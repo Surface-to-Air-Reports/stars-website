@@ -1,4 +1,4 @@
-import {Routes, Route, BrowserRouter, useNavigate} from 'react-router-dom';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './components/public/home';
 import About from './components/public/about';
 import AffectedAreas from './components/public/affected-areas';
