@@ -9,23 +9,15 @@ import Methodology from './components/public/methodology';
 import Statistics from './components/public/statistics';
 import WorstOffenders from './components/public/worst-offenders';
 import {Link} from "@mui/joy";
+import Header from "./components/reusable/header";
+import Footer from "./components/reusable/footer";
 
 
 function App() {
     return (
         <div>
-            <div style={{display: 'flex', flexDirection: 'row'}}>
-                <Link href={"/"}>about</Link>
-                <Link href={"/affected-areas"}>affected areas</Link>
-                <Link href={"/blog"}>blog</Link>
-                <Link href={"/data-search"}>data search</Link>
-                <Link href={"/file-report"}>file report</Link>
-                <Link href={"/"}>home</Link>
-                <Link href={"/methodology"}>methodology</Link>
-                <Link href={"/statistics"}>statistics</Link>
-                <Link href={"/worst-offenders"}>worst offenders</Link>
-            </div>
             <BrowserRouter>
+                <Header />
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/about" element={About}/>
@@ -37,6 +29,7 @@ function App() {
                     <Route path="/statistics" element={Statistics}/>
                     <Route path="/worst-offenders" element={WorstOffenders}/>
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </div>
     );
