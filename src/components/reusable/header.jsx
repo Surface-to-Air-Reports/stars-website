@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
             <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem'}}>
-                <img src={"/cdn/logo.png"} width={"200px"} onClick={()=>navigate("/")} />
+                <img alt={"Logo"} src={"/cdn/logo.png"} width={"200px"} onClick={()=>navigate("/")} />
             </Box>
             <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem'}}>
                 <Link onClick={() => navigate("/about")}
