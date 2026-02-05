@@ -8,7 +8,6 @@ import FileReport from './components/public/file-report';
 import Methodology from './components/public/methodology';
 import Statistics from './components/public/statistics';
 import WorstOffenders from './components/public/worst-offenders';
-import {Link} from "@mui/joy";
 import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 
