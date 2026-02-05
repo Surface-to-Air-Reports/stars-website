@@ -8,9 +8,9 @@ import FileReport from './components/public/file-report';
 import Methodology from './components/public/methodology';
 import Statistics from './components/public/statistics';
 import WorstOffenders from './components/public/worst-offenders';
-import {Link} from "@mui/joy";
 import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
+import Notfound from "./components/public/notfound";
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
                     <Route path="/methodology" element={Methodology}/>
                     <Route path="/statistics" element={Statistics}/>
                     <Route path="/worst-offenders" element={WorstOffenders}/>
+                    <Route path="*" element={Notfound()}/>
                 </Routes>
                 <Footer />
             </BrowserRouter>
