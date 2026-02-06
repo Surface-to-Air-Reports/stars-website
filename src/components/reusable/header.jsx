@@ -1,21 +1,30 @@
 import React from 'react';
-import {Link} from "@mui/joy";
+import {Link, Box} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 
 const Header = () => {
     const navigate = useNavigate();
     return (
-        <div style={{display: 'flex', flexDirection: 'row'}}>
-            <Link onClick={() => navigate("/about")}>about</Link>
-            <Link onClick={() => navigate("/affected-areas")}>affected areas</Link>
-            <Link onClick={() => navigate("/blog")}>blog</Link>
-            <Link onClick={() => navigate("/data-search")}>data search</Link>
-            <Link onClick={() => navigate("/file-report")}>file report</Link>
-            <Link onClick={() => navigate("/")}>home</Link>
-            <Link onClick={() => navigate("/methodology")}>methodology</Link>
-            <Link onClick={() => navigate("/statistics")}>statistics</Link>
-            <Link onClick={() => navigate("/worst-offenders")}>worst offenders</Link>
-        </div>
+        <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+            <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem'}}>
+                <img alt={"Logo"} src={"/cdn/logo.png"} width={"200px"} onClick={()=>navigate("/")} />
+            </Box>
+            <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem'}}>
+                <Link onClick={() => navigate("/about")}
+                      color = {"neutral"}
+
+                >
+                    About
+                </Link>
+                <Link onClick={() => navigate("/affected-areas")} color = {"neutral"}>Affected Areas</Link>
+                <Link onClick={() => navigate("/blog")} color = {"neutral"}>Blog</Link>
+                <Link onClick={() => navigate("/data-search")} color = {"neutral"}>Data Search</Link>
+                <Link onClick={() => navigate("/file-report")} color = {"neutral"}>File Report</Link>
+                <Link onClick={() => navigate("/methodology")} color = {"neutral"}>Methodology</Link>
+                <Link onClick={() => navigate("/statistics")} color = {"neutral"}>Statistics</Link>
+                <Link onClick={() => navigate("/worst-offenders")} color = {"neutral"}>Worst Offenders</Link>
+            </Box>
+        </Box>
 
     )
 }
