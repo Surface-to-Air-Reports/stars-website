@@ -5,7 +5,12 @@ import {useNavigate} from "react-router-dom";
 const Footer = () => {
     const navigate = useNavigate();
     return (
-        <Box sx = {{display: 'flex', flexDirection: 'row', borderTop: "1px solid", borderColor: "divider", paddingTop: "1rem"
+        <Box sx = {{display: 'flex',
+            flexDirection: 'row',
+            borderTop: "1px solid",
+            borderColor: "divider",
+            paddingTop: "1rem",
+            justifyContent: "space-between"
         }} >
             <Box sx ={{display: 'flex', flexDirection: 'column', gap: '.5rem', padding: '1rem'}}>
                 <Typography level = {'h4'}>
