@@ -12,25 +12,33 @@ import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
 
+import {Box} from "@mui/joy";
+
 
 function App() {
     return (
         <div>
             <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/about" element={About}/>
-                    <Route path="/affected-areas" element={AffectedAreas}/>
-                    <Route path="/blog" element={Blog}/>
-                    <Route path="/data-search" element={DataSearch}/>
-                    <Route path="/file-report" element={FileReport}/>
-                    <Route path="/methodology" element={Methodology}/>
-                    <Route path="/statistics" element={Statistics}/>
-                    <Route path="/worst-offenders" element={WorstOffenders}/>
-                    <Route path="*" element={Notfound()}/>
-                </Routes>
-                <Footer />
+                <Box sx={{display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'space-between'}}>
+                    <Box>
+                    <Header />
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/affected-areas" element={<AffectedAreas/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
+                            <Route path="/data-search" element={<DataSearch/>}/>
+                            <Route path="/file-report" element={<FileReport/>}/>
+                            <Route path="/methodology" element={<Methodology/>}/>
+                            <Route path="/statistics" element={<Statistics/>}/>
+                            <Route path="/worst-offenders" element={<WorstOffenders/>}/>
+
+
+                            <Route path="*" element={<Notfound/>}/>
+                        </Routes>
+                    </Box>
+                    <Footer/>
+                </Box>
             </BrowserRouter>
         </div>
     );
