@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Link, List, Typography} from "@mui/joy";
+import {Box, Link, List} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
