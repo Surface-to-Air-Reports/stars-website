@@ -11,11 +11,11 @@ const Page = () => {
 
     return (
         <Box>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '.5rem'}}>
-                <Typography level={"h1"} sx={{fontSize: "110px"}}>100,314</Typography>
+            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem'}}>
+                <Typography level={"h1"} sx={{fontSize: "110px", paddingTop: "10vh"}}>100,314</Typography>
                 <Typography level={"h2"} sx={{width: "500px"}} textAlign={"center"}>Planes have  been caught flying below the legal altitude in Superior</Typography>
                 <Typography level={"h3"} sx={{color: "light-gray"}}>Since 01/07/2026</Typography>
-                <Box sx={{display: 'flex', flexDirection: 'row'}}>
+                <Box sx={{display: 'flex', flexDirection: 'row', gap: '1rem'}}>
                     <Button
                         color={"neutral"}
                         onClick={() => navigate("/file-report")}>

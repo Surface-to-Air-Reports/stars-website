@@ -27,7 +27,7 @@ const Footer = () => {
                 <Link onClick={() => navigate("/blog")}>Blog</Link>
                     <Link onClick={() => navigate("/about")}>About</Link>
                     <Link onClick={() => navigate("/methodology")}>Methodology</Link>
-                    <Link onClick={() => navigate("/tos")}>Terms of Service</Link>
+                    <Link onClick={() => navigate("/tos")}>Terms of Use</Link>
                     <Link onClick={() => navigate("/privacy")}>Privacy Policy</Link>
                     <Link href={"https://github.com/Surface-to-Air-Reports"}>Github</Link>
                 </List>
