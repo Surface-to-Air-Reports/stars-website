@@ -1,0 +1,2352 @@
+
+============================================================
+  ADS-B RECEIVER STATISTICS
+============================================================
+  Data points   : 362,666
+  Unique aircraft: 760
+  Date range    : 2025-11-20 to 2026-02-06
+  Days of data  : 79
+  Flight sessions: 8,432
+
+------------------------------------------------------------
+  TOP 760 — TIME IN AIRSPACE (cumulative observed time)
+------------------------------------------------------------
+    1. N738BJ           1h 18m 39s   (109 sessions)
+    2. N184AF           1h 18m 31s   (131 sessions)
+    3. N256SF           1h 17m 55s   (187 sessions)
+    4. N3517S           1h 16m 59s   (143 sessions)
+    5. N268FM           1h 12m 11s   (172 sessions)
+    6. N265SF             1h 5m 7s   (163 sessions)
+    7. N264SF            1h 3m 16s   (150 sessions)
+    8. N65584            1h 1m 35s   (94 sessions)
+    9. N259SF              59m 58s   (148 sessions)
+   10. N58FF               57m 58s   (124 sessions)
+   11. N4547E              55m 23s   (120 sessions)
+   12. N25430              54m 45s   (87 sessions)
+   13. N53FF               53m 54s   (119 sessions)
+   14. N254SF              51m 44s   (144 sessions)
+   15. N76FF               50m 27s   (121 sessions)
+   16. N263SF              50m 14s   (125 sessions)
+   17. N4052F              48m 53s   (101 sessions)
+   18. N140PC              47m 35s   (101 sessions)
+   19. N120FM              46m 19s   (117 sessions)
+   20. N4345G              45m 54s   (74 sessions)
+   21. N303EH              43m 46s   (97 sessions)
+   22. N547ND              42m 52s   (101 sessions)
+   23. N96FF               42m 39s   (111 sessions)
+   24. N537ND              42m 35s   (92 sessions)
+   25. N224VS              42m 16s   (97 sessions)
+   26. N514MT              41m 26s   (97 sessions)
+   27. N816RD               41m 5s   (93 sessions)
+   28. N201TH              40m 42s   (98 sessions)
+   29. CXK548              40m 11s   (89 sessions)
+   30. N79FF                40m 8s   (105 sessions)
+   31. N57FF               38m 57s   (90 sessions)
+   32. CXK292              38m 50s   (98 sessions)
+   33. N810KK              36m 39s   (83 sessions)
+   34. N927TS              35m 26s   (80 sessions)
+   35. N29HT               34m 14s   (86 sessions)
+   36. N4632F              33m 54s   (72 sessions)
+   37. N5335S              32m 51s   (71 sessions)
+   38. N5178S              32m 51s   (88 sessions)
+   39. N561ND              32m 28s   (88 sessions)
+   40. N25CW               31m 16s   (70 sessions)
+   41. N48FF               30m 54s   (83 sessions)
+   42. N75FF               30m 46s   (78 sessions)
+   43. N406JA               30m 9s   (67 sessions)
+   44. N5290V              29m 54s   (72 sessions)
+   45. N31399              29m 16s   (39 sessions)
+   46. N1132W              28m 58s   (68 sessions)
+   47. N152SA              27m 52s   (51 sessions)
+   48. N522ND              26m 20s   (70 sessions)
+   49. CXK594              26m 18s   (65 sessions)
+   50. N45941              26m 16s   (40 sessions)
+   51. N9908K              24m 56s   (72 sessions)
+   52. N2168D              24m 51s   (49 sessions)
+   53. N526ND              24m 16s   (63 sessions)
+   54. N692CF              24m 13s   (67 sessions)
+   55. N735CF              24m 13s   (55 sessions)
+   56. N580ET              23m 43s   (78 sessions)
+   57. N601LS              23m 14s   (70 sessions)
+   58. N65251               23m 5s   (74 sessions)
+   59. N30147              22m 45s   (60 sessions)
+   60. N545Z               22m 36s   (50 sessions)
+   61. N929CD              22m 32s   (49 sessions)
+   62. N342FG              22m 28s   (54 sessions)
+   63. N65440              21m 18s   (42 sessions)
+   64. N75839              20m 40s   (42 sessions)
+   65. N739ZN              20m 19s   (46 sessions)
+   66. CXK699              20m 19s   (56 sessions)
+   67. N3128T               20m 5s   (73 sessions)
+   68. N5138R              19m 58s   (51 sessions)
+   69. N331CH               19m 5s   (51 sessions)
+   70. CXK461              18m 47s   (54 sessions)
+   71. N97FF               18m 18s   (43 sessions)
+   72. N621FJ               18m 9s   (43 sessions)
+   73. CXK442              16m 40s   (46 sessions)
+   74. CXK657              16m 36s   (38 sessions)
+   75. N721FJ              15m 38s   (49 sessions)
+   76. N821FJ              15m 23s   (44 sessions)
+   77. CXK430              15m 18s   (40 sessions)
+   78. CXK298              15m 10s   (36 sessions)
+   79. N6UX                 15m 9s   (18 sessions)
+   80. CXK455               15m 5s   (36 sessions)
+   81. N442SA              14m 47s   (30 sessions)
+   82. N736QG               14m 3s   (35 sessions)
+   83. N1218S              13m 29s   (36 sessions)
+   84. N248JS              13m 10s   (34 sessions)
+   85. N530PS              12m 41s   (22 sessions)
+   86. N549ND              12m 32s   (35 sessions)
+   87. N2552X               12m 9s   (28 sessions)
+   88. CXK142               12m 5s   (25 sessions)
+   89. N478BC              11m 46s   (25 sessions)
+   90. N720CL              10m 22s   (24 sessions)
+   91. CXK141               9m 49s   (24 sessions)
+   92. N225WS               9m 13s   (20 sessions)
+   93. N8352T               8m 46s   (21 sessions)
+   94. N491LG               8m 35s   (26 sessions)
+   95. N68BC                8m 30s   (14 sessions)
+   96. CXK318               8m 26s   (20 sessions)
+   97. N555YS               7m 38s   (19 sessions)
+   98. N184EH               7m 14s   (20 sessions)
+   99. CXK550                7m 2s   (20 sessions)
+  100. N610SL               6m 44s   (12 sessions)
+  101. CXK1106              6m 38s   (15 sessions)
+  102. N336PA               6m 14s   (16 sessions)
+  103. N648F                5m 47s   (10 sessions)
+  104. N4464D               5m 41s   (14 sessions)
+  105. N12772               5m 31s   (13 sessions)
+  106. N2347X                5m 5s   (11 sessions)
+  107. N364D                4m 58s   (9 sessions)
+  108. N173DC               4m 36s   (12 sessions)
+  109. N34043               4m 34s   (10 sessions)
+  110. N509AM               4m 32s   (13 sessions)
+  111. N940W                4m 22s   (9 sessions)
+  112. CXK1020              4m 22s   (14 sessions)
+  113. N86168               4m 22s   (7 sessions)
+  114. N1648H                4m 9s   (9 sessions)
+  115. N973HA                4m 2s   (13 sessions)
+  116. N4633J                4m 0s   (10 sessions)
+  117. CXK674               3m 52s   (8 sessions)
+  118. N360ES               3m 50s   (7 sessions)
+  119. N205UU               3m 49s   (9 sessions)
+  120. N164RM               3m 41s   (9 sessions)
+  121. CXK1143              3m 39s   (8 sessions)
+  122. N869TA               3m 37s   (9 sessions)
+  123. N96038               3m 32s   (8 sessions)
+  124. N3664U               3m 25s   (11 sessions)
+  125. ALIFE2               3m 23s   (8 sessions)
+  126. N252BS               3m 16s   (8 sessions)
+  127. N584RH               3m 16s   (5 sessions)
+  128. N956GM               3m 14s   (5 sessions)
+  129. N909MA               3m 14s   (7 sessions)
+  130. N284L                3m 10s   (7 sessions)
+  131. PRE81                2m 56s   (7 sessions)
+  132. N722WD               2m 54s   (8 sessions)
+  133. CFHQB                2m 52s   (4 sessions)
+  134. N7189L               2m 51s   (6 sessions)
+  135. CXK1150              2m 50s   (6 sessions)
+  136. FFL1033              2m 50s   (5 sessions)
+  137. N988AM               2m 47s   (6 sessions)
+  138. N555AV               2m 43s   (5 sessions)
+  139. N17BM                2m 40s   (5 sessions)
+  140. N341TM               2m 39s   (6 sessions)
+  141. N534HQ               2m 38s   (2 sessions)
+  142. N978GV               2m 37s   (9 sessions)
+  143. N185PB               2m 35s   (7 sessions)
+  144. N621TK               2m 34s   (7 sessions)
+  145. N19U                 2m 29s   (3 sessions)
+  146. N523DL               2m 28s   (6 sessions)
+  147. N53265               2m 27s   (5 sessions)
+  148. N618MM               2m 27s   (6 sessions)
+  149. N1846Z               2m 26s   (4 sessions)
+  150. N523AB               2m 24s   (5 sessions)
+  151. PRE315               2m 24s   (13 sessions)
+  152. N485DL               2m 23s   (7 sessions)
+  153. N3802C               2m 23s   (6 sessions)
+  154. CHILD1               2m 21s   (4 sessions)
+  155. N703BK               2m 20s   (5 sessions)
+  156. N10897               2m 20s   (4 sessions)
+  157. N526LK               2m 18s   (5 sessions)
+  158. N851MB               2m 14s   (4 sessions)
+  159. N3547L               2m 12s   (5 sessions)
+  160. N9811U                2m 8s   (4 sessions)
+  161. CAP582                2m 8s   (8 sessions)
+  162. N1337K                2m 6s   (4 sessions)
+  163. N6161X                2m 4s   (6 sessions)
+  164. N3051A                2m 1s   (4 sessions)
+  165. PRE90                 2m 0s   (4 sessions)
+  166. N2459S                2m 0s   (4 sessions)
+  167. N404FR                2m 0s   (5 sessions)
+  168. N75GL                1m 59s   (4 sessions)
+  169. N1330N               1m 56s   (6 sessions)
+  170. N505JF               1m 53s   (4 sessions)
+  171. N5341M               1m 51s   (3 sessions)
+  172. N2744W               1m 50s   (5 sessions)
+  173. N3952Q               1m 48s   (4 sessions)
+  174. N736RP               1m 46s   (5 sessions)
+  175. N6322A               1m 46s   (3 sessions)
+  176. N216BD               1m 46s   (5 sessions)
+  177. N400MZ               1m 46s   (3 sessions)
+  178. N98444               1m 45s   (2 sessions)
+  179. N114RG               1m 44s   (5 sessions)
+  180. N400BC               1m 41s   (5 sessions)
+  181. N8141Y               1m 41s   (5 sessions)
+  182. N172MT               1m 40s   (6 sessions)
+  183. N570JD               1m 38s   (5 sessions)
+  184. N24144               1m 38s   (5 sessions)
+  185. CXK1076              1m 37s   (5 sessions)
+  186. N272DS               1m 37s   (5 sessions)
+  187. N322BW               1m 36s   (8 sessions)
+  188. N1352U               1m 36s   (3 sessions)
+  189. N8125P               1m 35s   (6 sessions)
+  190. N7883Z               1m 35s   (2 sessions)
+  191. PCH2                 1m 34s   (3 sessions)
+  192. CXK434               1m 33s   (4 sessions)
+  193. N441A                1m 33s   (5 sessions)
+  194. N2439S               1m 30s   (2 sessions)
+  195. N5122U               1m 30s   (3 sessions)
+  196. N108NG               1m 30s   (6 sessions)
+  197. N838SP               1m 30s   (4 sessions)
+  198. N734EQ               1m 30s   (3 sessions)
+  199. N527JT               1m 29s   (2 sessions)
+  200. N268DA               1m 29s   (4 sessions)
+  201. N222AG               1m 27s   (3 sessions)
+  202. N4389D               1m 27s   (2 sessions)
+  203. CFXFT                1m 27s   (3 sessions)
+  204. N211EE               1m 26s   (4 sessions)
+  205. N720DR               1m 26s   (3 sessions)
+  206. N244WH               1m 24s   (4 sessions)
+  207. N7301P               1m 21s   (3 sessions)
+  208. N756UJ               1m 21s   (3 sessions)
+  209. N350FG               1m 20s   (4 sessions)
+  210. N353VR               1m 20s   (2 sessions)
+  211. N7018R               1m 20s   (2 sessions)
+  212. N2657D               1m 19s   (1 sessions)
+  213. N112NR               1m 19s   (3 sessions)
+  214. N763CB               1m 19s   (2 sessions)
+  215. N144RU               1m 17s   (7 sessions)
+  216. N74894               1m 16s   (3 sessions)
+  217. TWY818               1m 16s   (3 sessions)
+  218. N5275S               1m 15s   (3 sessions)
+  219. N5808T               1m 14s   (5 sessions)
+  220. N89764               1m 14s   (1 sessions)
+  221. N888AW               1m 13s   (2 sessions)
+  222. N971KC               1m 13s   (3 sessions)
+  223. N343AK               1m 12s   (3 sessions)
+  224. N589E                1m 12s   (4 sessions)
+  225. N7293B               1m 12s   (2 sessions)
+  226. N221FD               1m 11s   (4 sessions)
+  227. N967JB               1m 11s   (3 sessions)
+  228. N818RD               1m 10s   (2 sessions)
+  229. N311XX                1m 9s   (10 sessions)
+  230. N17FS                 1m 8s   (2 sessions)
+  231. N8314W                1m 6s   (3 sessions)
+  232. N372CZ                1m 6s   (3 sessions)
+  233. N1553X                1m 6s   (4 sessions)
+  234. N8269B                1m 5s   (1 sessions)
+  235. N909DB                1m 4s   (2 sessions)
+  236. N50LF                 1m 4s   (3 sessions)
+  237. EJA503                1m 3s   (2 sessions)
+  238. N8094T                1m 3s   (1 sessions)
+  239. N7973M                1m 3s   (2 sessions)
+  240. PRE26                 1m 3s   (2 sessions)
+  241. N677P                 1m 3s   (3 sessions)
+  242. N960MP                1m 3s   (2 sessions)
+  243. N808W                 1m 3s   (2 sessions)
+  244. CXK126                1m 2s   (2 sessions)
+  245. N427BB                1m 1s   (2 sessions)
+  246. N446DW                1m 1s   (2 sessions)
+  247. N720JH                1m 0s   (2 sessions)
+  248. N736SY                1m 0s   (1 sessions)
+  249. N418DR                1m 0s   (2 sessions)
+  250. EJA626                  59s   (2 sessions)
+  251. N9226D                  59s   (1 sessions)
+  252. N173SK                  59s   (1 sessions)
+  253. CAP596                  59s   (4 sessions)
+  254. JRE827                  58s   (2 sessions)
+  255. N657C                   58s   (1 sessions)
+  256. N260TT                  58s   (4 sessions)
+  257. N2315C                  58s   (2 sessions)
+  258. N4729C                  58s   (2 sessions)
+  259. TWY750                  57s   (2 sessions)
+  260. N9152Q                  57s   (2 sessions)
+  261. N64PW                   57s   (1 sessions)
+  262. N860JB                  57s   (3 sessions)
+  263. N1MN                    57s   (6 sessions)
+  264. N761BB                  57s   (6 sessions)
+  265. CXK623                  56s   (2 sessions)
+  266. PRE68                   56s   (2 sessions)
+  267. N831TT                  56s   (2 sessions)
+  268. N165AR                  55s   (3 sessions)
+  269. N728DJ                  55s   (2 sessions)
+  270. N1075E                  55s   (2 sessions)
+  271. N267AM                  54s   (2 sessions)
+  272. N226ML                  54s   (2 sessions)
+  273. N165MW                  54s   (2 sessions)
+  274. N510BE                  54s   (3 sessions)
+  275. N395FG                  53s   (2 sessions)
+  276. N855CP                  53s   (3 sessions)
+  277. N79347                  53s   (2 sessions)
+  278. EJA423                  52s   (2 sessions)
+  279. N93JN                   52s   (2 sessions)
+  280. N2WM                    52s   (3 sessions)
+  281. N708JP                  52s   (1 sessions)
+  282. N736TT                  52s   (2 sessions)
+  283. N22WB                   52s   (2 sessions)
+  284. N92RV                   52s   (2 sessions)
+  285. N70LX                   52s   (2 sessions)
+  286. EVANS17                 51s   (1 sessions)
+  287. N420FJ                  51s   (1 sessions)
+  288. N2643V                  51s   (1 sessions)
+  289. N657KT                  50s   (2 sessions)
+  290. N34982                  50s   (1 sessions)
+  291. N896JH                  50s   (2 sessions)
+  292. EJA838                  50s   (2 sessions)
+  293. N623BG                  49s   (2 sessions)
+  294. N1803W                  49s   (3 sessions)
+  295. N96665                  49s   (1 sessions)
+  296. N414TW                  48s   (3 sessions)
+  297. PIKES42                 48s   (1 sessions)
+  298. N2940T                  48s   (1 sessions)
+  299. N482CG                  48s   (1 sessions)
+  300. N37JL                   47s   (2 sessions)
+  301. JSX8103                 46s   (2 sessions)
+  302. N626UT                  46s   (1 sessions)
+  303. N254E                   46s   (1 sessions)
+  304. N6744W                  45s   (2 sessions)
+  305. CNS3311                 45s   (1 sessions)
+  306. N7895L                  44s   (2 sessions)
+  307. N2896G                  44s   (2 sessions)
+  308. N156ME                  44s   (2 sessions)
+  309. N707PD                  43s   (1 sessions)
+  310. EJA606                  43s   (1 sessions)
+  311. N668W                   43s   (2 sessions)
+  312. N11636                  43s   (2 sessions)
+  313. N263RS                  42s   (1 sessions)
+  314. N405PJ                  41s   (3 sessions)
+  315. N970TX                  41s   (1 sessions)
+  316. N8175N                  41s   (1 sessions)
+  317. EJA665                  41s   (1 sessions)
+  318. EJA572                  41s   (1 sessions)
+  319. EJA459                  41s   (1 sessions)
+  320. N1071Z                  40s   (1 sessions)
+  321. LXJ605                  40s   (2 sessions)
+  322. N422V                   40s   (1 sessions)
+  323. N3216E                  40s   (1 sessions)
+  324. CXK188                  40s   (3 sessions)
+  325. N350ZF                  40s   (1 sessions)
+  326. N5327J                  40s   (2 sessions)
+  327. EJA817                  39s   (1 sessions)
+  328. EJA922                  39s   (1 sessions)
+  329. N194AK                  39s   (3 sessions)
+  330. N585GC                  39s   (1 sessions)
+  331. N514TX                  39s   (1 sessions)
+  332. N5033J                  39s   (2 sessions)
+  333. CXK174                  39s   (2 sessions)
+  334. LXJ474                  39s   (1 sessions)
+  335. TG57                    38s   (1 sessions)
+  336. N121TS                  38s   (1 sessions)
+  337. EJA533                  38s   (1 sessions)
+  338. N272SP                  38s   (1 sessions)
+  339. N185HJ                  38s   (1 sessions)
+  340. N930J                   38s   (1 sessions)
+  341. LXJ596                  38s   (1 sessions)
+  342. N761JK                  38s   (3 sessions)
+  343. EJA314                  38s   (1 sessions)
+  344. N24PH                   38s   (1 sessions)
+  345. N971MB                  37s   (1 sessions)
+  346. N988NW                  37s   (1 sessions)
+  347. NJM608                  37s   (1 sessions)
+  348. N98FF                   37s   (2 sessions)
+  349. N21LX                   37s   (1 sessions)
+  350. N443CS                  37s   (1 sessions)
+  351. N555BG                  37s   (2 sessions)
+  352. N61TY                   37s   (3 sessions)
+  353. EJA333                  36s   (1 sessions)
+  354. CAP543                  36s   (1 sessions)
+  355. N707WY                  36s   (2 sessions)
+  356. N189BL                  36s   (1 sessions)
+  357. N100DD                  36s   (1 sessions)
+  358. N90CG                   36s   (1 sessions)
+  359. N404BC                  36s   (1 sessions)
+  360. N850TB                  36s   (1 sessions)
+  361. N523DM                  36s   (1 sessions)
+  362. N806LR                  36s   (1 sessions)
+  363. N350HN                  36s   (2 sessions)
+  364. N772XJ                  36s   (2 sessions)
+  365. EJM134                  35s   (1 sessions)
+  366. EJA417                  35s   (2 sessions)
+  367. EJA760                  35s   (1 sessions)
+  368. LXJ303                  35s   (1 sessions)
+  369. N660S                   35s   (2 sessions)
+  370. N555WP                  35s   (1 sessions)
+  371. N415HS                  35s   (1 sessions)
+  372. N9133F                  35s   (3 sessions)
+  373. N9614H                  35s   (1 sessions)
+  374. N68MJ                   35s   (1 sessions)
+  375. N203RF                  35s   (1 sessions)
+  376. N976DP                  35s   (1 sessions)
+  377. PRE31                   35s   (2 sessions)
+  378. EJA414                  35s   (1 sessions)
+  379. N3804C                  35s   (2 sessions)
+  380. N612RM                  34s   (1 sessions)
+  381. LXJ598                  34s   (1 sessions)
+  382. JTL321                  34s   (1 sessions)
+  383. N697RM                  34s   (1 sessions)
+  384. N110DK                  34s   (1 sessions)
+  385. TG24                    34s   (1 sessions)
+  386. N960RR                  34s   (1 sessions)
+  387. PRE54                   34s   (1 sessions)
+  388. N394SP                  34s   (1 sessions)
+  389. N611MB                  34s   (2 sessions)
+  390. N401LX                  34s   (1 sessions)
+  391. VPCIP                   34s   (1 sessions)
+  392. N108DB                  34s   (1 sessions)
+  393. N686MA                  34s   (1 sessions)
+  394. N978AH                  33s   (1 sessions)
+  395. EJA910                  33s   (1 sessions)
+  396. EJA544                  33s   (1 sessions)
+  397. N118NG                  33s   (1 sessions)
+  398. N930ML                  33s   (2 sessions)
+  399. N707NG                  33s   (1 sessions)
+  400. EJA529                  33s   (1 sessions)
+  401. PCH1                    33s   (1 sessions)
+  402. SJJ209                  33s   (1 sessions)
+  403. N98306                  33s   (2 sessions)
+  404. N339JM                  33s   (1 sessions)
+  405. N26EV                   33s   (1 sessions)
+  406. N888GX                  33s   (1 sessions)
+  407. N8300J                  33s   (1 sessions)
+  408. N408DH                  32s   (1 sessions)
+  409. N201AH                  32s   (1 sessions)
+  410. IJA30                   32s   (1 sessions)
+  411. N185EE                  32s   (1 sessions)
+  412. EJA530                  32s   (1 sessions)
+  413. COL1953                 32s   (1 sessions)
+  414. N2079X                  32s   (1 sessions)
+  415. N960F                   32s   (1 sessions)
+  416. N22265                  32s   (1 sessions)
+  417. N989AR                  32s   (1 sessions)
+  418. N6824P                  32s   (1 sessions)
+  419. KFS171                  31s   (1 sessions)
+  420. EJA917                  31s   (1 sessions)
+  421. EJM188                  31s   (1 sessions)
+  422. N3939X                  31s   (1 sessions)
+  423. N331JK                  31s   (2 sessions)
+  424. N18KS                   31s   (1 sessions)
+  425. EJA361                  31s   (1 sessions)
+  426. N259PC                  31s   (1 sessions)
+  427. N729HZ                  31s   (1 sessions)
+  428. TCN717                  31s   (1 sessions)
+  429. N78RK                   31s   (1 sessions)
+  430. NJM998                  31s   (1 sessions)
+  431. N364AE                  31s   (1 sessions)
+  432. N734DJ                  30s   (1 sessions)
+  433. N910GE                  30s   (1 sessions)
+  434. EJA956                  30s   (1 sessions)
+  435. N487ER                  30s   (1 sessions)
+  436. EJA637                  30s   (1 sessions)
+  437. N724FS                  30s   (1 sessions)
+  438. N246SJ                  30s   (2 sessions)
+  439. QHD681                  30s   (1 sessions)
+  440. LXJ465                  30s   (1 sessions)
+  441. JTZ765                  30s   (1 sessions)
+  442. PCH604                  30s   (1 sessions)
+  443. N567JW                  30s   (1 sessions)
+  444. N8DZ                    30s   (2 sessions)
+  445. N480RL                  30s   (1 sessions)
+  446. CAP584                  29s   (1 sessions)
+  447. N70RF                   29s   (1 sessions)
+  448. N247ER                  29s   (1 sessions)
+  449. N92TX                   29s   (1 sessions)
+  450. N710                    29s   (1 sessions)
+  451. XSR340                  29s   (2 sessions)
+  452. N883SC                  29s   (1 sessions)
+  453. N612NG                  29s   (1 sessions)
+  454. N6112G                  29s   (1 sessions)
+  455. N47RM                   29s   (1 sessions)
+  456. EJM960                  29s   (2 sessions)
+  457. EJA612                  29s   (1 sessions)
+  458. JAS302                  28s   (1 sessions)
+  459. N275AM                  28s   (2 sessions)
+  460. N141QS                  28s   (1 sessions)
+  461. CXK329                  28s   (1 sessions)
+  462. EJA345                  28s   (1 sessions)
+  463. EJA325                  28s   (1 sessions)
+  464. EJA874                  28s   (1 sessions)
+  465. N577XW                  28s   (2 sessions)
+  466. EJA485                  28s   (1 sessions)
+  467. EJA278                  28s   (1 sessions)
+  468. EJA436                  28s   (1 sessions)
+  469. EJA273                  28s   (1 sessions)
+  470. N1WG                    28s   (1 sessions)
+  471. N7NE                    28s   (1 sessions)
+  472. ASP816                  28s   (1 sessions)
+  473. TIV70                   28s   (1 sessions)
+  474. N888PA                  28s   (1 sessions)
+  475. JTL717                  28s   (1 sessions)
+  476. N375DB                  28s   (2 sessions)
+  477. EJA680                  28s   (1 sessions)
+  478. N44941                  27s   (2 sessions)
+  479. N382TS                  27s   (1 sessions)
+  480. N909XX                  27s   (3 sessions)
+  481. N4741X                  27s   (1 sessions)
+  482. SDE755                  27s   (1 sessions)
+  483. N580RM                  27s   (1 sessions)
+  484. 1200                    27s   (1 sessions)
+  485. N58219                  27s   (1 sessions)
+  486. EJM713                  27s   (1 sessions)
+  487. N100ML                  27s   (2 sessions)
+  488. EJA469                  27s   (1 sessions)
+  489. N840MQ                  27s   (3 sessions)
+  490. EJA315                  27s   (1 sessions)
+  491. N1091A                  27s   (2 sessions)
+  492. N104WF                  27s   (1 sessions)
+  493. N277WG                  27s   (1 sessions)
+  494. N50TW                   27s   (1 sessions)
+  495. N715MN                  27s   (1 sessions)
+  496. EJA577                  27s   (1 sessions)
+  497. N307EE                  27s   (1 sessions)
+  498. N28FY                   26s   (1 sessions)
+  499. TWY944                  26s   (1 sessions)
+  500. EJA444                  26s   (1 sessions)
+  501. N397MY                  26s   (2 sessions)
+  502. N794XJ                  26s   (1 sessions)
+  503. N3343Q                  26s   (1 sessions)
+  504. KSLAWO1                 26s   (1 sessions)
+  505. N63NX                   26s   (4 sessions)
+  506. LXJ540                  26s   (1 sessions)
+  507. LXJ360                  26s   (1 sessions)
+  508. EJA886                  26s   (1 sessions)
+  509. DCM815                  26s   (1 sessions)
+  510. EJA872                  26s   (1 sessions)
+  511. EJA889                  26s   (1 sessions)
+  512. N858ZG                  26s   (1 sessions)
+  513. LXJ410                  26s   (1 sessions)
+  514. N737JR                  25s   (2 sessions)
+  515. EJM19                   25s   (1 sessions)
+  516. SLH4                    25s   (1 sessions)
+  517. N895CC                  25s   (1 sessions)
+  518. GLT393                  25s   (1 sessions)
+  519. RTY131                  25s   (1 sessions)
+  520. VJA338                  25s   (1 sessions)
+  521. N112TG                  25s   (1 sessions)
+  522. CXK495                  25s   (1 sessions)
+  523. EJA706                  25s   (1 sessions)
+  524. N218KF                  25s   (1 sessions)
+  525. N430MW                  25s   (1 sessions)
+  526. CHR7                    25s   (1 sessions)
+  527. N969GC                  25s   (1 sessions)
+  528. EJA824                  25s   (1 sessions)
+  529. PRE388                  25s   (1 sessions)
+  530. EJA422                  25s   (1 sessions)
+  531. EJA884                  25s   (1 sessions)
+  532. JTZ287                  25s   (1 sessions)
+  533. LXJ575                  25s   (1 sessions)
+  534. N420BD                  25s   (1 sessions)
+  535. LXJ397                  24s   (1 sessions)
+  536. N24293                  24s   (1 sessions)
+  537. N53DF                   24s   (1 sessions)
+  538. N84UP                   24s   (1 sessions)
+  539. JTL3                    24s   (1 sessions)
+  540. N525PG                  24s   (1 sessions)
+  541. N53UB                   24s   (1 sessions)
+  542. N9523Q                  24s   (2 sessions)
+  543. N902F                   24s   (1 sessions)
+  544. LXJ484                  24s   (1 sessions)
+  545. N828SK                  24s   (1 sessions)
+  546. N707GP                  24s   (1 sessions)
+  547. N127SF                  24s   (2 sessions)
+  548. PFT151                  24s   (1 sessions)
+  549. EJA327                  24s   (1 sessions)
+  550. N6749G                  24s   (2 sessions)
+  551. N59PJ                   24s   (1 sessions)
+  552. N744EF                  23s   (1 sessions)
+  553. N268VT                  23s   (1 sessions)
+  554. N125Z                   23s   (2 sessions)
+  555. N918LT                  23s   (1 sessions)
+  556. LXJ262                  23s   (1 sessions)
+  557. TCN399                  23s   (1 sessions)
+  558. LXJ392                  23s   (1 sessions)
+  559. KAI525                  23s   (1 sessions)
+  560. N249TH                  23s   (1 sessions)
+  561. PJC36                   23s   (1 sessions)
+  562. RAX555                  23s   (1 sessions)
+  563. N3387R                  23s   (1 sessions)
+  564. N2046Z                  22s   (3 sessions)
+  565. N109MJ                  22s   (1 sessions)
+  566. N8795W                  22s   (1 sessions)
+  567. EJA257                  22s   (1 sessions)
+  568. EJA464                  22s   (1 sessions)
+  569. N313BK                  22s   (1 sessions)
+  570. N335FG                  22s   (1 sessions)
+  571. N6642J                  22s   (1 sessions)
+  572. N661M                   22s   (1 sessions)
+  573. N700WW                  22s   (2 sessions)
+  574. N881AF                  22s   (1 sessions)
+  575. EJA830                  22s   (1 sessions)
+  576. N9580J                  22s   (1 sessions)
+  577. N888                    22s   (1 sessions)
+  578. N6007C                  22s   (1 sessions)
+  579. N263BA                  22s   (1 sessions)
+  580. CYO461                  22s   (1 sessions)
+  581. N800MD                  22s   (1 sessions)
+  582. N727MS                  22s   (1 sessions)
+  583. N365LG                  22s   (1 sessions)
+  584. N978PW                  21s   (1 sessions)
+  585. N505RR                  21s   (1 sessions)
+  586. N850AX                  21s   (1 sessions)
+  587. N278GA                  21s   (1 sessions)
+  588. EJA784                  21s   (1 sessions)
+  589. NGF7579                 21s   (1 sessions)
+  590. N4HD                    21s   (1 sessions)
+  591. N303DC                  20s   (1 sessions)
+  592. N244U                   20s   (1 sessions)
+  593. TCN784                  20s   (1 sessions)
+  594. N660PS                  20s   (1 sessions)
+  595. N7963W                  20s   (2 sessions)
+  596. N462SW                  20s   (1 sessions)
+  597. N848                    20s   (1 sessions)
+  598. N633PC                  20s   (1 sessions)
+  599. N881RE                  20s   (1 sessions)
+  600. N736JH                  20s   (1 sessions)
+  601. N1668M                  19s   (2 sessions)
+  602. N742BS                  19s   (1 sessions)
+  603. EJA975                  19s   (1 sessions)
+  604. N6FZ                    19s   (1 sessions)
+  605. LIFELN1                 19s   (1 sessions)
+  606. EJA574                  18s   (1 sessions)
+  607. N530JF                  18s   (1 sessions)
+  608. N305BZ                  18s   (2 sessions)
+  609. N261HB                  18s   (1 sessions)
+  610. EJA265                  18s   (1 sessions)
+  611. N525PZ                  18s   (1 sessions)
+  612. N107SB                  18s   (1 sessions)
+  613. JCY900                  17s   (1 sessions)
+  614. N346PA                  17s   (1 sessions)
+  615. N395GF                  17s   (1 sessions)
+  616. N28BJ                   17s   (1 sessions)
+  617. N713MA                  17s   (1 sessions)
+  618. N1090J                  17s   (1 sessions)
+  619. N651DR                  17s   (1 sessions)
+  620. N756XP                  17s   (2 sessions)
+  621. N996EP                  17s   (1 sessions)
+  622. N570DS                  17s   (1 sessions)
+  623. N775AL                  17s   (1 sessions)
+  624. N681DB                  17s   (1 sessions)
+  625. N788RB                  17s   (3 sessions)
+  626. N853HL                  16s   (1 sessions)
+  627. CWG742                  16s   (1 sessions)
+  628. N421RS                  16s   (1 sessions)
+  629. N210JV                  15s   (1 sessions)
+  630. N321TF                  15s   (3 sessions)
+  631. N8840V                  15s   (1 sessions)
+  632. N865QS                  15s   (1 sessions)
+  633. EJA416                  15s   (1 sessions)
+  634. N139SH                  15s   (1 sessions)
+  635. N11024                  15s   (1 sessions)
+  636. N72KM                   15s   (1 sessions)
+  637. N256SW                  14s   (1 sessions)
+  638. N789JH                  14s   (1 sessions)
+  639. N9894Y                  14s   (1 sessions)
+  640. N4221Q                  14s   (1 sessions)
+  641. N778HA                  14s   (2 sessions)
+  642. N475XP                  13s   (1 sessions)
+  643. KFS150                  13s   (1 sessions)
+  644. CAP597                  13s   (1 sessions)
+  645. N717TV                  13s   (1 sessions)
+  646. N275TB                  13s   (1 sessions)
+  647. JNX02                   13s   (1 sessions)
+  648. N149GK                  13s   (1 sessions)
+  649. CBC868                  13s   (1 sessions)
+  650. VNT372                  13s   (1 sessions)
+  651. N456FM                  13s   (1 sessions)
+  652. LOST37                  13s   (1 sessions)
+  653. RAIDR07                 13s   (1 sessions)
+  654. TG61                    12s   (1 sessions)
+  655. N508JD                  12s   (1 sessions)
+  656. N914SM                  12s   (2 sessions)
+  657. ARROW12                 12s   (1 sessions)
+  658. N24X                    12s   (1 sessions)
+  659. N327MP                  12s   (1 sessions)
+  660. N410SJ                  12s   (2 sessions)
+  661. EJA584                  12s   (1 sessions)
+  662. N790CA                  12s   (2 sessions)
+  663. N716XJ                  11s   (1 sessions)
+  664. TG25                    11s   (1 sessions)
+  665. N222AL                  11s   (1 sessions)
+  666. N68VS                   11s   (1 sessions)
+  667. N777YN                  10s   (2 sessions)
+  668. N22AF                   10s   (1 sessions)
+  669. N1813B                  10s   (1 sessions)
+  670. N121RE                  10s   (1 sessions)
+  671. N493JD                   9s   (1 sessions)
+  672. N51EP                    9s   (1 sessions)
+  673. N523C                    9s   (1 sessions)
+  674. N104QT                   9s   (1 sessions)
+  675. N8533X                   8s   (1 sessions)
+  676. N9TC                     8s   (1 sessions)
+  677. RTY909                   8s   (2 sessions)
+  678. N146EC                   8s   (1 sessions)
+  679. N369PC                   8s   (1 sessions)
+  680. N702                     8s   (1 sessions)
+  681. N6062F                   8s   (1 sessions)
+  682. N927ML                   8s   (1 sessions)
+  683. N340RF                   7s   (1 sessions)
+  684. N2169W                   7s   (1 sessions)
+  685. N850TA                   7s   (1 sessions)
+  686. N28995                   7s   (1 sessions)
+  687. ERY850                   7s   (1 sessions)
+  688. N351WT                   6s   (1 sessions)
+  689. N327D                    6s   (1 sessions)
+  690. N1504R                   6s   (1 sessions)
+  691. N443S                    6s   (1 sessions)
+  692. N333SR                   6s   (1 sessions)
+  693. N555EW                   6s   (2 sessions)
+  694. N980EK                   6s   (2 sessions)
+  695. N7873N                   5s   (1 sessions)
+  696. N9338Y                   5s   (2 sessions)
+  697. N355T                    5s   (1 sessions)
+  698. N910ER                   4s   (1 sessions)
+  699. N7255T                   4s   (1 sessions)
+  700. N736VX                   4s   (1 sessions)
+  701. N222CS                   4s   (1 sessions)
+  702. N183SF                   4s   (1 sessions)
+  703. N758RF                   4s   (1 sessions)
+  704. KFS123                   4s   (1 sessions)
+  705. N12JA                    4s   (1 sessions)
+  706. N901LB                   3s   (1 sessions)
+  707. N160TT                   3s   (1 sessions)
+  708. N722AP                   3s   (1 sessions)
+  709. N850AG                   3s   (3 sessions)
+  710. N531SJ                   3s   (1 sessions)
+  711. N898AJ                   3s   (1 sessions)
+  712. N630WE                   3s   (1 sessions)
+  713. CAP526                   3s   (1 sessions)
+  714. N176LA                   3s   (1 sessions)
+  715. N779CC                   2s   (1 sessions)
+  716. N223CW                   2s   (1 sessions)
+  717. SWIFT11                  2s   (1 sessions)
+  718. N663JN                   2s   (1 sessions)
+  719. N32AV                    2s   (1 sessions)
+  720. N654CP                   2s   (1 sessions)
+  721. N1746                    2s   (1 sessions)
+  722. N227MF                   2s   (1 sessions)
+  723. SCW4827                  2s   (1 sessions)
+  724. N910PK                   2s   (1 sessions)
+  725. N318SA                   2s   (1 sessions)
+  726. JTL882                   2s   (1 sessions)
+  727. N778GT                   2s   (1 sessions)
+  728. N345DZ                   1s   (1 sessions)
+  729. N711WV                   1s   (1 sessions)
+  730. N850GH                   1s   (1 sessions)
+  731. N2110A                   1s   (1 sessions)
+  732. N492CG                   1s   (1 sessions)
+  733. N599RM                   1s   (1 sessions)
+  734. N56JP                    1s   (1 sessions)
+  735. N5HT                     1s   (1 sessions)
+  736. N4615C                   1s   (1 sessions)
+  737. N590JL                   1s   (1 sessions)
+  738. N398MP                   1s   (1 sessions)
+  739. N59FB                    0s   (1 sessions)
+  740. JTL980                   0s   (1 sessions)
+  741. N148BD                   0s   (1 sessions)
+  742. N602JC                   0s   (1 sessions)
+  743. N510FF                   0s   (1 sessions)
+  744. N572SG                   0s   (1 sessions)
+  745. EJM702                   0s   (1 sessions)
+  746. N725MS                   0s   (1 sessions)
+  747. TWY704                   0s   (1 sessions)
+  748. N930PW                   0s   (1 sessions)
+  749. N71PP                    0s   (1 sessions)
+  750. N410DM                   0s   (1 sessions)
+  751. N1163B                   0s   (1 sessions)
+  752. N696NG                   0s   (1 sessions)
+  753. N645R                    0s   (1 sessions)
+  754. N595TM                   0s   (1 sessions)
+  755. TFF959                   0s   (1 sessions)
+  756. N84GH                    0s   (1 sessions)
+  757. N145QS                   0s   (1 sessions)
+  758. N45RK                    0s   (1 sessions)
+  759. TG65                     0s   (1 sessions)
+  760. N378BG                   0s   (1 sessions)
+
+------------------------------------------------------------
+  TOP 760 — NUMBER OF VISITS (sessions)
+------------------------------------------------------------
+    1. N256SF         187 visits   (total time: 1h 17m 55s)
+    2. N268FM         172 visits   (total time: 1h 12m 11s)
+    3. N265SF         163 visits   (total time: 1h 5m 7s)
+    4. N264SF         150 visits   (total time: 1h 3m 16s)
+    5. N259SF         148 visits   (total time: 59m 58s)
+    6. N254SF         144 visits   (total time: 51m 44s)
+    7. N3517S         143 visits   (total time: 1h 16m 59s)
+    8. N184AF         131 visits   (total time: 1h 18m 31s)
+    9. N263SF         125 visits   (total time: 50m 14s)
+   10. N58FF          124 visits   (total time: 57m 58s)
+   11. N76FF          121 visits   (total time: 50m 27s)
+   12. N4547E         120 visits   (total time: 55m 23s)
+   13. N53FF          119 visits   (total time: 53m 54s)
+   14. N120FM         117 visits   (total time: 46m 19s)
+   15. N96FF          111 visits   (total time: 42m 39s)
+   16. N738BJ         109 visits   (total time: 1h 18m 39s)
+   17. N79FF          105 visits   (total time: 40m 8s)
+   18. N547ND         101 visits   (total time: 42m 52s)
+   19. N4052F         101 visits   (total time: 48m 53s)
+   20. N140PC         101 visits   (total time: 47m 35s)
+   21. N201TH          98 visits   (total time: 40m 42s)
+   22. CXK292          98 visits   (total time: 38m 50s)
+   23. N224VS          97 visits   (total time: 42m 16s)
+   24. N303EH          97 visits   (total time: 43m 46s)
+   25. N514MT          97 visits   (total time: 41m 26s)
+   26. N65584          94 visits   (total time: 1h 1m 35s)
+   27. N816RD          93 visits   (total time: 41m 5s)
+   28. N537ND          92 visits   (total time: 42m 35s)
+   29. N57FF           90 visits   (total time: 38m 57s)
+   30. CXK548          89 visits   (total time: 40m 11s)
+   31. N561ND          88 visits   (total time: 32m 28s)
+   32. N5178S          88 visits   (total time: 32m 51s)
+   33. N25430          87 visits   (total time: 54m 45s)
+   34. N29HT           86 visits   (total time: 34m 14s)
+   35. N48FF           83 visits   (total time: 30m 54s)
+   36. N810KK          83 visits   (total time: 36m 39s)
+   37. N927TS          80 visits   (total time: 35m 26s)
+   38. N580ET          78 visits   (total time: 23m 43s)
+   39. N75FF           78 visits   (total time: 30m 46s)
+   40. N65251          74 visits   (total time: 23m 5s)
+   41. N4345G          74 visits   (total time: 45m 54s)
+   42. N3128T          73 visits   (total time: 20m 5s)
+   43. N4632F          72 visits   (total time: 33m 54s)
+   44. N5290V          72 visits   (total time: 29m 54s)
+   45. N9908K          72 visits   (total time: 24m 56s)
+   46. N5335S          71 visits   (total time: 32m 51s)
+   47. N25CW           70 visits   (total time: 31m 16s)
+   48. N522ND          70 visits   (total time: 26m 20s)
+   49. N601LS          70 visits   (total time: 23m 14s)
+   50. N1132W          68 visits   (total time: 28m 58s)
+   51. N692CF          67 visits   (total time: 24m 13s)
+   52. N406JA          67 visits   (total time: 30m 9s)
+   53. CXK594          65 visits   (total time: 26m 18s)
+   54. N526ND          63 visits   (total time: 24m 16s)
+   55. N30147          60 visits   (total time: 22m 45s)
+   56. CXK699          56 visits   (total time: 20m 19s)
+   57. N735CF          55 visits   (total time: 24m 13s)
+   58. N342FG          54 visits   (total time: 22m 28s)
+   59. CXK461          54 visits   (total time: 18m 47s)
+   60. N331CH          51 visits   (total time: 19m 5s)
+   61. N152SA          51 visits   (total time: 27m 52s)
+   62. N5138R          51 visits   (total time: 19m 58s)
+   63. N545Z           50 visits   (total time: 22m 36s)
+   64. N721FJ          49 visits   (total time: 15m 38s)
+   65. N929CD          49 visits   (total time: 22m 32s)
+   66. N2168D          49 visits   (total time: 24m 51s)
+   67. CXK442          46 visits   (total time: 16m 40s)
+   68. N739ZN          46 visits   (total time: 20m 19s)
+   69. N821FJ          44 visits   (total time: 15m 23s)
+   70. N621FJ          43 visits   (total time: 18m 9s)
+   71. N97FF           43 visits   (total time: 18m 18s)
+   72. N65440          42 visits   (total time: 21m 18s)
+   73. N75839          42 visits   (total time: 20m 40s)
+   74. N45941          40 visits   (total time: 26m 16s)
+   75. CXK430          40 visits   (total time: 15m 18s)
+   76. N31399          39 visits   (total time: 29m 16s)
+   77. CXK657          38 visits   (total time: 16m 36s)
+   78. N1218S          36 visits   (total time: 13m 29s)
+   79. CXK298          36 visits   (total time: 15m 10s)
+   80. CXK455          36 visits   (total time: 15m 5s)
+   81. N549ND          35 visits   (total time: 12m 32s)
+   82. N736QG          35 visits   (total time: 14m 3s)
+   83. N248JS          34 visits   (total time: 13m 10s)
+   84. N442SA          30 visits   (total time: 14m 47s)
+   85. N2552X          28 visits   (total time: 12m 9s)
+   86. N491LG          26 visits   (total time: 8m 35s)
+   87. CXK142          25 visits   (total time: 12m 5s)
+   88. N478BC          25 visits   (total time: 11m 46s)
+   89. CXK141          24 visits   (total time: 9m 49s)
+   90. N720CL          24 visits   (total time: 10m 22s)
+   91. N530PS          22 visits   (total time: 12m 41s)
+   92. N8352T          21 visits   (total time: 8m 46s)
+   93. CXK550          20 visits   (total time: 7m 2s)
+   94. CXK318          20 visits   (total time: 8m 26s)
+   95. N184EH          20 visits   (total time: 7m 14s)
+   96. N225WS          20 visits   (total time: 9m 13s)
+   97. N555YS          19 visits   (total time: 7m 38s)
+   98. N6UX            18 visits   (total time: 15m 9s)
+   99. N336PA          16 visits   (total time: 6m 14s)
+  100. CXK1106         15 visits   (total time: 6m 38s)
+  101. N4464D          14 visits   (total time: 5m 41s)
+  102. N68BC           14 visits   (total time: 8m 30s)
+  103. CXK1020         14 visits   (total time: 4m 22s)
+  104. N973HA          13 visits   (total time: 4m 2s)
+  105. PRE315          13 visits   (total time: 2m 24s)
+  106. N509AM          13 visits   (total time: 4m 32s)
+  107. N12772          13 visits   (total time: 5m 31s)
+  108. N610SL          12 visits   (total time: 6m 44s)
+  109. N173DC          12 visits   (total time: 4m 36s)
+  110. N3664U          11 visits   (total time: 3m 25s)
+  111. N2347X          11 visits   (total time: 5m 5s)
+  112. N648F           10 visits   (total time: 5m 47s)
+  113. N311XX          10 visits   (total time: 1m 9s)
+  114. N34043          10 visits   (total time: 4m 34s)
+  115. N4633J          10 visits   (total time: 4m 0s)
+  116. N205UU           9 visits   (total time: 3m 49s)
+  117. N869TA           9 visits   (total time: 3m 37s)
+  118. N940W            9 visits   (total time: 4m 22s)
+  119. N978GV           9 visits   (total time: 2m 37s)
+  120. N364D            9 visits   (total time: 4m 58s)
+  121. N164RM           9 visits   (total time: 3m 41s)
+  122. N1648H           9 visits   (total time: 4m 9s)
+  123. CXK674           8 visits   (total time: 3m 52s)
+  124. N322BW           8 visits   (total time: 1m 36s)
+  125. CXK1143          8 visits   (total time: 3m 39s)
+  126. ALIFE2           8 visits   (total time: 3m 23s)
+  127. N252BS           8 visits   (total time: 3m 16s)
+  128. CAP582           8 visits   (total time: 2m 8s)
+  129. N96038           8 visits   (total time: 3m 32s)
+  130. N722WD           8 visits   (total time: 2m 54s)
+  131. N144RU           7 visits   (total time: 1m 17s)
+  132. N86168           7 visits   (total time: 4m 22s)
+  133. N284L            7 visits   (total time: 3m 10s)
+  134. N185PB           7 visits   (total time: 2m 35s)
+  135. N360ES           7 visits   (total time: 3m 50s)
+  136. N909MA           7 visits   (total time: 3m 14s)
+  137. PRE81            7 visits   (total time: 2m 56s)
+  138. N485DL           7 visits   (total time: 2m 23s)
+  139. N621TK           7 visits   (total time: 2m 34s)
+  140. N761BB           6 visits   (total time: 57s)
+  141. N3802C           6 visits   (total time: 2m 23s)
+  142. N1330N           6 visits   (total time: 1m 56s)
+  143. N1MN             6 visits   (total time: 57s)
+  144. N341TM           6 visits   (total time: 2m 39s)
+  145. N618MM           6 visits   (total time: 2m 27s)
+  146. CXK1150          6 visits   (total time: 2m 50s)
+  147. N8125P           6 visits   (total time: 1m 35s)
+  148. N523DL           6 visits   (total time: 2m 28s)
+  149. N172MT           6 visits   (total time: 1m 40s)
+  150. N6161X           6 visits   (total time: 2m 4s)
+  151. N7189L           6 visits   (total time: 2m 51s)
+  152. N988AM           6 visits   (total time: 2m 47s)
+  153. N108NG           6 visits   (total time: 1m 30s)
+  154. N8141Y           5 visits   (total time: 1m 41s)
+  155. CXK1076          5 visits   (total time: 1m 37s)
+  156. N584RH           5 visits   (total time: 3m 16s)
+  157. N956GM           5 visits   (total time: 3m 14s)
+  158. N5808T           5 visits   (total time: 1m 14s)
+  159. N404FR           5 visits   (total time: 2m 0s)
+  160. N53265           5 visits   (total time: 2m 27s)
+  161. N3547L           5 visits   (total time: 2m 12s)
+  162. N17BM            5 visits   (total time: 2m 40s)
+  163. N441A            5 visits   (total time: 1m 33s)
+  164. N555AV           5 visits   (total time: 2m 43s)
+  165. N24144           5 visits   (total time: 1m 38s)
+  166. N216BD           5 visits   (total time: 1m 46s)
+  167. N526LK           5 visits   (total time: 2m 18s)
+  168. N523AB           5 visits   (total time: 2m 24s)
+  169. N703BK           5 visits   (total time: 2m 20s)
+  170. N2744W           5 visits   (total time: 1m 50s)
+  171. N736RP           5 visits   (total time: 1m 46s)
+  172. N272DS           5 visits   (total time: 1m 37s)
+  173. N570JD           5 visits   (total time: 1m 38s)
+  174. FFL1033          5 visits   (total time: 2m 50s)
+  175. N400BC           5 visits   (total time: 1m 41s)
+  176. N114RG           5 visits   (total time: 1m 44s)
+  177. N63NX            4 visits   (total time: 26s)
+  178. N589E            4 visits   (total time: 1m 12s)
+  179. N838SP           4 visits   (total time: 1m 30s)
+  180. CXK434           4 visits   (total time: 1m 33s)
+  181. N244WH           4 visits   (total time: 1m 24s)
+  182. N1553X           4 visits   (total time: 1m 6s)
+  183. N505JF           4 visits   (total time: 1m 53s)
+  184. CFHQB            4 visits   (total time: 2m 52s)
+  185. CAP596           4 visits   (total time: 59s)
+  186. N851MB           4 visits   (total time: 2m 14s)
+  187. N211EE           4 visits   (total time: 1m 26s)
+  188. N9811U           4 visits   (total time: 2m 8s)
+  189. PRE90            4 visits   (total time: 2m 0s)
+  190. N260TT           4 visits   (total time: 58s)
+  191. N221FD           4 visits   (total time: 1m 11s)
+  192. CHILD1           4 visits   (total time: 2m 21s)
+  193. N3051A           4 visits   (total time: 2m 1s)
+  194. N75GL            4 visits   (total time: 1m 59s)
+  195. N350FG           4 visits   (total time: 1m 20s)
+  196. N1337K           4 visits   (total time: 2m 6s)
+  197. N3952Q           4 visits   (total time: 1m 48s)
+  198. N268DA           4 visits   (total time: 1m 29s)
+  199. N1846Z           4 visits   (total time: 2m 26s)
+  200. N2459S           4 visits   (total time: 2m 0s)
+  201. N10897           4 visits   (total time: 2m 20s)
+  202. N855CP           3 visits   (total time: 53s)
+  203. CXK188           3 visits   (total time: 40s)
+  204. N1803W           3 visits   (total time: 49s)
+  205. N61TY            3 visits   (total time: 37s)
+  206. N860JB           3 visits   (total time: 57s)
+  207. N761JK           3 visits   (total time: 38s)
+  208. N720DR           3 visits   (total time: 1m 26s)
+  209. N1352U           3 visits   (total time: 1m 36s)
+  210. N788RB           3 visits   (total time: 17s)
+  211. N756UJ           3 visits   (total time: 1m 21s)
+  212. N909XX           3 visits   (total time: 27s)
+  213. N8314W           3 visits   (total time: 1m 6s)
+  214. N112NR           3 visits   (total time: 1m 19s)
+  215. N19U             3 visits   (total time: 2m 29s)
+  216. N510BE           3 visits   (total time: 54s)
+  217. PCH2             3 visits   (total time: 1m 34s)
+  218. N414TW           3 visits   (total time: 48s)
+  219. N343AK           3 visits   (total time: 1m 12s)
+  220. N405PJ           3 visits   (total time: 41s)
+  221. N677P            3 visits   (total time: 1m 3s)
+  222. N840MQ           3 visits   (total time: 27s)
+  223. N50LF            3 visits   (total time: 1m 4s)
+  224. N7301P           3 visits   (total time: 1m 21s)
+  225. N5122U           3 visits   (total time: 1m 30s)
+  226. N165AR           3 visits   (total time: 55s)
+  227. N5275S           3 visits   (total time: 1m 15s)
+  228. N2046Z           3 visits   (total time: 22s)
+  229. N9133F           3 visits   (total time: 35s)
+  230. N194AK           3 visits   (total time: 39s)
+  231. N850AG           3 visits   (total time: 3s)
+  232. TWY818           3 visits   (total time: 1m 16s)
+  233. N222AG           3 visits   (total time: 1m 27s)
+  234. N734EQ           3 visits   (total time: 1m 30s)
+  235. N6322A           3 visits   (total time: 1m 46s)
+  236. N372CZ           3 visits   (total time: 1m 6s)
+  237. N2WM             3 visits   (total time: 52s)
+  238. N321TF           3 visits   (total time: 15s)
+  239. N5341M           3 visits   (total time: 1m 51s)
+  240. N967JB           3 visits   (total time: 1m 11s)
+  241. N971KC           3 visits   (total time: 1m 13s)
+  242. N400MZ           3 visits   (total time: 1m 46s)
+  243. CFXFT            3 visits   (total time: 1m 27s)
+  244. N74894           3 visits   (total time: 1m 16s)
+  245. N555EW           2 visits   (total time: 6s)
+  246. EJM960           2 visits   (total time: 29s)
+  247. N44941           2 visits   (total time: 27s)
+  248. N7963W           2 visits   (total time: 20s)
+  249. N275AM           2 visits   (total time: 28s)
+  250. CXK126           2 visits   (total time: 1m 2s)
+  251. N737JR           2 visits   (total time: 25s)
+  252. CXK623           2 visits   (total time: 56s)
+  253. PRE31            2 visits   (total time: 35s)
+  254. N818RD           2 visits   (total time: 1m 10s)
+  255. N707WY           2 visits   (total time: 36s)
+  256. N7973M           2 visits   (total time: 1m 3s)
+  257. N79347           2 visits   (total time: 53s)
+  258. N763CB           2 visits   (total time: 1m 19s)
+  259. N7293B           2 visits   (total time: 1m 12s)
+  260. N100ML           2 visits   (total time: 27s)
+  261. JRE827           2 visits   (total time: 58s)
+  262. EJA503           2 visits   (total time: 1m 3s)
+  263. N896JH           2 visits   (total time: 50s)
+  264. N808W            2 visits   (total time: 1m 3s)
+  265. N9152Q           2 visits   (total time: 57s)
+  266. N17FS            2 visits   (total time: 1m 8s)
+  267. PRE26            2 visits   (total time: 1m 3s)
+  268. N5033J           2 visits   (total time: 39s)
+  269. N305BZ           2 visits   (total time: 18s)
+  270. N93JN            2 visits   (total time: 52s)
+  271. LXJ605           2 visits   (total time: 40s)
+  272. N37JL            2 visits   (total time: 47s)
+  273. N772XJ           2 visits   (total time: 36s)
+  274. N888AW           2 visits   (total time: 1m 13s)
+  275. N267AM           2 visits   (total time: 54s)
+  276. N4389D           2 visits   (total time: 1m 27s)
+  277. N720JH           2 visits   (total time: 1m 0s)
+  278. N2439S           2 visits   (total time: 1m 30s)
+  279. N1075E           2 visits   (total time: 55s)
+  280. N778HA           2 visits   (total time: 14s)
+  281. N410SJ           2 visits   (total time: 12s)
+  282. N446DW           2 visits   (total time: 1m 1s)
+  283. N7883Z           2 visits   (total time: 1m 35s)
+  284. N22WB            2 visits   (total time: 52s)
+  285. N98FF            2 visits   (total time: 37s)
+  286. N246SJ           2 visits   (total time: 30s)
+  287. N2896G           2 visits   (total time: 44s)
+  288. CXK174           2 visits   (total time: 39s)
+  289. N909DB           2 visits   (total time: 1m 4s)
+  290. N98306           2 visits   (total time: 33s)
+  291. N700WW           2 visits   (total time: 22s)
+  292. N3804C           2 visits   (total time: 35s)
+  293. N623BG           2 visits   (total time: 49s)
+  294. N395FG           2 visits   (total time: 53s)
+  295. N70LX            2 visits   (total time: 52s)
+  296. N165MW           2 visits   (total time: 54s)
+  297. EJA838           2 visits   (total time: 50s)
+  298. N418DR           2 visits   (total time: 1m 0s)
+  299. N226ML           2 visits   (total time: 54s)
+  300. N353VR           2 visits   (total time: 1m 20s)
+  301. N660S            2 visits   (total time: 35s)
+  302. N960MP           2 visits   (total time: 1m 3s)
+  303. N668W            2 visits   (total time: 43s)
+  304. N777YN           2 visits   (total time: 10s)
+  305. EJA626           2 visits   (total time: 59s)
+  306. N1091A           2 visits   (total time: 27s)
+  307. N790CA           2 visits   (total time: 12s)
+  308. N6749G           2 visits   (total time: 24s)
+  309. N930ML           2 visits   (total time: 33s)
+  310. N831TT           2 visits   (total time: 56s)
+  311. N92RV            2 visits   (total time: 52s)
+  312. N611MB           2 visits   (total time: 34s)
+  313. N7895L           2 visits   (total time: 44s)
+  314. TWY750           2 visits   (total time: 57s)
+  315. N2315C           2 visits   (total time: 58s)
+  316. N9338Y           2 visits   (total time: 5s)
+  317. N6744W           2 visits   (total time: 45s)
+  318. N728DJ           2 visits   (total time: 55s)
+  319. N5327J           2 visits   (total time: 40s)
+  320. N98444           2 visits   (total time: 1m 45s)
+  321. N9523Q           2 visits   (total time: 24s)
+  322. N577XW           2 visits   (total time: 28s)
+  323. N11636           2 visits   (total time: 43s)
+  324. EJA423           2 visits   (total time: 52s)
+  325. XSR340           2 visits   (total time: 29s)
+  326. N127SF           2 visits   (total time: 24s)
+  327. N375DB           2 visits   (total time: 28s)
+  328. N534HQ           2 visits   (total time: 2m 38s)
+  329. N914SM           2 visits   (total time: 12s)
+  330. RTY909           2 visits   (total time: 8s)
+  331. N1668M           2 visits   (total time: 19s)
+  332. N756XP           2 visits   (total time: 17s)
+  333. N657KT           2 visits   (total time: 50s)
+  334. N8DZ             2 visits   (total time: 30s)
+  335. N350HN           2 visits   (total time: 36s)
+  336. N397MY           2 visits   (total time: 26s)
+  337. PRE68            2 visits   (total time: 56s)
+  338. N156ME           2 visits   (total time: 44s)
+  339. N125Z            2 visits   (total time: 23s)
+  340. N7018R           2 visits   (total time: 1m 20s)
+  341. N555BG           2 visits   (total time: 37s)
+  342. N4729C           2 visits   (total time: 58s)
+  343. N331JK           2 visits   (total time: 31s)
+  344. N427BB           2 visits   (total time: 1m 1s)
+  345. N980EK           2 visits   (total time: 6s)
+  346. EJA417           2 visits   (total time: 35s)
+  347. N527JT           2 visits   (total time: 1m 29s)
+  348. JSX8103          2 visits   (total time: 46s)
+  349. N736TT           2 visits   (total time: 52s)
+  350. N910ER           1 visits   (total time: 4s)
+  351. N145QS           1 visits   (total time: 0s)
+  352. N779CC           1 visits   (total time: 2s)
+  353. N2079X           1 visits   (total time: 32s)
+  354. N850TA           1 visits   (total time: 7s)
+  355. N510FF           1 visits   (total time: 0s)
+  356. N398MP           1 visits   (total time: 1s)
+  357. N121RE           1 visits   (total time: 10s)
+  358. N758RF           1 visits   (total time: 4s)
+  359. N327D            1 visits   (total time: 6s)
+  360. N9TC             1 visits   (total time: 8s)
+  361. N72KM            1 visits   (total time: 15s)
+  362. N107SB           1 visits   (total time: 18s)
+  363. N828SK           1 visits   (total time: 24s)
+  364. N364AE           1 visits   (total time: 31s)
+  365. CAP543           1 visits   (total time: 36s)
+  366. N272SP           1 visits   (total time: 38s)
+  367. EJA606           1 visits   (total time: 43s)
+  368. N724FS           1 visits   (total time: 30s)
+  369. N4HD             1 visits   (total time: 21s)
+  370. N734DJ           1 visits   (total time: 30s)
+  371. N420FJ           1 visits   (total time: 51s)
+  372. EJA665           1 visits   (total time: 41s)
+  373. N850TB           1 visits   (total time: 36s)
+  374. CHR7             1 visits   (total time: 25s)
+  375. EJA273           1 visits   (total time: 28s)
+  376. EJA345           1 visits   (total time: 28s)
+  377. 1200             1 visits   (total time: 27s)
+  378. KAI525           1 visits   (total time: 23s)
+  379. N263BA           1 visits   (total time: 22s)
+  380. EJA459           1 visits   (total time: 41s)
+  381. N794XJ           1 visits   (total time: 26s)
+  382. N263RS           1 visits   (total time: 42s)
+  383. N736SY           1 visits   (total time: 1m 0s)
+  384. EJA361           1 visits   (total time: 31s)
+  385. N318SA           1 visits   (total time: 2s)
+  386. N599RM           1 visits   (total time: 1s)
+  387. N713MA           1 visits   (total time: 17s)
+  388. N369PC           1 visits   (total time: 8s)
+  389. N185EE           1 visits   (total time: 32s)
+  390. N697RM           1 visits   (total time: 34s)
+  391. LXJ360           1 visits   (total time: 26s)
+  392. LXJ474           1 visits   (total time: 39s)
+  393. EJA817           1 visits   (total time: 39s)
+  394. N7873N           1 visits   (total time: 5s)
+  395. EJA572           1 visits   (total time: 41s)
+  396. LXJ484           1 visits   (total time: 24s)
+  397. N708JP           1 visits   (total time: 52s)
+  398. EJA874           1 visits   (total time: 28s)
+  399. LXJ575           1 visits   (total time: 25s)
+  400. N420BD           1 visits   (total time: 25s)
+  401. N865QS           1 visits   (total time: 15s)
+  402. LXJ596           1 visits   (total time: 38s)
+  403. N141QS           1 visits   (total time: 28s)
+  404. N580RM           1 visits   (total time: 27s)
+  405. EJA910           1 visits   (total time: 33s)
+  406. N654CP           1 visits   (total time: 2s)
+  407. N602JC           1 visits   (total time: 0s)
+  408. N148BD           1 visits   (total time: 0s)
+  409. N686MA           1 visits   (total time: 34s)
+  410. EJA327           1 visits   (total time: 24s)
+  411. VJA338           1 visits   (total time: 25s)
+  412. N806LR           1 visits   (total time: 36s)
+  413. TIV70            1 visits   (total time: 28s)
+  414. N21LX            1 visits   (total time: 37s)
+  415. EJA760           1 visits   (total time: 35s)
+  416. N247ER           1 visits   (total time: 29s)
+  417. N505RR           1 visits   (total time: 21s)
+  418. N960F            1 visits   (total time: 32s)
+  419. N443S            1 visits   (total time: 6s)
+  420. N775AL           1 visits   (total time: 17s)
+  421. N523C            1 visits   (total time: 9s)
+  422. N645R            1 visits   (total time: 0s)
+  423. N183SF           1 visits   (total time: 4s)
+  424. N89764           1 visits   (total time: 1m 14s)
+  425. N160TT           1 visits   (total time: 3s)
+  426. N173SK           1 visits   (total time: 59s)
+  427. N736JH           1 visits   (total time: 20s)
+  428. N482CG           1 visits   (total time: 48s)
+  429. N176LA           1 visits   (total time: 3s)
+  430. ARROW12          1 visits   (total time: 12s)
+  431. N4615C           1 visits   (total time: 1s)
+  432. N118NG           1 visits   (total time: 33s)
+  433. EJA574           1 visits   (total time: 18s)
+  434. KSLAWO1          1 visits   (total time: 26s)
+  435. N514TX           1 visits   (total time: 39s)
+  436. SLH4             1 visits   (total time: 25s)
+  437. EJA577           1 visits   (total time: 27s)
+  438. N109MJ           1 visits   (total time: 22s)
+  439. N108DB           1 visits   (total time: 34s)
+  440. N850AX           1 visits   (total time: 21s)
+  441. N339JM           1 visits   (total time: 33s)
+  442. N104WF           1 visits   (total time: 27s)
+  443. GLT393           1 visits   (total time: 25s)
+  444. EJA584           1 visits   (total time: 12s)
+  445. EJM19            1 visits   (total time: 25s)
+  446. N53UB            1 visits   (total time: 24s)
+  447. N24X             1 visits   (total time: 12s)
+  448. N6062F           1 visits   (total time: 8s)
+  449. N850GH           1 visits   (total time: 1s)
+  450. N1746            1 visits   (total time: 2s)
+  451. ERY850           1 visits   (total time: 7s)
+  452. N303DC           1 visits   (total time: 20s)
+  453. CXK329           1 visits   (total time: 28s)
+  454. N595TM           1 visits   (total time: 0s)
+  455. N149GK           1 visits   (total time: 13s)
+  456. EJA333           1 visits   (total time: 36s)
+  457. EJA784           1 visits   (total time: 21s)
+  458. N978AH           1 visits   (total time: 33s)
+  459. N365LG           1 visits   (total time: 22s)
+  460. COL1953          1 visits   (total time: 32s)
+  461. N480RL           1 visits   (total time: 30s)
+  462. N100DD           1 visits   (total time: 36s)
+  463. N45RK            1 visits   (total time: 0s)
+  464. N996EP           1 visits   (total time: 17s)
+  465. N742BS           1 visits   (total time: 19s)
+  466. CAP526           1 visits   (total time: 3s)
+  467. CAP597           1 visits   (total time: 13s)
+  468. N249TH           1 visits   (total time: 23s)
+  469. N350ZF           1 visits   (total time: 40s)
+  470. N28995           1 visits   (total time: 7s)
+  471. N8840V           1 visits   (total time: 15s)
+  472. N1504R           1 visits   (total time: 6s)
+  473. KFS123           1 visits   (total time: 4s)
+  474. N223CW           1 visits   (total time: 2s)
+  475. N898AJ           1 visits   (total time: 3s)
+  476. N59PJ            1 visits   (total time: 24s)
+  477. TG24             1 visits   (total time: 34s)
+  478. TG57             1 visits   (total time: 38s)
+  479. TG65             1 visits   (total time: 0s)
+  480. N378BG           1 visits   (total time: 0s)
+  481. N104QT           1 visits   (total time: 9s)
+  482. N8795W           1 visits   (total time: 22s)
+  483. VNT372           1 visits   (total time: 13s)
+  484. N351WT           1 visits   (total time: 6s)
+  485. N555WP           1 visits   (total time: 35s)
+  486. CNS3311          1 visits   (total time: 45s)
+  487. N970TX           1 visits   (total time: 41s)
+  488. LXJ465           1 visits   (total time: 30s)
+  489. SJJ209           1 visits   (total time: 33s)
+  490. TWY944           1 visits   (total time: 26s)
+  491. LXJ598           1 visits   (total time: 34s)
+  492. JTL321           1 visits   (total time: 34s)
+  493. PFT151           1 visits   (total time: 24s)
+  494. IJA30            1 visits   (total time: 32s)
+  495. N895CC           1 visits   (total time: 25s)
+  496. EJA257           1 visits   (total time: 22s)
+  497. N404BC           1 visits   (total time: 36s)
+  498. N50TW            1 visits   (total time: 27s)
+  499. N335FG           1 visits   (total time: 22s)
+  500. N960RR           1 visits   (total time: 34s)
+  501. N930J            1 visits   (total time: 38s)
+  502. N6642J           1 visits   (total time: 22s)
+  503. N355T            1 visits   (total time: 5s)
+  504. EJA637           1 visits   (total time: 30s)
+  505. N6FZ             1 visits   (total time: 19s)
+  506. KFS171           1 visits   (total time: 31s)
+  507. N422V            1 visits   (total time: 40s)
+  508. PCH1             1 visits   (total time: 33s)
+  509. N78RK            1 visits   (total time: 31s)
+  510. NJM608           1 visits   (total time: 37s)
+  511. EJA530           1 visits   (total time: 32s)
+  512. KFS150           1 visits   (total time: 13s)
+  513. N51EP            1 visits   (total time: 9s)
+  514. N848             1 visits   (total time: 20s)
+  515. N778GT           1 visits   (total time: 2s)
+  516. N410DM           1 visits   (total time: 0s)
+  517. N58219           1 visits   (total time: 27s)
+  518. N725MS           1 visits   (total time: 0s)
+  519. N590JL           1 visits   (total time: 1s)
+  520. N2169W           1 visits   (total time: 7s)
+  521. N2110A           1 visits   (total time: 1s)
+  522. N663JN           1 visits   (total time: 2s)
+  523. N8094T           1 visits   (total time: 1m 3s)
+  524. N853HL           1 visits   (total time: 16s)
+  525. N222AL           1 visits   (total time: 11s)
+  526. EJA422           1 visits   (total time: 25s)
+  527. N716XJ           1 visits   (total time: 11s)
+  528. NJM998           1 visits   (total time: 31s)
+  529. N6824P           1 visits   (total time: 32s)
+  530. N401LX           1 visits   (total time: 34s)
+  531. N902F            1 visits   (total time: 24s)
+  532. N456FM           1 visits   (total time: 13s)
+  533. TCN399           1 visits   (total time: 23s)
+  534. N121TS           1 visits   (total time: 38s)
+  535. N92TX            1 visits   (total time: 29s)
+  536. EJM713           1 visits   (total time: 27s)
+  537. N657C            1 visits   (total time: 58s)
+  538. N345DZ           1 visits   (total time: 1s)
+  539. EJA956           1 visits   (total time: 30s)
+  540. LXJ397           1 visits   (total time: 24s)
+  541. N729HZ           1 visits   (total time: 31s)
+  542. N888             1 visits   (total time: 22s)
+  543. N612RM           1 visits   (total time: 34s)
+  544. LXJ303           1 visits   (total time: 35s)
+  545. N278GA           1 visits   (total time: 21s)
+  546. N6007C           1 visits   (total time: 22s)
+  547. N711WV           1 visits   (total time: 1s)
+  548. N327MP           1 visits   (total time: 12s)
+  549. TFF959           1 visits   (total time: 0s)
+  550. JTL882           1 visits   (total time: 2s)
+  551. JTL980           1 visits   (total time: 0s)
+  552. N96665           1 visits   (total time: 49s)
+  553. EJM702           1 visits   (total time: 0s)
+  554. N53DF            1 visits   (total time: 24s)
+  555. JTZ765           1 visits   (total time: 30s)
+  556. JTZ287           1 visits   (total time: 25s)
+  557. N11024           1 visits   (total time: 15s)
+  558. LOST37           1 visits   (total time: 13s)
+  559. N4221Q           1 visits   (total time: 14s)
+  560. N8533X           1 visits   (total time: 8s)
+  561. N508JD           1 visits   (total time: 12s)
+  562. N1071Z           1 visits   (total time: 40s)
+  563. N736VX           1 visits   (total time: 4s)
+  564. N313BK           1 visits   (total time: 22s)
+  565. N3387R           1 visits   (total time: 23s)
+  566. N430MW           1 visits   (total time: 25s)
+  567. N394SP           1 visits   (total time: 34s)
+  568. N531SJ           1 visits   (total time: 3s)
+  569. N901LB           1 visits   (total time: 3s)
+  570. N146EC           1 visits   (total time: 8s)
+  571. RAIDR07          1 visits   (total time: 13s)
+  572. N630WE           1 visits   (total time: 3s)
+  573. N727MS           1 visits   (total time: 22s)
+  574. N9894Y           1 visits   (total time: 14s)
+  575. EJA278           1 visits   (total time: 28s)
+  576. LXJ410           1 visits   (total time: 26s)
+  577. N68VS            1 visits   (total time: 11s)
+  578. EJA824           1 visits   (total time: 25s)
+  579. EJA680           1 visits   (total time: 28s)
+  580. N978PW           1 visits   (total time: 21s)
+  581. N976DP           1 visits   (total time: 35s)
+  582. N90CG            1 visits   (total time: 36s)
+  583. EJM134           1 visits   (total time: 35s)
+  584. N493JD           1 visits   (total time: 9s)
+  585. N789JH           1 visits   (total time: 14s)
+  586. N702             1 visits   (total time: 8s)
+  587. JNX02            1 visits   (total time: 13s)
+  588. N881RE           1 visits   (total time: 20s)
+  589. TCN784           1 visits   (total time: 20s)
+  590. EJA265           1 visits   (total time: 18s)
+  591. N2643V           1 visits   (total time: 51s)
+  592. EJA830           1 visits   (total time: 22s)
+  593. N633PC           1 visits   (total time: 20s)
+  594. N222CS           1 visits   (total time: 4s)
+  595. N227MF           1 visits   (total time: 2s)
+  596. N9580J           1 visits   (total time: 22s)
+  597. N421RS           1 visits   (total time: 16s)
+  598. CAP584           1 visits   (total time: 29s)
+  599. TWY704           1 visits   (total time: 0s)
+  600. N22AF            1 visits   (total time: 10s)
+  601. N1163B           1 visits   (total time: 0s)
+  602. SCW4827          1 visits   (total time: 2s)
+  603. N56JP            1 visits   (total time: 1s)
+  604. N5HT             1 visits   (total time: 1s)
+  605. N4741X           1 visits   (total time: 27s)
+  606. N340RF           1 visits   (total time: 7s)
+  607. N28BJ            1 visits   (total time: 17s)
+  608. N722AP           1 visits   (total time: 3s)
+  609. N32AV            1 visits   (total time: 2s)
+  610. N1090J           1 visits   (total time: 17s)
+  611. N333SR           1 visits   (total time: 6s)
+  612. N1813B           1 visits   (total time: 10s)
+  613. TG61             1 visits   (total time: 12s)
+  614. N110DK           1 visits   (total time: 34s)
+  615. RTY131           1 visits   (total time: 25s)
+  616. N70RF            1 visits   (total time: 29s)
+  617. N918LT           1 visits   (total time: 23s)
+  618. JTL3             1 visits   (total time: 24s)
+  619. PCH604           1 visits   (total time: 30s)
+  620. EJA414           1 visits   (total time: 35s)
+  621. EJA884           1 visits   (total time: 25s)
+  622. TG25             1 visits   (total time: 11s)
+  623. N910GE           1 visits   (total time: 30s)
+  624. EJA706           1 visits   (total time: 25s)
+  625. N218KF           1 visits   (total time: 25s)
+  626. N24293           1 visits   (total time: 24s)
+  627. N881AF           1 visits   (total time: 22s)
+  628. N8269B           1 visits   (total time: 1m 5s)
+  629. N47RM            1 visits   (total time: 29s)
+  630. N1WG             1 visits   (total time: 28s)
+  631. N7NE             1 visits   (total time: 28s)
+  632. N626UT           1 visits   (total time: 46s)
+  633. N307EE           1 visits   (total time: 27s)
+  634. N567JW           1 visits   (total time: 30s)
+  635. QHD681           1 visits   (total time: 30s)
+  636. N910PK           1 visits   (total time: 2s)
+  637. N696NG           1 visits   (total time: 0s)
+  638. EJA612           1 visits   (total time: 29s)
+  639. N969GC           1 visits   (total time: 25s)
+  640. EJA886           1 visits   (total time: 26s)
+  641. N408DH           1 visits   (total time: 32s)
+  642. N395GF           1 visits   (total time: 17s)
+  643. EJA416           1 visits   (total time: 15s)
+  644. N24PH            1 visits   (total time: 38s)
+  645. EJA485           1 visits   (total time: 28s)
+  646. N268VT           1 visits   (total time: 23s)
+  647. N707NG           1 visits   (total time: 33s)
+  648. N525PZ           1 visits   (total time: 18s)
+  649. SDE755           1 visits   (total time: 27s)
+  650. RAX555           1 visits   (total time: 23s)
+  651. N487ER           1 visits   (total time: 30s)
+  652. N415HS           1 visits   (total time: 35s)
+  653. LXJ540           1 visits   (total time: 26s)
+  654. PJC36            1 visits   (total time: 23s)
+  655. N660PS           1 visits   (total time: 20s)
+  656. N570DS           1 visits   (total time: 17s)
+  657. N661M            1 visits   (total time: 22s)
+  658. N612NG           1 visits   (total time: 29s)
+  659. EJA529           1 visits   (total time: 33s)
+  660. EJA533           1 visits   (total time: 38s)
+  661. EJA314           1 visits   (total time: 38s)
+  662. EJA922           1 visits   (total time: 39s)
+  663. N18KS            1 visits   (total time: 31s)
+  664. N651DR           1 visits   (total time: 17s)
+  665. EJA544           1 visits   (total time: 33s)
+  666. N989AR           1 visits   (total time: 32s)
+  667. N475XP           1 visits   (total time: 13s)
+  668. N84GH            1 visits   (total time: 0s)
+  669. N210JV           1 visits   (total time: 15s)
+  670. N927ML           1 visits   (total time: 8s)
+  671. N277WG           1 visits   (total time: 27s)
+  672. N139SH           1 visits   (total time: 15s)
+  673. N492CG           1 visits   (total time: 1s)
+  674. N800MD           1 visits   (total time: 22s)
+  675. N572SG           1 visits   (total time: 0s)
+  676. N275TB           1 visits   (total time: 13s)
+  677. N883SC           1 visits   (total time: 29s)
+  678. N585GC           1 visits   (total time: 39s)
+  679. VPCIP            1 visits   (total time: 34s)
+  680. N8300J           1 visits   (total time: 33s)
+  681. EJM188           1 visits   (total time: 31s)
+  682. N525PG           1 visits   (total time: 24s)
+  683. JCY900           1 visits   (total time: 17s)
+  684. LXJ392           1 visits   (total time: 23s)
+  685. EJA889           1 visits   (total time: 26s)
+  686. N462SW           1 visits   (total time: 20s)
+  687. CBC868           1 visits   (total time: 13s)
+  688. N34982           1 visits   (total time: 50s)
+  689. PIKES42          1 visits   (total time: 48s)
+  690. LIFELN1          1 visits   (total time: 19s)
+  691. N71PP            1 visits   (total time: 0s)
+  692. EVANS17          1 visits   (total time: 51s)
+  693. N12JA            1 visits   (total time: 4s)
+  694. N744EF           1 visits   (total time: 23s)
+  695. CXK495           1 visits   (total time: 25s)
+  696. EJA975           1 visits   (total time: 19s)
+  697. N710             1 visits   (total time: 29s)
+  698. N64PW            1 visits   (total time: 57s)
+  699. N244U            1 visits   (total time: 20s)
+  700. EJA469           1 visits   (total time: 27s)
+  701. N201AH           1 visits   (total time: 32s)
+  702. N68MJ            1 visits   (total time: 35s)
+  703. N185HJ           1 visits   (total time: 38s)
+  704. NGF7579          1 visits   (total time: 21s)
+  705. N28FY            1 visits   (total time: 26s)
+  706. N22265           1 visits   (total time: 32s)
+  707. N707PD           1 visits   (total time: 43s)
+  708. N9614H           1 visits   (total time: 35s)
+  709. N717TV           1 visits   (total time: 13s)
+  710. N858ZG           1 visits   (total time: 26s)
+  711. N681DB           1 visits   (total time: 17s)
+  712. N3343Q           1 visits   (total time: 26s)
+  713. SWIFT11          1 visits   (total time: 2s)
+  714. N256SW           1 visits   (total time: 14s)
+  715. N715MN           1 visits   (total time: 27s)
+  716. N84UP            1 visits   (total time: 24s)
+  717. JAS302           1 visits   (total time: 28s)
+  718. N707GP           1 visits   (total time: 24s)
+  719. EJA436           1 visits   (total time: 28s)
+  720. EJA872           1 visits   (total time: 26s)
+  721. N382TS           1 visits   (total time: 27s)
+  722. JTL717           1 visits   (total time: 28s)
+  723. DCM815           1 visits   (total time: 26s)
+  724. N988NW           1 visits   (total time: 37s)
+  725. TCN717           1 visits   (total time: 31s)
+  726. LXJ262           1 visits   (total time: 23s)
+  727. N3216E           1 visits   (total time: 40s)
+  728. N443CS           1 visits   (total time: 37s)
+  729. N888PA           1 visits   (total time: 28s)
+  730. ASP816           1 visits   (total time: 28s)
+  731. N971MB           1 visits   (total time: 37s)
+  732. EJA917           1 visits   (total time: 31s)
+  733. N2940T           1 visits   (total time: 48s)
+  734. N7255T           1 visits   (total time: 4s)
+  735. N261HB           1 visits   (total time: 18s)
+  736. N346PA           1 visits   (total time: 17s)
+  737. N888GX           1 visits   (total time: 33s)
+  738. N9226D           1 visits   (total time: 59s)
+  739. N930PW           1 visits   (total time: 0s)
+  740. EJA325           1 visits   (total time: 28s)
+  741. N26EV            1 visits   (total time: 33s)
+  742. N523DM           1 visits   (total time: 36s)
+  743. CWG742           1 visits   (total time: 16s)
+  744. EJA315           1 visits   (total time: 27s)
+  745. EJA444           1 visits   (total time: 26s)
+  746. CYO461           1 visits   (total time: 22s)
+  747. N259PC           1 visits   (total time: 31s)
+  748. N59FB            1 visits   (total time: 0s)
+  749. N254E            1 visits   (total time: 46s)
+  750. N6112G           1 visits   (total time: 29s)
+  751. N530JF           1 visits   (total time: 18s)
+  752. N112TG           1 visits   (total time: 25s)
+  753. PRE54            1 visits   (total time: 34s)
+  754. N189BL           1 visits   (total time: 36s)
+  755. N2657D           1 visits   (total time: 1m 19s)
+  756. N203RF           1 visits   (total time: 35s)
+  757. N8175N           1 visits   (total time: 41s)
+  758. PRE388           1 visits   (total time: 25s)
+  759. N3939X           1 visits   (total time: 31s)
+  760. EJA464           1 visits   (total time: 22s)
+
+------------------------------------------------------------
+  TOP 760 — LOWEST ALTITUDE OBSERVED (feet)
+------------------------------------------------------------
+    1. N249TH         5,568 ft
+    2. N720CL         5,693 ft
+    3. N350ZF         5,725 ft
+    4. ALIFE2         5,739 ft
+    5. N491LG         5,741 ft
+    6. N810KK         5,751 ft
+    7. N185PB         5,751 ft
+    8. N405PJ         5,771 ft
+    9. N4052F         5,787 ft
+   10. N25430         5,814 ft
+   11. N697RM         5,817 ft
+   12. N851MB         5,827 ft
+   13. N3802C         5,838 ft
+   14. N1337K         5,844 ft
+   15. N584RH         5,870 ft
+   16. LXJ605         5,871 ft
+   17. N303EH         5,874 ft
+   18. N3804C         5,876 ft
+   19. N3517S         5,879 ft
+   20. N284L          5,879 ft
+   21. LXJ360         5,879 ft
+   22. N621FJ         5,888 ft
+   23. N75839         5,888 ft
+   24. N140PC         5,891 ft
+   25. N738BJ         5,894 ft
+   26. N5335S         5,894 ft
+   27. N53FF          5,899 ft
+   28. N360ES         5,899 ft
+   29. CFHQB          5,899 ft
+   30. CFXFT          5,902 ft
+   31. N264SF         5,904 ft
+   32. N256SW         5,906 ft
+   33. N537ND         5,907 ft
+   34. N184AF         5,909 ft
+   35. N692CF         5,909 ft
+   36. CXK548         5,909 ft
+   37. N3128T         5,909 ft
+   38. N244WH         5,909 ft
+   39. N4464D         5,909 ft
+   40. N57FF          5,910 ft
+   41. N25CW          5,911 ft
+   42. N31399         5,916 ft
+   43. EJA784         5,918 ft
+   44. JAS302         5,919 ft
+   45. N929CD         5,922 ft
+   46. N65584         5,925 ft
+   47. N84UP          5,925 ft
+   48. N406JA         5,926 ft
+   49. N65440         5,927 ft
+   50. N173DC         5,927 ft
+   51. N657C          5,929 ft
+   52. CXK594         5,930 ft
+   53. N268FM         5,934 ft
+   54. N967JB         5,935 ft
+   55. CXK657         5,936 ft
+   56. N523DM         5,936 ft
+   57. N927TS         5,937 ft
+   58. N96FF          5,937 ft
+   59. EJA333         5,937 ft
+   60. N570JD         5,937 ft
+   61. N76FF          5,939 ft
+   62. N17FS          5,939 ft
+   63. N1132W         5,940 ft
+   64. N394SP         5,940 ft
+   65. N68BC          5,941 ft
+   66. N96038         5,941 ft
+   67. N485DL         5,941 ft
+   68. N530PS         5,942 ft
+   69. N715MN         5,943 ft
+   70. N127SF         5,944 ft
+   71. N75FF          5,945 ft
+   72. EJA417         5,946 ft
+   73. N372CZ         5,951 ft
+   74. N265SF         5,955 ft
+   75. CXK1020        5,955 ft
+   76. N256SF         5,956 ft
+   77. N120FM         5,957 ft
+   78. N677P          5,957 ft
+   79. N610SL         5,958 ft
+   80. N50LF          5,959 ft
+   81. EJA922         5,959 ft
+   82. N547ND         5,960 ft
+   83. N561ND         5,960 ft
+   84. N184EH         5,960 ft
+   85. N5341M         5,960 ft
+   86. N514MT         5,961 ft
+   87. N739ZN         5,962 ft
+   88. N201TH         5,965 ft
+   89. N816RD         5,965 ft
+   90. N218KF         5,967 ft
+   91. N4345G         5,968 ft
+   92. N442SA         5,969 ft
+   93. N4632F         5,970 ft
+   94. N545Z          5,974 ft
+   95. N259SF         5,974 ft
+   96. N224VS         5,974 ft
+   97. N1218S         5,974 ft
+   98. N29HT          5,974 ft
+   99. N736QG         5,974 ft
+  100. PCH1           5,975 ft
+  101. EVANS17        5,975 ft
+  102. CXK434         5,976 ft
+  103. LXJ598         5,979 ft
+  104. N254SF         5,980 ft
+  105. N480RL         5,980 ft
+  106. N400BC         5,980 ft
+  107. N114RG         5,980 ft
+  108. N78RK          5,981 ft
+  109. N48FF          5,982 ft
+  110. N5808T         5,984 ft
+  111. N12772         5,984 ft
+  112. N97FF          5,984 ft
+  113. N1846Z         5,986 ft
+  114. N5290V         5,990 ft
+  115. N400MZ         5,990 ft
+  116. EJA464         5,990 ft
+  117. N5138R         5,991 ft
+  118. N248JS         5,991 ft
+  119. CXK292         5,991 ft
+  120. N772XJ         5,991 ft
+  121. N555WP         5,991 ft
+  122. N58FF          5,992 ft
+  123. N79FF          5,993 ft
+  124. CNS3311        5,993 ft
+  125. PRE90          5,994 ft
+  126. EJA626         5,994 ft
+  127. KFS150         5,994 ft
+  128. N252BS         5,995 ft
+  129. CXK461         5,995 ft
+  130. EJA830         5,997 ft
+  131. PRE81          5,998 ft
+  132. TWY750         5,998 ft
+  133. N86168         5,999 ft
+  134. N404FR         5,999 ft
+  135. N341TM         5,999 ft
+  136. N724FS         5,999 ft
+  137. N6161X         5,999 ft
+  138. EJA422         6,000 ft
+  139. EJA533         6,000 ft
+  140. PRE68          6,000 ft
+  141. EJA314         6,001 ft
+  142. N720DR         6,002 ft
+  143. KAI525         6,002 ft
+  144. N68MJ          6,002 ft
+  145. JTL321         6,003 ft
+  146. N611MB         6,004 ft
+  147. N703BK         6,004 ft
+  148. N5122U         6,004 ft
+  149. CXK430         6,004 ft
+  150. TWY944         6,005 ft
+  151. N7895L         6,005 ft
+  152. EJA444         6,005 ft
+  153. N30147         6,006 ft
+  154. EJA817         6,006 ft
+  155. N343AK         6,006 ft
+  156. N612RM         6,006 ft
+  157. EJA760         6,007 ft
+  158. LXJ474         6,008 ft
+  159. N4547E         6,009 ft
+  160. N50TW          6,009 ft
+  161. N260TT         6,009 ft
+  162. N2744W         6,009 ft
+  163. N534HQ         6,009 ft
+  164. N189BL         6,009 ft
+  165. N203RF         6,009 ft
+  166. N522ND         6,010 ft
+  167. N9338Y         6,010 ft
+  168. N74894         6,010 ft
+  169. N216BD         6,012 ft
+  170. CXK455         6,012 ft
+  171. LXJ465         6,012 ft
+  172. EJA706         6,012 ft
+  173. JSX8103        6,012 ft
+  174. N828SK         6,014 ft
+  175. N92TX          6,014 ft
+  176. N722WD         6,014 ft
+  177. FFL1033        6,014 ft
+  178. CAP596         6,015 ft
+  179. N970TX         6,015 ft
+  180. LXJ303         6,015 ft
+  181. N401LX         6,017 ft
+  182. N18KS          6,017 ft
+  183. N4389D         6,018 ft
+  184. N869TA         6,019 ft
+  185. N763CB         6,019 ft
+  186. N7883Z         6,019 ft
+  187. N427BB         6,019 ft
+  188. EJA530         6,020 ft
+  189. N601LS         6,021 ft
+  190. N6UX           6,021 ft
+  191. N263SF         6,022 ft
+  192. N246SJ         6,022 ft
+  193. EJA884         6,022 ft
+  194. N555AV         6,023 ft
+  195. EJA529         6,023 ft
+  196. N526ND         6,024 ft
+  197. CXK141         6,024 ft
+  198. N648F          6,024 ft
+  199. N342FG         6,024 ft
+  200. N2168D         6,024 ft
+  201. N272SP         6,024 ft
+  202. EJA606         6,024 ft
+  203. N960F          6,024 ft
+  204. N626UT         6,024 ft
+  205. QHD681         6,024 ft
+  206. CXK126         6,025 ft
+  207. N3547L         6,025 ft
+  208. N418DR         6,025 ft
+  209. N331CH         6,026 ft
+  210. COL1953        6,026 ft
+  211. N1MN           6,027 ft
+  212. CHR7           6,027 ft
+  213. N247ER         6,027 ft
+  214. N735CF         6,028 ft
+  215. EJA257         6,028 ft
+  216. JRE827         6,030 ft
+  217. N404BC         6,030 ft
+  218. PCH604         6,031 ft
+  219. N34043         6,032 ft
+  220. IJA30          6,032 ft
+  221. EJA503         6,033 ft
+  222. N960MP         6,033 ft
+  223. N70RF          6,033 ft
+  224. EJA414         6,033 ft
+  225. N721FJ         6,034 ft
+  226. CXK318         6,034 ft
+  227. N808W          6,034 ft
+  228. N37JL          6,034 ft
+  229. CXK699         6,034 ft
+  230. N623BG         6,034 ft
+  231. N710           6,034 ft
+  232. EJA315         6,034 ft
+  233. PRE54          6,034 ft
+  234. N850TB         6,035 ft
+  235. N978AH         6,035 ft
+  236. N10897         6,035 ft
+  237. EJA273         6,036 ft
+  238. CAP582         6,036 ft
+  239. N221FD         6,036 ft
+  240. N408DH         6,036 ft
+  241. N152SA         6,037 ft
+  242. LXJ484         6,037 ft
+  243. N335FG         6,037 ft
+  244. CXK442         6,038 ft
+  245. EJM960         6,038 ft
+  246. EJA345         6,038 ft
+  247. N729HZ         6,039 ft
+  248. EJA469         6,039 ft
+  249. N821FJ         6,040 ft
+  250. VJA338         6,041 ft
+  251. KFS171         6,041 ft
+  252. N6824P         6,041 ft
+  253. EJA665         6,042 ft
+  254. N909MA         6,042 ft
+  255. N2896G         6,042 ft
+  256. N668W          6,042 ft
+  257. N831TT         6,042 ft
+  258. N65251         6,043 ft
+  259. N555YS         6,043 ft
+  260. N121TS         6,043 ft
+  261. EJA886         6,043 ft
+  262. N263BA         6,044 ft
+  263. TCN784         6,044 ft
+  264. PRE388         6,044 ft
+  265. EJA327         6,045 ft
+  266. N365LG         6,045 ft
+  267. EJA956         6,045 ft
+  268. EJA325         6,045 ft
+  269. TCN399         6,046 ft
+  270. N420FJ         6,048 ft
+  271. N70LX          6,048 ft
+  272. N6112G         6,048 ft
+  273. N549ND         6,049 ft
+  274. N940W          6,049 ft
+  275. N618MM         6,049 ft
+  276. N734DJ         6,049 ft
+  277. N514TX         6,049 ft
+  278. N254E          6,049 ft
+  279. CXK142         6,050 ft
+  280. N9811U         6,050 ft
+  281. N969GC         6,050 ft
+  282. N259PC         6,050 ft
+  283. N1352U         6,051 ft
+  284. N7NE           6,051 ft
+  285. JTL3           6,052 ft
+  286. N523DL         6,053 ft
+  287. N555BG         6,053 ft
+  288. N272DS         6,054 ft
+  289. N112NR         6,055 ft
+  290. N19U           6,055 ft
+  291. N660S          6,055 ft
+  292. EJM713         6,055 ft
+  293. N988AM         6,055 ft
+  294. EJA612         6,055 ft
+  295. N108NG         6,055 ft
+  296. N7301P         6,056 ft
+  297. N895CC         6,056 ft
+  298. N1WG           6,056 ft
+  299. EJA572         6,058 ft
+  300. N24144         6,058 ft
+  301. N225WS         6,058 ft
+  302. SJJ209         6,059 ft
+  303. N164RM         6,059 ft
+  304. N90CG          6,059 ft
+  305. TWY818         6,059 ft
+  306. EJM134         6,059 ft
+  307. N8269B         6,059 ft
+  308. N64PW          6,059 ft
+  309. N988NW         6,059 ft
+  310. N2657D         6,059 ft
+  311. N9152Q         6,060 ft
+  312. N222AG         6,060 ft
+  313. N141QS         6,061 ft
+  314. N336PA         6,061 ft
+  315. N881AF         6,061 ft
+  316. N657KT         6,061 ft
+  317. N736TT         6,061 ft
+  318. EJA278         6,062 ft
+  319. PRE26          6,063 ft
+  320. CXK550         6,064 ft
+  321. EJA485         6,064 ft
+  322. SDE755         6,064 ft
+  323. N415HS         6,064 ft
+  324. N612NG         6,064 ft
+  325. ASP816         6,064 ft
+  326. N527JT         6,064 ft
+  327. N75GL          6,065 ft
+  328. N11636         6,065 ft
+  329. PJC36          6,065 ft
+  330. N53265         6,066 ft
+  331. N960RR         6,066 ft
+  332. N902F          6,066 ft
+  333. LXJ540         6,067 ft
+  334. N441A          6,068 ft
+  335. N930J          6,068 ft
+  336. LXJ397         6,068 ft
+  337. N45941         6,069 ft
+  338. CXK1150        6,069 ft
+  339. EJA459         6,069 ft
+  340. N708JP         6,069 ft
+  341. NJM998         6,069 ft
+  342. N24PH          6,069 ft
+  343. N736SY         6,070 ft
+  344. N350FG         6,070 ft
+  345. N580ET         6,071 ft
+  346. N414TW         6,071 ft
+  347. NJM608         6,071 ft
+  348. N918LT         6,071 ft
+  349. N350HN         6,071 ft
+  350. EJA874         6,072 ft
+  351. N888GX         6,072 ft
+  352. N364AE         6,074 ft
+  353. PFT151         6,074 ft
+  354. N420BD         6,075 ft
+  355. N2347X         6,075 ft
+  356. N720JH         6,076 ft
+  357. N840MQ         6,076 ft
+  358. N5178S         6,077 ft
+  359. LXJ575         6,077 ft
+  360. LXJ410         6,077 ft
+  361. N443CS         6,077 ft
+  362. N5033J         6,078 ft
+  363. N339JM         6,078 ft
+  364. JTZ287         6,078 ft
+  365. N580RM         6,079 ft
+  366. CYO461         6,079 ft
+  367. EJA361         6,080 ft
+  368. LXJ596         6,080 ft
+  369. N8300J         6,080 ft
+  370. TIV70          6,081 ft
+  371. N430MW         6,081 ft
+  372. N2WM           6,081 ft
+  373. N888AW         6,082 ft
+  374. N118NG         6,083 ft
+  375. N313BK         6,083 ft
+  376. N422V          6,084 ft
+  377. N728DJ         6,084 ft
+  378. N364D          6,084 ft
+  379. EJA975         6,084 ft
+  380. DCM815         6,084 ft
+  381. N107SB         6,086 ft
+  382. N794XJ         6,086 ft
+  383. EJA680         6,086 ft
+  384. N7293B         6,087 ft
+  385. N226ML         6,087 ft
+  386. N278GA         6,088 ft
+  387. N910GE         6,088 ft
+  388. N53DF          6,089 ft
+  389. N3387R         6,089 ft
+  390. N268VT         6,089 ft
+  391. N707NG         6,089 ft
+  392. CXK1143        6,090 ft
+  393. N806LR         6,090 ft
+  394. CXK298         6,091 ft
+  395. N201AH         6,091 ft
+  396. N21LX          6,092 ft
+  397. N9908K         6,092 ft
+  398. N577XW         6,092 ft
+  399. EJA824         6,092 ft
+  400. EJA436         6,092 ft
+  401. N26EV          6,093 ft
+  402. N17BM          6,094 ft
+  403. N909XX         6,094 ft
+  404. N756UJ         6,095 ft
+  405. PRE31          6,098 ft
+  406. N510BE         6,098 ft
+  407. N914SM         6,098 ft
+  408. N205UU         6,099 ft
+  409. N1330N         6,099 ft
+  410. N818RD         6,099 ft
+  411. CAP543         6,099 ft
+  412. N4HD           6,099 ft
+  413. 1200           6,099 ft
+  414. N505RR         6,099 ft
+  415. EJA872         6,100 ft
+  416. N61TY          6,101 ft
+  417. N896JH         6,101 ft
+  418. EJA423         6,102 ft
+  419. N487ER         6,102 ft
+  420. N838SP         6,103 ft
+  421. N989AR         6,103 ft
+  422. EJA637         6,104 ft
+  423. XSR340         6,104 ft
+  424. RAX555         6,105 ft
+  425. N7018R         6,105 ft
+  426. N523AB         6,106 ft
+  427. N930ML         6,106 ft
+  428. N736RP         6,107 ft
+  429. N47RM          6,107 ft
+  430. N149GK         6,108 ft
+  431. PRE315         6,109 ft
+  432. N446DW         6,109 ft
+  433. N976DP         6,109 ft
+  434. TCN717         6,109 ft
+  435. EJA917         6,111 ft
+  436. N8175N         6,111 ft
+  437. N311XX         6,112 ft
+  438. N707WY         6,112 ft
+  439. N971MB         6,114 ft
+  440. N3939X         6,114 ft
+  441. N761JK         6,115 ft
+  442. CWG742         6,115 ft
+  443. N263RS         6,117 ft
+  444. N165MW         6,118 ft
+  445. N526LK         6,119 ft
+  446. EJA265         6,119 ft
+  447. N761BB         6,120 ft
+  448. N2439S         6,121 ft
+  449. N6322A         6,121 ft
+  450. N530JF         6,122 ft
+  451. N509AM         6,124 ft
+  452. N156ME         6,124 ft
+  453. N888PA         6,124 ft
+  454. N104WF         6,125 ft
+  455. N881RE         6,125 ft
+  456. JTL717         6,126 ft
+  457. N973HA         6,127 ft
+  458. N860JB         6,128 ft
+  459. N108DB         6,129 ft
+  460. N261HB         6,129 ft
+  461. CHILD1         6,130 ft
+  462. N883SC         6,130 ft
+  463. N707GP         6,130 ft
+  464. N3216E         6,130 ft
+  465. N395GF         6,131 ft
+  466. N978PW         6,134 ft
+  467. N244U          6,134 ft
+  468. N621TK         6,136 ft
+  469. JNX02          6,136 ft
+  470. N24293         6,136 ft
+  471. N8352T         6,137 ft
+  472. N567JW         6,137 ft
+  473. N268DA         6,137 ft
+  474. N633PC         6,138 ft
+  475. JTZ765         6,139 ft
+  476. N909DB         6,140 ft
+  477. N7189L         6,140 ft
+  478. EJA838         6,143 ft
+  479. N9226D         6,143 ft
+  480. N3051A         6,144 ft
+  481. N1553X         6,145 ft
+  482. N211EE         6,145 ft
+  483. N686MA         6,146 ft
+  484. N395FG         6,146 ft
+  485. N4633J         6,147 ft
+  486. EJA889         6,148 ft
+  487. N8141Y         6,149 ft
+  488. N2079X         6,149 ft
+  489. N505JF         6,149 ft
+  490. EJM19          6,150 ft
+  491. N160TT         6,151 ft
+  492. N855CP         6,153 ft
+  493. N2552X         6,153 ft
+  494. EJA577         6,153 ft
+  495. N717TV         6,153 ft
+  496. N346PA         6,153 ft
+  497. EJA910         6,154 ft
+  498. N185HJ         6,154 ft
+  499. N2940T         6,154 ft
+  500. VPCIP          6,155 ft
+  501. CXK1106        6,159 ft
+  502. N98444         6,159 ft
+  503. N173SK         6,160 ft
+  504. N353VR         6,160 ft
+  505. N478BC         6,160 ft
+  506. N716XJ         6,161 ft
+  507. N589E          6,163 ft
+  508. N53UB          6,163 ft
+  509. EJA544         6,163 ft
+  510. CXK674         6,164 ft
+  511. N22WB          6,164 ft
+  512. N307EE         6,165 ft
+  513. N1648H         6,165 ft
+  514. N139SH         6,170 ft
+  515. CXK329         6,172 ft
+  516. N375DB         6,172 ft
+  517. N2315C         6,173 ft
+  518. N79347         6,174 ft
+  519. N9TC           6,175 ft
+  520. N369PC         6,176 ft
+  521. N2643V         6,176 ft
+  522. LXJ392         6,176 ft
+  523. N865QS         6,177 ft
+  524. N2459S         6,177 ft
+  525. N109MJ         6,179 ft
+  526. N6FZ           6,179 ft
+  527. N3664U         6,180 ft
+  528. EJM188         6,180 ft
+  529. LXJ262         6,181 ft
+  530. N8314W         6,183 ft
+  531. N888           6,184 ft
+  532. N858ZG         6,184 ft
+  533. N98306         6,188 ft
+  534. N22265         6,188 ft
+  535. CXK1076        6,189 ft
+  536. N5327J         6,189 ft
+  537. N525PZ         6,189 ft
+  538. LOST37         6,190 ft
+  539. N681DB         6,190 ft
+  540. N7973M         6,193 ft
+  541. N8795W         6,193 ft
+  542. N590JL         6,194 ft
+  543. N1071Z         6,194 ft
+  544. GLT393         6,195 ft
+  545. VNT372         6,195 ft
+  546. N1075E         6,196 ft
+  547. N996EP         6,197 ft
+  548. PCH2           6,198 ft
+  549. CXK623         6,199 ft
+  550. N100ML         6,199 ft
+  551. N775AL         6,199 ft
+  552. KSLAWO1        6,199 ft
+  553. SLH4           6,200 ft
+  554. N4741X         6,200 ft
+  555. N525PG         6,205 ft
+  556. JCY900         6,205 ft
+  557. N978GV         6,209 ft
+  558. N971KC         6,209 ft
+  559. TG24           6,212 ft
+  560. N456FM         6,213 ft
+  561. N172MT         6,214 ft
+  562. N22AF          6,214 ft
+  563. N112TG         6,214 ft
+  564. N92RV          6,215 ft
+  565. N89764         6,220 ft
+  566. EJA574         6,220 ft
+  567. N100DD         6,221 ft
+  568. N661M          6,221 ft
+  569. N6749G         6,224 ft
+  570. N68VS          6,227 ft
+  571. N8DZ           6,228 ft
+  572. N756XP         6,229 ft
+  573. N382TS         6,234 ft
+  574. N327MP         6,235 ft
+  575. CXK495         6,238 ft
+  576. N778HA         6,239 ft
+  577. N8125P         6,239 ft
+  578. PIKES42        6,239 ft
+  579. N7873N         6,241 ft
+  580. N72KM          6,242 ft
+  581. N305BZ         6,245 ft
+  582. N4729C         6,245 ft
+  583. N24X           6,246 ft
+  584. N8094T         6,248 ft
+  585. EJA416         6,252 ft
+  586. N9894Y         6,253 ft
+  587. N475XP         6,253 ft
+  588. N5275S         6,254 ft
+  589. N1803W         6,255 ft
+  590. N585GC         6,255 ft
+  591. N322BW         6,257 ft
+  592. CAP584         6,258 ft
+  593. N3952Q         6,258 ft
+  594. N8840V         6,259 ft
+  595. NGF7579        6,262 ft
+  596. N28FY          6,265 ft
+  597. N397MY         6,267 ft
+  598. N462SW         6,267 ft
+  599. N956GM         6,270 ft
+  600. N570DS         6,273 ft
+  601. CXK188         6,274 ft
+  602. N321TF         6,274 ft
+  603. N144RU         6,275 ft
+  604. N789JH         6,275 ft
+  605. N222AL         6,277 ft
+  606. N850AX         6,279 ft
+  607. N1091A         6,279 ft
+  608. N6642J         6,281 ft
+  609. N9523Q         6,281 ft
+  610. N727MS         6,282 ft
+  611. N788RB         6,284 ft
+  612. ERY850         6,284 ft
+  613. N700WW         6,284 ft
+  614. N508JD         6,284 ft
+  615. CBC868         6,285 ft
+  616. EJA584         6,287 ft
+  617. N121RE         6,289 ft
+  618. N6007C         6,294 ft
+  619. N421RS         6,294 ft
+  620. N277WG         6,301 ft
+  621. N523C          6,303 ft
+  622. N800MD         6,306 ft
+  623. N63NX          6,307 ft
+  624. N34982         6,307 ft
+  625. N6744W         6,308 ft
+  626. N3343Q         6,308 ft
+  627. N125Z          6,309 ft
+  628. CXK174         6,313 ft
+  629. N223CW         6,313 ft
+  630. RTY131         6,313 ft
+  631. N104QT         6,315 ft
+  632. N303DC         6,318 ft
+  633. TG25           6,318 ft
+  634. N351WT         6,319 ft
+  635. N275AM         6,324 ft
+  636. N222CS         6,324 ft
+  637. TG57           6,329 ft
+  638. N96665         6,329 ft
+  639. N9133F         6,330 ft
+  640. RAIDR07        6,330 ft
+  641. N2046Z         6,332 ft
+  642. N572SG         6,332 ft
+  643. N9614H         6,332 ft
+  644. N59PJ          6,336 ft
+  645. N331JK         6,339 ft
+  646. N210JV         6,341 ft
+  647. N702           6,342 ft
+  648. N734EQ         6,342 ft
+  649. N44941         6,344 ft
+  650. N736JH         6,348 ft
+  651. N742BS         6,349 ft
+  652. N493JD         6,349 ft
+  653. N227MF         6,349 ft
+  654. N850TA         6,350 ft
+  655. N980EK         6,351 ft
+  656. N910ER         6,355 ft
+  657. N713MA         6,355 ft
+  658. N51EP          6,357 ft
+  659. N333SR         6,359 ft
+  660. N1813B         6,360 ft
+  661. N555EW         6,362 ft
+  662. N848           6,364 ft
+  663. N722AP         6,364 ft
+  664. CAP597         6,368 ft
+  665. N2169W         6,369 ft
+  666. TG61           6,369 ft
+  667. N28BJ          6,372 ft
+  668. N1090J         6,373 ft
+  669. N9580J         6,374 ft
+  670. N165AR         6,375 ft
+  671. N758RF         6,378 ft
+  672. N737JR         6,381 ft
+  673. N7963W         6,384 ft
+  674. N777YN         6,384 ft
+  675. N790CA         6,384 ft
+  676. N11024         6,385 ft
+  677. N4221Q         6,385 ft
+  678. N340RF         6,389 ft
+  679. N660PS         6,389 ft
+  680. N267AM         6,393 ft
+  681. N194AK         6,398 ft
+  682. N185EE         6,399 ft
+  683. N901LB         6,399 ft
+  684. N275TB         6,401 ft
+  685. N410SJ         6,404 ft
+  686. N58219         6,404 ft
+  687. N93JN          6,405 ft
+  688. N927ML         6,405 ft
+  689. N630WE         6,406 ft
+  690. SCW4827        6,412 ft
+  691. N651DR         6,412 ft
+  692. N853HL         6,413 ft
+  693. KFS123         6,414 ft
+  694. N1668M         6,415 ft
+  695. N98FF          6,416 ft
+  696. N898AJ         6,418 ft
+  697. N707PD         6,418 ft
+  698. SWIFT11        6,418 ft
+  699. N663JN         6,423 ft
+  700. N654CP         6,424 ft
+  701. N59FB          6,424 ft
+  702. N482CG         6,425 ft
+  703. LIFELN1        6,426 ft
+  704. N1504R         6,427 ft
+  705. N183SF         6,429 ft
+  706. N744EF         6,432 ft
+  707. N327D          6,445 ft
+  708. N599RM         6,447 ft
+  709. N5HT           6,450 ft
+  710. N2110A         6,451 ft
+  711. N146EC         6,452 ft
+  712. N56JP          6,452 ft
+  713. N850GH         6,454 ft
+  714. N910PK         6,454 ft
+  715. N7255T         6,454 ft
+  716. EJM702         6,457 ft
+  717. N736VX         6,458 ft
+  718. N28995         6,459 ft
+  719. JTL882         6,459 ft
+  720. N850AG         6,459 ft
+  721. N110DK         6,460 ft
+  722. N779CC         6,461 ft
+  723. N8533X         6,462 ft
+  724. N355T          6,464 ft
+  725. N176LA         6,465 ft
+  726. N410DM         6,465 ft
+  727. N711WV         6,466 ft
+  728. N531SJ         6,467 ft
+  729. N645R          6,470 ft
+  730. N443S          6,474 ft
+  731. N725MS         6,474 ft
+  732. JTL980         6,477 ft
+  733. N71PP          6,479 ft
+  734. N12JA          6,479 ft
+  735. N930PW         6,479 ft
+  736. N778GT         6,480 ft
+  737. RTY909         6,480 ft
+  738. ARROW12        6,489 ft
+  739. N4615C         6,489 ft
+  740. N32AV          6,489 ft
+  741. N318SA         6,492 ft
+  742. N398MP         6,493 ft
+  743. N492CG         6,494 ft
+  744. N1746          6,496 ft
+  745. N602JC         6,497 ft
+  746. N345DZ         6,497 ft
+  747. N510FF         6,498 ft
+  748. N148BD         6,498 ft
+  749. N45RK          6,501 ft
+  750. TG65           6,504 ft
+  751. N378BG         6,504 ft
+  752. TFF959         6,506 ft
+  753. N1163B         6,506 ft
+  754. N145QS         6,509 ft
+  755. TWY704         6,511 ft
+  756. N696NG         6,511 ft
+  757. N84GH          6,512 ft
+  758. CAP526         6,514 ft
+  759. N595TM         6,517 ft
+  760. N6062F         6,522 ft
+
+------------------------------------------------------------
+  TOP 10 — BUSIEST DAYS (by data points)
+------------------------------------------------------------
+    1. 2026-02-05     18,409 points   120 aircraft
+    2. 2025-11-25     17,131 points    98 aircraft
+    3. 2026-01-14     12,716 points   102 aircraft
+    4. 2026-02-04     12,172 points    95 aircraft
+    5. 2025-11-24     12,067 points    95 aircraft
+    6. 2026-01-07     11,048 points    89 aircraft
+    7. 2025-12-02     10,593 points    78 aircraft
+    8. 2026-02-02     10,259 points    77 aircraft
+    9. 2026-01-22     10,109 points    89 aircraft
+   10. 2025-12-15     10,041 points    92 aircraft
+
+------------------------------------------------------------
+  FLIGHT ACTIVITY BY HOUR OF DAY (UTC±00:00)
+------------------------------------------------------------
+  00:00  ███████████████                            16,770
+  01:00  ███████████                                12,456
+  02:00  ████████                                    8,880
+  03:00  ██                                          2,167
+  04:00  █                                           1,335
+  05:00  █                                           1,104
+  06:00                                                373
+  07:00                                                  0
+  08:00                                                 11
+  09:00                                                 11
+  10:00                                                  0
+  11:00                                                 25
+  12:00                                                998
+  13:00  █                                           1,992
+  14:00  ███████████                                11,781
+  15:00  ████████████████                           17,388
+  16:00  ██████████████████████████                 27,914
+  17:00  █████████████████████████████████████      40,171
+  18:00  ████████████████████████████████████████   42,383
+  19:00  ██████████████████████████████████████     40,298
+  20:00  ███████████████████████████████████████    42,117
+  21:00  ████████████████████████████████████       38,556
+  22:00  ████████████████████████████               30,659
+  23:00  ███████████████████████                    25,277
+
+------------------------------------------------------------
+  ALTITUDE STATISTICS (feet)
+------------------------------------------------------------
+  Minimum  :    5,568
+  Maximum  :    6,522
+  Mean     :    6,332
+============================================================
+
