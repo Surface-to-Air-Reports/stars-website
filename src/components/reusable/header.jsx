@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Box} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
+import ModeToggle from "./ModeToggle";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -15,6 +16,7 @@ const Header = () => {
                 <Link onClick={() => navigate("/statistics")} color = {"neutral"}>Statistics</Link>
                 <Link onClick={() => navigate("/affected-areas")} color = {"neutral"}>Affected Areas</Link>
                 <Link onClick={() => navigate("/file-report")} color = {"neutral"}>File a Report</Link>
+                <ModeToggle sx={{ ml: 'auto' }} />
             </Box>
         </Box>
 
