@@ -12,12 +12,18 @@ import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
 
-import {Box} from "@mui/joy";
+import {Box, CssBaseline, CssVarsProvider} from "@mui/joy";
 
+import { extendTheme } from '@mui/joy/styles';
+
+const theme = extendTheme({
+    colorSchemeSelector: 'media',
+});
 
 function App() {
     return (
-        <div>
+        <CssVarsProvider theme={theme}>
+            <CssBaseline />
             <BrowserRouter>
                 <Box sx={{display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'space-between'}}>
                     <Box>
@@ -40,7 +46,7 @@ function App() {
                     <Footer/>
                 </Box>
             </BrowserRouter>
-        </div>
+        </CssVarsProvider>
     );
 }
 

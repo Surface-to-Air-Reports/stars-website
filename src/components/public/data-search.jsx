@@ -12,6 +12,8 @@ const Page = () => {
                             <th>Time</th>
                             <th>Lowest Altitude</th>
                             <th>Violating time</th>
+                            <th>Aircraft Type</th>
+                            <th>Owner</th>
                         </tr>
                     </thead>
                     <tr>
