@@ -1,9 +1,12 @@
 import React from 'react';
-import {Box, Link, List} from "@mui/joy";
+import {Box, Link, List, useColorScheme} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
     const navigate = useNavigate();
+
+    const {mode, setMode} = useColorScheme();
+
     return (
         <Box sx = {{
             display: 'flex',
@@ -14,12 +17,20 @@ const Footer = () => {
             paddingBottom: "2rem",
             padding: "1rem",
             justifyContent: 'space-between',
+            alignItems: "center"
 
         }}
              component="footer"
         >
-            <Box sx={{display: 'flex', flexDirection: 'column', gap: '.5rem', padding: '1rem', width: '50%'}}>
-                <img alt={"Logo"} src={"/cdn/logo.png"} width={"200px"} onClick={() => navigate("/")}/>
+            <Box sx={{display: 'flex', flexDirection: 'column', gap: '.5rem',}}>
+                {(mode === "light" || mode === "system") && (
+                    <img alt={"Logo"} src={"/cdn/STARlogo.png"} width={"35px"} onClick={() => navigate("/")}
+                         style={{cursor: 'pointer'}}/>
+                )}
+                {mode === "dark" && (
+                    <img alt={"Logo"} src={"/cdn/DarkModeLogo.png"} width={"35px"} onClick={() => navigate("/")}
+                         style={{cursor: 'pointer'}}/>
+                )}
             </Box>
 
             <Box>
