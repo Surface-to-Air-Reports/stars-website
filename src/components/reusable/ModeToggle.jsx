@@ -1,6 +1,4 @@
 import React from 'react';
-import Select from '@mui/joy/Select';
-import Option from '@mui/joy/Option';
 import {Box, useColorScheme} from "@mui/joy";
 
 import LightModeIcon from '@mui/icons-material/LightMode';
