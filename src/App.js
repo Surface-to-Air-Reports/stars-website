@@ -3,6 +3,7 @@ import Home from './components/public/home';
 import About from './components/public/about';
 import AffectedAreas from './components/public/affected-areas';
 import Blog from './components/public/blog';
+import TermsOfUse from './components/public/terms-of-use';
 import DataSearch from './components/public/data-search';
 import FileReport from './components/public/file-report';
 import Methodology from './components/public/methodology';
@@ -38,6 +39,7 @@ function App() {
                             <Route path="/methodology" element={<Methodology/>}/>
                             <Route path="/statistics" element={<Statistics/>}/>
                             <Route path="/worst-offenders" element={<WorstOffenders/>}/>
+                            <Route path="/terms-of-use" element={<TermsOfUse />} />
 
 
                             <Route path="*" element={<Notfound/>}/>
