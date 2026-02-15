@@ -109,7 +109,7 @@ export default function TermsOfUse() {
 
         <Box sx={{ mb: 4 }}>
           <Typography level="h3" sx={{ mb: 1 }}>
-            7. Privacy
+            8. Privacy
           </Typography>
           <Typography>
             This site does not collect personal identifying information from
