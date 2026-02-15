@@ -106,6 +106,17 @@ export default function TermsOfUse() {
             use or interpretation of the data provided.
           </Typography>
         </Box>
+
+        <Box sx={{ mb: 4 }}>
+          <Typography level="h3" sx={{ mb: 1 }}>
+            7. Privacy
+          </Typography>
+          <Typography>
+            This site does not collect personal identifying information from
+            users. No user accounts, tracking systems, or behavioral analytics
+            are implemented.
+          </Typography>
+        </Box>
       </Box>
     </Container>
   );
