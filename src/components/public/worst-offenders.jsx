@@ -49,12 +49,7 @@ const Page = () => {
                 </Card>
             </Box>
             <Box sx = {{alignSelf : 'center'}}>
-                <Typography sx = {{alignText : 'center'}}>
-                    BEHOLD!!
-                </Typography>
-                <Typography sx = {{alignText : 'center'}}>
-                    THE ASSHOLES!!
-                </Typography>
+
             </Box>
         </Box>
     )
