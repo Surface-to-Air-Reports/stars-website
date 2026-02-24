@@ -5,7 +5,7 @@ import {useNavigate} from "react-router-dom";
 const Footer = () => {
     const navigate = useNavigate();
 
-    const {mode, setMode} = useColorScheme();
+    const mode = useColorScheme();
 
     return (
         <Box sx = {{

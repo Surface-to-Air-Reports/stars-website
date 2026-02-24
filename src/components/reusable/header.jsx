@@ -6,7 +6,7 @@ import ModeToggle from "./ModeToggle";
 const Header = () => {
     const navigate = useNavigate();
 
-    const {mode, setMode} = useColorScheme();
+    const mode = useColorScheme();
 
     return (
         <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
