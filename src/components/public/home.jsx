@@ -4,11 +4,6 @@ import {useNavigate} from "react-router-dom";
 
 const Page = () => {
     const navigate = useNavigate();
-
-
-
-
-
     return (
         <Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem'}}>
