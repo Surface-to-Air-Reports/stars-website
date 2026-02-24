@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, MenuItem, MenuList, Table, Typography} from "@mui/joy";
+import {Box, MenuItem, MenuList, Typography} from "@mui/joy";
 
 import Sessions from "./data-search-tabs/sessions"
 import Planes from "./data-search-tabs/planes"
