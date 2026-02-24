@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Typography, Button, Card, Divider,} from "@mui/joy";
+import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
 
 const page = () => {
@@ -9,7 +9,7 @@ const page = () => {
                 width: 500,}}>
                 <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "100px"}}>10,000</Typography>
                 <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Hours of illegal flight time</Typography>
-            </Card>
+            </Card>S
             <Divider>
 
             </Divider>
