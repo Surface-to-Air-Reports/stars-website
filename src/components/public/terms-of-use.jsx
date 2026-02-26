@@ -226,9 +226,10 @@ export default function TermsOfUse() {
             10. Contact
           </Typography>
           <Typography>
-            If you have questions about this Privacy Policy, contact:
+            If you have questions about this   Privacy Policy, contact:
             <br />
-            [Your Contact Email or Form URL]
+            <br />
+            starscolorado@protonmail.com
           </Typography>
         </Box>
       </Box>
