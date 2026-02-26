@@ -21,7 +21,7 @@ const Header = () => {
             </Box>
             <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem', alignItems: "center"}}>
             <Link onClick={() => navigate("/data-search")} color = {"neutral"}>Data Search</Link>
-                <Link onClick={() => navigate("/worst-offenders")} color = {"neutral"}>Worst Offenders</Link>
+                <Link onClick={() => navigate("/aircraft-rankings")} color = {"neutral"}>Aircraft Rankings</Link>
                 <Link onClick={() => navigate("/statistics")} color = {"neutral"}>Statistics</Link>
                 <Link onClick={() => navigate("/affected-areas")} color = {"neutral"}>Affected Areas</Link>
                 <Link onClick={() => navigate("/file-report")} color = {"neutral"}>File a Report</Link>

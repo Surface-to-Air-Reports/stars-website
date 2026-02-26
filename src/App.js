@@ -8,7 +8,7 @@ import DataSearch from './components/public/data-search';
 import FileReport from './components/public/file-report';
 import Methodology from './components/public/methodology';
 import Statistics from './components/public/statistics';
-import WorstOffenders from './components/public/worst-offenders';
+import AircraftRankings from './components/public/aircraft-rankings';
 import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
@@ -38,7 +38,7 @@ function App() {
                             <Route path="/file-report" element={<FileReport/>}/>
                             <Route path="/methodology" element={<Methodology/>}/>
                             <Route path="/statistics" element={<Statistics/>}/>
-                            <Route path="/worst-offenders" element={<WorstOffenders/>}/>
+                            <Route path="/aircraft-rankings" element={<AircraftRankings/>}/>
                             <Route path="/terms-of-use" element={<TermsOfUse />} />
 
 

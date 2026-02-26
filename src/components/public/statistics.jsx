@@ -8,7 +8,7 @@ const page = () => {
             <Card variant = 'soft' sx = {{
                 width: 500,}}>
                 <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "100px"}}>10,000</Typography>
-                <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Hours of illegal flight time</Typography>
+                <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Time Below 500 ft</Typography>
             </Card>S
             <Divider>
 
