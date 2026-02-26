@@ -10,7 +10,7 @@ export default function TermsOfUse() {
         </Typography>
 
         <Typography level="body-sm" sx={{ mb: 4 }}>
-          Last Updated: [IDK Date or smth] 
+          Last Updated: 2/26/26 
         </Typography>
 
         <Box sx={{ mb: 4 }}>
