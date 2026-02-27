@@ -10,7 +10,7 @@ export default function TermsOfUse() {
         </Typography>
 
         <Typography level="body-sm" sx={{ mb: 4 }}>
-          Last Updated: [IDK Date or smth] 
+          Last Updated: 2/26/26 
         </Typography>
 
         <Box sx={{ mb: 4 }}>
@@ -226,9 +226,10 @@ export default function TermsOfUse() {
             10. Contact
           </Typography>
           <Typography>
-            If you have questions about this Privacy Policy, contact:
+            If you have questions about this   Privacy Policy, contact:
             <br />
-            [Your Contact Email or Form URL]
+            <br />
+            starscolorado@protonmail.com
           </Typography>
         </Box>
       </Box>
