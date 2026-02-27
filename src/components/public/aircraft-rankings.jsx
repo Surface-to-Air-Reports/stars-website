@@ -10,18 +10,18 @@ const Page = () => {
             <Box sx = {{bgcolor: 'background.level1'}}>
                 <Box sx = {{display : 'flex', flexDirection : 'column', alignItems : 'center', gap : '1.5rem', py : '5rem'}}>
                     <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Check out this weeks</Typography>
-                    <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>SKY OFFENDERS</Typography>
+                    <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>RANKINGS</Typography>
                     <Box sx={{display: 'flex', flexDirection: 'row', gap : '.5rem'}}>
                         <Button
                             color={"neutral"}
                             onClick={() => navigate("/file-report")}>
-                            Enemy Number 1
+                            Top Aircraft 
                         </Button>
                         <Button
                             color={"neutral"}
                             variant={"outlined"}
                             onClick={() => navigate("/data-search")}>
-                            Leaderboard
+                            Activity Breakdown
                         </Button>
                 </Box>
                 </Box>
@@ -49,12 +49,7 @@ const Page = () => {
                 </Card>
             </Box>
             <Box sx = {{alignSelf : 'center'}}>
-                <Typography sx = {{alignText : 'center'}}>
-                    BEHOLD!!
-                </Typography>
-                <Typography sx = {{alignText : 'center'}}>
-                    THE ASSHOLES!!
-                </Typography>
+
             </Box>
         </Box>
     )

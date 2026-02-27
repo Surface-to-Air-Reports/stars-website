@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, useColorScheme} from "@mui/joy";
+import {Card, useColorScheme} from "@mui/joy";
 
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -17,19 +17,19 @@ function ModeToggle() {
     }
 
     if (mode === "light") {
-        return(<Box onClick={() => setMode("dark")}>
+        return(<Card onClick={() => setMode("dark")} sx={{padding: "8px"}} variant={"outlined"}>
             <LightModeIcon />
-        </Box>)
+        </Card>)
     }
     if (mode === "dark") {
-        return (<Box onClick={() => setMode("light")}>
+        return (<Card onClick={() => setMode("light")} sx={{padding: "8px"}} variant={"outlined"}>
             <DarkModeIcon />
-        </Box>)
+        </Card>)
     }
     if (mode === "system") {
-        return (<Box onClick={() => setMode("dark")}>
+        return (<Card onClick={() => setMode("dark")} sx={{padding: "8px"}} variant={"outlined"}>
             <ComputerIcon />
-        </Box>)
+        </Card>)
     }
 
 

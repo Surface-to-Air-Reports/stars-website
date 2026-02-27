@@ -25,7 +25,7 @@ const Page = () => {
                         <Card>
                             <Typography level="h1">{post["title"]}</Typography>
                             <Typography level="h2">{post["subtitle"]}</Typography>
-                            <Typography level="body-lg">By: Viki, and Henwy ⚪️{post["date"]}</Typography>
+                            <Typography level="body-lg">By: [Author] ⚪️{post["date"]}</Typography>
                             <Stack spacing={1}>
                                 {post["copy"].map((line) => (
                                     <Typography level="body-md">{line}</Typography>
