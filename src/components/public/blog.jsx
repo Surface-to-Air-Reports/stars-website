@@ -10,7 +10,6 @@ async function loadData() {
 
 const Page = () => {
     const [blogData, setBlogData] = useState({});
-    // loadData().then(data => setBlogData(data));
 
     useEffect(() => {
         loadData().then(setBlogData);
