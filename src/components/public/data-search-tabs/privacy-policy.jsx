@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             <strong>Effective Date:</strong> [Insert Date]
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             1. Introduction
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
             described here.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             2. Information We Do Not Collect Directly
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             through forms or communications.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             3. Hosting and Automatically Collected Data
             </Typography>
             <Typography sx={{ mb: 1 }}>
@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
             hosting platform.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             4. Cookies and Tracking
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
             security, or analytics.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             5. Third-Party Services
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -81,7 +81,7 @@ export default function PrivacyPolicy() {
             practices of third-party services.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             6. Data Use
             </Typography>
             <Typography sx={{ mb: 1 }}>
@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
             We do not sell or rent personal information.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             7. Data Security
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -108,7 +108,7 @@ export default function PrivacyPolicy() {
             to be 100% secure.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             8. Your Rights
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -116,7 +116,7 @@ export default function PrivacyPolicy() {
             to, correction of, or deletion of personal data.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             9. Changes to This Policy
             </Typography>
             <Typography sx={{ mb: 2 }}>
@@ -124,7 +124,7 @@ export default function PrivacyPolicy() {
             posted on this page with a revised effective date.
             </Typography>
 
-            <Typography level="title-md" sx={{ mt: 2, mb: 1 }}>
+            <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
             10. Contact
             </Typography>
             <Typography>
