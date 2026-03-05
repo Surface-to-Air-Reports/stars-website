@@ -13,6 +13,8 @@ const page = () => {
         connected to it. This Raspberry Pi processes the data by removing
         records outside the FAA-defined residential area <Link
           href="https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/vfr/"
+          target="_blank"
+
         >
         (learn more about this area) 
         </Link>
