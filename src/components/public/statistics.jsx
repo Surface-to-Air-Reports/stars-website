@@ -1,35 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
 
-async function loadData() {
-    const response = await fetch("/cdn/stats.json");
-    const data = await response.json();
-    console.log(data);
-    return data;
-}
 
 
 const Page = () => {
-    const [data, setData] = useState({});
 
-    const [timeRanges, setTimeRanges] = useState([]);
-    const [timeValues, setTimeValues] = useState([]);
-
-    const [altRanges, setAltRanges] = useState([]);
-    const [altValues, setAltValues] = useState([]);
-
-    const [calls, setCalls] = useState([]);
-    const [callValues, setCallValues] = useState([]);
-
-    useEffect(() => {
-        loadData().then(setData);
-    }, [])
-
-    useEffect(() => {
-        //process time ranges
-
-    }, [data])
 
 
 
