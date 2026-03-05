@@ -11,10 +11,11 @@ const Page = () => {
     useEffect(() => {
         getGenStats().then((result) => {
             let totsec = result["lowtime"];
-            let sec = totsec%60;
-            let min = Math.floor((totsec%3600)/60);
+            let sec = (totsec%60).toString().padStart(2, "0");
+            let min = Math.floor((totsec%3600)/60).toString().padStart(2, "0");
             let hour = Math.floor(totsec/3600);
             console.log(hour, min, sec);
+
             setTime(hour+":" + min+":" + sec);
         });
     })

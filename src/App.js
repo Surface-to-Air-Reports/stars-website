@@ -13,7 +13,7 @@ import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
 
-import {Box, CssBaseline, CssVarsProvider, Typography} from "@mui/joy";
+import {Box, CssBaseline, CssVarsProvider} from "@mui/joy";
 
 import { extendTheme } from '@mui/joy/styles';
 
@@ -22,61 +22,32 @@ const theme = extendTheme({
 });
 
 
-
-//remove for final version:
-
-const PROTECTED = import.meta.env.VITE_PROTECTED === "true";
-const ALLOWED = import.meta.env.VITE_ALLOWED_DEVICE;
-
-function getDeviceId() {
-    if (typeof window === "undefined") return null;
-    return localStorage.getItem("device_id");
-}
-
-
-//end remove
-
 function App() {
-
-
-    const id = getDeviceId();
-
-    if (PROTECTED && id !== ALLOWED) {
-        return (
-            <Box sx={{height:"100vh", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                <Box>
-                    <Typography level="h2">Access Denied</Typography>
-                </Box>
-            </Box>
-        );
-    }
-
     return (
         <CssVarsProvider theme={theme}>
             <CssBaseline />
             <BrowserRouter>
-
-                    <Box sx={{display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'space-between'}}>
-                        <Box>
+                <Box sx={{display: 'flex', flexDirection: 'column', height: '100vh', justifyContent: 'space-between'}}>
+                    <Box>
                         <Header />
-                            <Routes>
-                                <Route path="/" element={<Home/>}/>
-                                <Route path="/about" element={<About/>}/>
-                                <Route path="/affected-areas" element={<AffectedAreas/>}/>
-                                <Route path="/blog" element={<Blog/>}/>
-                                <Route path="/data-search" element={<DataSearch/>}/>
-                                <Route path="/file-report" element={<FileReport/>}/>
-                                <Route path="/methodology" element={<Methodology/>}/>
-                                <Route path="/statistics" element={<Statistics/>}/>
-                                <Route path="/aircraft-rankings" element={<AircraftRankings/>}/>
-                                <Route path="/terms-of-use" element={<TermsOfUse />} />
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/affected-areas" element={<AffectedAreas/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
+                            <Route path="/data-search" element={<DataSearch/>}/>
+                            <Route path="/file-report" element={<FileReport/>}/>
+                            <Route path="/methodology" element={<Methodology/>}/>
+                            <Route path="/statistics" element={<Statistics/>}/>
+                            <Route path="/rankings" element={<AircraftRankings/>}/>
+                            <Route path="/terms-of-use" element={<TermsOfUse />} />
 
 
-                                <Route path="*" element={<Notfound/>}/>
-                            </Routes>
-                        </Box>
-                        <Footer/>
+                            <Route path="*" element={<Notfound/>}/>
+                        </Routes>
                     </Box>
+                    <Footer/>
+                </Box>
             </BrowserRouter>
         </CssVarsProvider>
     );
