@@ -12,6 +12,7 @@ import Rankings from './components/public/rankings';
 import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
+import PrivacyPolicy from './components/public/data-search-tabs/privacy-policy';
 
 import {Box, CssBaseline, CssVarsProvider, Typography} from "@mui/joy";
 
@@ -69,8 +70,8 @@ function App() {
                                 <Route path="/methodology" element={<Methodology/>}/>
                                 <Route path="/statistics" element={<Statistics/>}/>
                                 <Route path="/rankings" element={<Rankings/>}/>
-                                <Route path="/terms-of-use" element={<TermsOfUse />} />
-
+                                <Route path="/terms-of-use" element={<TermsOfUse/>} />
+                                <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
 
                                 <Route path="*" element={<Notfound/>}/>
                             </Routes>
