@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Box, Button, Typography} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 import {getGenStats} from "../../utils/getStats";
+import {secToDuration} from "../../utils/secToDuration";
 
 const Page = () => {
     const navigate = useNavigate();
@@ -10,15 +11,17 @@ const Page = () => {
 
     useEffect(() => {
         getGenStats().then((result) => {
-            let totsec = result["lowtime"];
-            let sec = (totsec%60).toString().padStart(2, "0");
-            let min = Math.floor((totsec%3600)/60).toString().padStart(2, "0");
-            let hour = Math.floor(totsec/3600);
-            console.log(hour, min, sec);
+            // let totsec = result["lowtime"];
+            // let sec = (totsec%60).toString().padStart(2, "0");
+            // let min = Math.floor((totsec%3600)/60).toString().padStart(2, "0");
+            // let hour = Math.floor(totsec/3600);
+            // console.log(hour, min, sec);
+            //
+            // setTime(hour+":" + min+":" + sec);
 
-            setTime(hour+":" + min+":" + sec);
+            setTime(secToDuration(result["lowtime"]));
         });
-    })
+    }, [])
 
     return (
         <Box>
