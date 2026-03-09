@@ -1,5 +1,5 @@
 import {firestore} from "./firebase.js";
-import { doc, getDocs, collection, orderBy, limit, query } from "firebase/firestore";
+import { getDocs, collection, orderBy, limit, query } from "firebase/firestore";
 
 async function getTopAircraft(number) {
 

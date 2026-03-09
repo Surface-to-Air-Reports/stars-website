@@ -1,12 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Typography, Button, Card} from "@mui/joy";
-import {useNavigate} from "react-router-dom";
+import {Box, Typography, Card} from "@mui/joy";
 import {getTopAircraft} from "../../utils/getTopAircraft";
 import {secToDuration} from "../../utils/secToDuration";
 
 const Page = () => {
-    const navigate = useNavigate();
-
     const [aircraft, setAircraft] = useState([]);
 
     useEffect(() => {
