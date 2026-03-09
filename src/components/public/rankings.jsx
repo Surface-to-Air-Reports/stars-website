@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 const Page = () => {
     const navigate = useNavigate();
 
+
     return (
         <Box sx={{display: "flex", flexDirection: "column", gap : '5rem'}}>
             <Box sx = {{bgcolor: 'background.level1'}}>

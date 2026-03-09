@@ -2,7 +2,13 @@ import React from 'react';
 import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
 
-const page = () => {
+
+
+const Page = () => {
+
+
+
+
     return (
         <Box sx={{display: "flex", flexDirection: "column", gap : '2.5rem', alignItems: 'center'}}>
             <Typography level={"h1"}>Statistics</Typography>
@@ -50,4 +56,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page;

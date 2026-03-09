@@ -1,32 +1,37 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Button, Typography, Tooltip} from "@mui/joy";
+import {Box, Button, Typography} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
-
-async function loadData() {
-    const response = await fetch("/cdn/violating_totals.txt");
-    const data = await response.text()
-    console.log(data);
-    return data;
-}
+import {getGenStats} from "../../utils/getStats";
+import {secToDuration} from "../../utils/secToDuration";
 
 const Page = () => {
     const navigate = useNavigate();
 
-    const [data, setData] = useState("");
+    const [time, setTime] = useState("");
 
     useEffect(() => {
-        loadData().then(setData);
+        getGenStats().then((result) => {
+            // let totsec = result["lowtime"];
+            // let sec = (totsec%60).toString().padStart(2, "0");
+            // let min = Math.floor((totsec%3600)/60).toString().padStart(2, "0");
+            // let hour = Math.floor(totsec/3600);
+            // console.log(hour, min, sec);
+            //
+            // setTime(hour+":" + min+":" + sec);
+
+            setTime(secToDuration(result["lowtime"]));
+        });
     }, [])
 
     return (
         <Box>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem'}}>
-                <Typography level={"h1"} sx={{fontSize: "110px", paddingTop: "10vh"}}>{data}</Typography>
+                <Typography level={"h1"} sx={{fontSize: "110px", paddingTop: "10vh"}}>{time}</Typography>
                 <Typography level={"h2"} sx={{width: "500px"}} textAlign={"center"}>of Low-Altitude Flight</Typography>
                 <Typography level={"h3"} sx={{color: "light-gray"}}>Updated March 3rd 2026 {' '}
                     <Tooltip title="Data recording started Novemeber 11th">
                         <Box
-                        component="span"
+                            component="span"
                             sx={{
                                 cursor: 'pointer',
                                 fontSize: '1.25rem',
@@ -35,10 +40,10 @@ const Page = () => {
                                 display: 'inline-block',
                             }}
                         >
-                        *
+                            *
                         </Box>
                     </Tooltip>
-                     </Typography>
+                </Typography>
                 <Box sx={{display: 'flex', flexDirection: 'row', gap: '1rem'}}>
                     <Button
                         color={"neutral"}
