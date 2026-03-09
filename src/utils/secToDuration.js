@@ -3,7 +3,7 @@ function secToDuration(time) {
     let min = Math.floor((time%3600)/60).toString().padStart(2, "0");
     let hour = Math.floor(time/3600);
 
-    return(hour+":" + min+":" + sec);
+    return(hour+"h " + min+"m " + sec + "s");
 }
 
 export {secToDuration};
