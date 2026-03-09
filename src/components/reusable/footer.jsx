@@ -35,12 +35,12 @@ const Footer = () => {
 
             <Box>
                 <List sx={{display: 'flex', flexDirection: 'row', gap: '.5rem'}}>
-                <Link onClick={() => navigate("/blog")}>Blog</Link>
-                    <Link onClick={() => navigate("/about")}>About</Link>
-                    <Link onClick={() => navigate("/methodology")}>Methodology</Link>
-                    <Link onClick={() => navigate("/terms-of-use")}>Terms of Use</Link>
-                    <Link onClick={() => navigate("/privacy")}>Privacy Policy</Link>
-                    <Link href={"https://github.com/Surface-to-Air-Reports"}>Github</Link>
+                <Link onClick={() => navigate("/blog")} color = {"neutral"} >Blog</Link>
+                    <Link onClick={() => navigate("/about")} color = {"neutral"} >About</Link>
+                    <Link onClick={() => navigate("/methodology")} color = {"neutral"} >Methodology</Link>
+                    <Link onClick={() => navigate("/terms-of-use")} color = {"neutral"} >Terms of Use</Link>
+                    <Link onClick={() => navigate("/privacy-policy")} color = {"neutral"} >Privacy Policy</Link>
+                    <Link href={"https://github.com/Surface-to-Air-Reports"} color = {"neutral"} >Github</Link>
                 </List>
             </Box>
         </Box>
