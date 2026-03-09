@@ -11,11 +11,9 @@ const Page = () => {
 
     return (
         <Box sx={{display: "flex", flexDirection: "column", gap : '2.5rem', alignItems: 'center'}}>
-            <Card variant = 'soft' sx = {{
-                width: 500,}}>
-                <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "100px"}}>10,000</Typography>
-                <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Time Below 500 ft</Typography>
-            </Card>S
+            <Typography level={"h1"}>Statistics</Typography>
+            <Typography level={"h2"} textAlign={"center"} sx = {{fontSize : "100px"}}>861</Typography>
+            <Typography level={"h3"} textAlign={"center"}  color = {"neutral"}>Planes recorded at low altitudes</Typography>
             <Divider>
 
             </Divider>
