@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
         <Box sx={{ mb: 4 }}>
 
             <Typography level="body-sm" sx={{ mb: 2 }}>
-            <strong>Effective Date:</strong> [Insert Date]
+            <strong>Effective Date:</strong> 2/26/26
             </Typography>
 
             <Typography level="h3" sx={{ mt: 2, mb: 1 }}>
