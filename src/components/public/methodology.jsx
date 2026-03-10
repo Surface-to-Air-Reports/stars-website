@@ -5,7 +5,7 @@ const page = () => {
     <Container maxWidth="lg">
         <Box sx={{ my: 6 }}>
         <Typography level="h1" sx={{ mb: 2 }}>
-                  Methdology
+                  Methodology
                 </Typography>
       <Typography sx={{ mb: 2 }}>
         Since November 20th, 2025, our team has operated an antenna in Rock Creek
