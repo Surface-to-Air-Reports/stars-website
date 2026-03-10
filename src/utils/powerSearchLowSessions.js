@@ -15,7 +15,7 @@ const sort_directions = Object.freeze({
     DESCENDING: "desc"
 })
 
-async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from, time_to, tail_filter, alt_to, alt_from, dur_from, dur_to, own_filter, type_filter) {
+async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from, time_to, tail_filter, alt_to, alt_from, dur_from, dur_to) {
     // x,sort by, start from, none,none,none,none,none,none......
     // establish the collection to query
     const sessions = collection(firestore, "low_sessions");
@@ -23,23 +23,23 @@ async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from,
     console.log(sort_fields, sort_directions)
 
     let callOperator = "==";
-    let ownerOperator = "==";
-    let typeOperator = "==";
+    // let ownerOperator = "==";
+    // let typeOperator = "==";
 
     if (!tail_filter || tail_filter === "") {
         callOperator = "<";
         tail_filter = "";
     }
 
-    if (!own_filter || own_filter === "") {
-        ownerOperator = "<";
-        own_filter = "";
-    }
-
-    if (!type_filter || type_filter === "") {
-        typeOperator = "<";
-        type_filter = "";
-    }
+    // if (!own_filter || own_filter === "") {
+    //     ownerOperator = "<";
+    //     own_filter = "";
+    // }
+    //
+    // if (!type_filter || type_filter === "") {
+    //     typeOperator = "<";
+    //     type_filter = "";
+    // }
 
     if (!time_from) {
         time_from = new Timestamp(1, 0);
@@ -66,11 +66,9 @@ async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from,
     }
     console.log({
         "CALL OPERATOR": callOperator,
-        "TYPE OPERATOR": typeOperator,
-        "OWNER OPERATOR": ownerOperator,
+        // "TYPE OPERATOR": typeOperator,
+        // "OWNER OPERATOR": ownerOperator,
         "CALL FILTER": tail_filter,
-        "OWNER FILTER": own_filter,
-        "TYPE FILTER": type_filter,
         "TIME FROM": time_from,
         "TIME TO": time_to,
         "ALT FROM": alt_from,
@@ -89,8 +87,8 @@ async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from,
         where("sdur", ">", dur_from),
         where("sdur", "<", dur_to),
         where("cs", callOperator, tail_filter),
-        where("own", ownerOperator, own_filter),
-        where("at", typeOperator, type_filter),
+        // where("own", ownerOperator, own_filter),
+        // where("at", typeOperator, type_filter),
         limit(maxReturn)
     );
 
