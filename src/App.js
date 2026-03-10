@@ -12,7 +12,7 @@ import Rankings from './components/public/rankings';
 import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
-import PrivacyPolicy from './components/public/data-search-tabs/privacy-policy';
+import PrivacyPolicy from './components/public/privacy-policy';
 
 import {Box, CssBaseline, CssVarsProvider} from "@mui/joy";
 
