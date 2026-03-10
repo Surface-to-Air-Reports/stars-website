@@ -4,8 +4,6 @@ import {secToDurationShort} from "../../../utils/secToDurationShort";
 import {colorScaleInverse, colorScale} from "../../../utils/colorScale";
 import {powerSearchLowSessions} from "../../../utils/powerSearchLowSessions";
 
-import {getOwners, getTails, getTypes} from "../../../utils/getAssists";
-
 const Sessions = () => {
     const [sessions, setSessions] = useState([]);
 
