@@ -1,12 +1,9 @@
 import {Button, Chip, Table, Input, FormLabel, Autocomplete, CircularProgress} from "@mui/joy";
 import React, {useEffect, useState} from "react";
-import {getLowAlt} from "../../../utils/getLowAlt";
 import {secToDurationShort} from "../../../utils/secToDurationShort";
 import {colorScaleInverse, colorScale} from "../../../utils/colorScale";
-import {getReadableTime} from "../../../utils/getReadableTime";
 import {powerSearchLowSessions} from "../../../utils/powerSearchLowSessions";
 
-import {Timestamp} from "firebase/firestore";
 import {getOwners, getTails, getTypes} from "../../../utils/getAssists";
 
 const Sessions = () => {

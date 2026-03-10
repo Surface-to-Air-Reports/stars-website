@@ -1,5 +1,5 @@
 import {firestore} from "./firebase.js";
-import { getDocs, collection, orderBy, limit, query, getCountFromServer, where, Timestamp } from "firebase/firestore";
+import { getDocs, collection, orderBy, limit, query, where, Timestamp } from "firebase/firestore";
 
 const sort_fields = Object.freeze({
     TIME: "ssrt",
@@ -19,6 +19,8 @@ async function powerSearchLowSessions(maxReturn, sort_by, start_from, time_from,
     // x,sort by, start from, none,none,none,none,none,none......
     // establish the collection to query
     const sessions = collection(firestore, "low_sessions");
+
+    console.log(sort_fields, sort_directions)
 
     let callOperator = "==";
     let ownerOperator = "==";
