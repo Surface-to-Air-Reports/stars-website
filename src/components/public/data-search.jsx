@@ -30,7 +30,7 @@ const Page = () => {
                     </MenuList>
 
                 </Box>
-                <Box sx={{maxWidth: 800}}>
+                <Box sx={{maxWidth: 1200}}>
                     {currentTab === 0 && (
                         <Sessions/>
                     )}
