@@ -1,10 +1,42 @@
 import {Chip, Table} from "@mui/joy";
-import React from "react";
-
+import React, {useEffect, useState} from "react";
+import {secToDurationShort} from "../../../utils/secToDurationShort";
+import {colorScaleInverse, colorScale} from "../../../utils/colorScale";
+import {powerSearchLowSessions} from "../../../utils/powerSearchLowSessions";
 
 const Sessions = () => {
+    const [sessions, setSessions] = useState([]);
+
+    const [callFilter] = useState("");
+
+    const [altLowFilter] = useState(0);
+    const [altHighFilter] = useState(0);
+
+    const [durationLowFilter] = useState(0);
+    const [durationHighFilter] = useState(0);
+
+    useEffect(() => {
+        powerSearchLowSessions(10, "ssrt", 0, null, null, callFilter, altHighFilter, altLowFilter, durationLowFilter, durationHighFilter).then(result => {setSessions(result)});
+    }, [callFilter, altLowFilter, altHighFilter, durationLowFilter, durationHighFilter]);
+
     return (
-        <Table>
+        <>
+
+            {/*<FormLabel>Callsign</FormLabel>*/}
+            {/*<Input placeholder={"Callsign"} value={callFilter} onChange={(e) => setCallFilter(e.target.value)}></Input>*/}
+            {/*<br/>*/}
+            {/*<FormLabel>Altitude From</FormLabel>*/}
+            {/*<Input placeholder={"Altitude From"} value={altLowFilter} onChange={(e) => setAltLowFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<FormLabel>Altitude To</FormLabel>*/}
+            {/*<Input placeholder={"Altitude To"} value={altHighFilter} onChange={(e) => setAltHighFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<br/>*/}
+            {/*<FormLabel>Duration From</FormLabel>*/}
+            {/*<Input placeholder={"Duration From"} value={durationLowFilter} onChange={(e) => setDurationLowFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<FormLabel>Duration To</FormLabel>*/}
+            {/*<Input placeholder={"Duration To"} value={durationHighFilter} onChange={(e) => setDurationHighFilter(parseInt(e.target.value))}></Input>*/}
+
+
+            <Table>
             <thead>
             <tr>
                 <th>Tail Number</th>
@@ -15,15 +47,19 @@ const Sessions = () => {
                 <th>Aircraft Type</th>
             </tr>
             </thead>
-            <tr>
-                <td>ABC123</td>
-                <td>05:23 AM, 02/24/26</td>
-                <td><Chip color={"danger"}>324ft</Chip></td>
-                <td><Chip color={"danger"}>05:43</Chip></td>
-                <td>Jeff</td>
-                <td>Cesena 123</td>
-            </tr>
+            {sessions.map((session) => (
+                <tr>
+                    <td>{session.cs}</td>
+                    <td>{session.ssrt.toDate().toLocaleString({timeZone: "MST"})}</td>
+                    <td><Chip color={colorScaleInverse(session.lalt, 6100, 6000)}>{session.lalt}ft</Chip></td>
+                    <td><Chip color={colorScale(session.sdur, 30, 60)}>{secToDurationShort(session.sdur)}</Chip></td>
+                    <td>{session.own}</td>
+                    <td>{session.at}</td>
+                </tr>
+
+            ))}
         </Table>
+            </>
     )
 }
 
