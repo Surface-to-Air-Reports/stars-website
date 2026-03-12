@@ -1,4 +1,4 @@
-import {Chip, Table, Input, FormLabel} from "@mui/joy";
+import {Chip, Table} from "@mui/joy";
 import React, {useEffect, useState} from "react";
 import {secToDurationShort} from "../../../utils/secToDurationShort";
 import {colorScaleInverse, colorScale} from "../../../utils/colorScale";
@@ -22,18 +22,18 @@ const Sessions = () => {
     return (
         <>
 
-            <FormLabel>Callsign</FormLabel>
-            <Input placeholder={"Callsign"} value={callFilter} onChange={(e) => setCallFilter(e.target.value)}></Input>
-            <br/>
-            <FormLabel>Altitude From</FormLabel>
-            <Input placeholder={"Altitude From"} value={altLowFilter} onChange={(e) => setAltLowFilter(parseInt(e.target.value))}></Input>
-            <FormLabel>Altitude To</FormLabel>
-            <Input placeholder={"Altitude To"} value={altHighFilter} onChange={(e) => setAltHighFilter(parseInt(e.target.value))}></Input>
-            <br/>
-            <FormLabel>Duration From</FormLabel>
-            <Input placeholder={"Duration From"} value={durationLowFilter} onChange={(e) => setDurationLowFilter(parseInt(e.target.value))}></Input>
-            <FormLabel>Duration To</FormLabel>
-            <Input placeholder={"Duration To"} value={durationHighFilter} onChange={(e) => setDurationHighFilter(parseInt(e.target.value))}></Input>
+            {/*<FormLabel>Callsign</FormLabel>*/}
+            {/*<Input placeholder={"Callsign"} value={callFilter} onChange={(e) => setCallFilter(e.target.value)}></Input>*/}
+            {/*<br/>*/}
+            {/*<FormLabel>Altitude From</FormLabel>*/}
+            {/*<Input placeholder={"Altitude From"} value={altLowFilter} onChange={(e) => setAltLowFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<FormLabel>Altitude To</FormLabel>*/}
+            {/*<Input placeholder={"Altitude To"} value={altHighFilter} onChange={(e) => setAltHighFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<br/>*/}
+            {/*<FormLabel>Duration From</FormLabel>*/}
+            {/*<Input placeholder={"Duration From"} value={durationLowFilter} onChange={(e) => setDurationLowFilter(parseInt(e.target.value))}></Input>*/}
+            {/*<FormLabel>Duration To</FormLabel>*/}
+            {/*<Input placeholder={"Duration To"} value={durationHighFilter} onChange={(e) => setDurationHighFilter(parseInt(e.target.value))}></Input>*/}
 
 
             <Table>
