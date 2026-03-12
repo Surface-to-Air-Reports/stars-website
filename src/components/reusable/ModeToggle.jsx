@@ -8,6 +8,8 @@ import ComputerIcon from '@mui/icons-material/Computer';
 function ModeToggle() {
     const { mode, setMode } = useColorScheme();
     const [mounted, setMounted] = React.useState(false);
+    // const modeSwap = {"light": "dark", "dark": "light"};
+    // setMode(modeSwap[mode]);
 
     React.useEffect(() => {
         setMounted(true);

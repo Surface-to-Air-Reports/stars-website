@@ -1,8 +1,17 @@
 import {Chip, Table} from "@mui/joy";
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {getTopOwners} from "../../../utils/getTopOwners";
+import {colorScale} from "../../../utils/colorScale";
+import {secToDurationShort} from "../../../utils/secToDurationShort";
 
 
 const Owners = () => {
+    const [owners, setOwners] = useState([]);
+
+    useEffect(() => {
+        getTopOwners(25).then(result => {setOwners(result)});
+    }, [])
+
     return (
         <Table>
             <thead>
@@ -12,11 +21,17 @@ const Owners = () => {
                 <th>Tail Numbers</th>
             </tr>
             </thead>
-            <tr>
-                <td>Jeff</td>
-                <td><Chip color={"danger"}>0:05:43</Chip></td>
-                <td><Chip>ABC12</Chip><Chip>ABC12</Chip></td>
-            </tr>
+            {owners.map((owner) => (
+                <tr>
+                    <td>{owner.name}</td>
+                    <td><Chip color={colorScale(owner.total_violated_seconds, 60000, 72000)}>{secToDurationShort(owner.total_violated_seconds)}</Chip></td>
+                    <td>
+                        {owner.aircraft_refs.map((craft) => (
+                            <Chip>{craft.path.slice(9)}</Chip>
+                        ))}
+                    </td>
+                </tr>
+            ))}
         </Table>
     )
 }
