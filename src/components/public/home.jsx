@@ -29,7 +29,7 @@ const Page = () => {
                 <Typography level={"h1"} sx={{fontSize: "110px", paddingTop: "10vh"}}>{time}</Typography>
                 <Typography level={"h2"} sx={{width: "500px"}} textAlign={"center"}>of Low-Altitude Flight</Typography>
                 <Typography level={"h3"} sx={{color: "light-gray"}}>Updated March 3rd 2026 {' '}
-                    <Tooltip title="Data recording started Novemeber 11th">
+                    <Tooltip title="Data recording started November 11th">
                         <Box
                             component="span"
                             sx={{
