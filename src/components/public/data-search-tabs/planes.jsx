@@ -17,8 +17,8 @@ const Planes = () => {
             <thead>
             <tr>
                 <th>Tail Number</th>
-                <th>Low Flight Time</th>
                 <th>Lowest Lifetime Altitude</th>
+                <th>Low Flight Time</th>
                 <th>Registered Owner</th>
                 <th>Aircraft Type</th>
             </tr>
