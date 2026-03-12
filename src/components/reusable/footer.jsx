@@ -40,7 +40,7 @@ const Footer = () => {
                     <Link onClick={() => navigate("/methodology")} color = {"neutral"} >Methodology</Link>
                     <Link onClick={() => navigate("/terms-of-use")} color = {"neutral"} >Terms of Use</Link>
                     <Link onClick={() => navigate("/privacy-policy")} color = {"neutral"} >Privacy Policy</Link>
-                    <Link href={"https://github.com/Surface-to-Air-Reports"} color = {"neutral"} >Github</Link>
+                    <Link href={"https://github.com/Surface-to-Air-Reports"} color = {"neutral"} >GitHub</Link>
                 </List>
             </Box>
         </Box>
