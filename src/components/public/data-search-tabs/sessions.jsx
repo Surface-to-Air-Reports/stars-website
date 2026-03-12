@@ -7,13 +7,13 @@ import {powerSearchLowSessions} from "../../../utils/powerSearchLowSessions";
 const Sessions = () => {
     const [sessions, setSessions] = useState([]);
 
-    const [callFilter, setCallFilter] = useState("");
+    const [callFilter] = useState("");
 
-    const [altLowFilter, setAltLowFilter] = useState(0);
-    const [altHighFilter, setAltHighFilter] = useState(0);
+    const [altLowFilter] = useState(0);
+    const [altHighFilter] = useState(0);
 
-    const [durationLowFilter, setDurationLowFilter] = useState(0);
-    const [durationHighFilter, setDurationHighFilter] = useState(0);
+    const [durationLowFilter] = useState(0);
+    const [durationHighFilter] = useState(0);
 
     useEffect(() => {
         powerSearchLowSessions(10, "ssrt", 0, null, null, callFilter, altHighFilter, altLowFilter, durationLowFilter, durationHighFilter).then(result => {setSessions(result)});
