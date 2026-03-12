@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
             10. Contact
             </Typography>
             <Typography>
-            If you have questions about this   Privacy Policy, contact:
+            If you have questions about this Privacy Policy, contact:
             <br />
             <br />
             starscolorado@protonmail.com
