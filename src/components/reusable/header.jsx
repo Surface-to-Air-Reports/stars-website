@@ -2,6 +2,26 @@ import React from 'react';
 import {Link, Box, useColorScheme, Typography} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 import ModeToggle from "./ModeToggle";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant',
+    });
+  }, [pathname]);   
+
+  return null;
+};
 
 const Header = () => {
     const navigate = useNavigate();
@@ -9,6 +29,9 @@ const Header = () => {
     const {mode} = useColorScheme();
 
     return (
+        <>
+        <ScrollToTop />
+
         <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
             <Box style={{display: 'flex', flexDirection: 'row', padding: '1rem', gap: '1rem', cursor: 'pointer', alignItems: "center"}} onClick={() => navigate("/")}>
                 {(mode === "light" || mode === "system") && (
@@ -28,7 +51,7 @@ const Header = () => {
                 <ModeToggle sx={{ ml: 'auto' }} />
             </Box>
         </Box>
-
+    </>
     )
 }
 
