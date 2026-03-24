@@ -1,6 +1,26 @@
 import React from 'react';
 import {Box, Link, List, useColorScheme} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant',
+    });
+  }, [pathname]);   
+
+  return null;
+};
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -8,6 +28,9 @@ const Footer = () => {
     const {mode} = useColorScheme();
 
     return (
+        <>
+         <ScrollToTop />
+    
         <Box sx = {{
             display: 'flex',
             flexDirection: 'row',
@@ -45,7 +68,7 @@ const Footer = () => {
             </Box>
         </Box>
 
-
+    </>
     )
 }
 
