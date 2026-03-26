@@ -6,22 +6,34 @@ import {getFrequencyStats} from '../../utils/getStats'
 
 
 const Page = () => {
-    // const [frequencyData, setFrequencyData] = useState({});
     const [frequencyTimes, setFrequencyTimes] = useState([]);
-    // const [frequencyCount, setFrequencyCount] = useState([]);
-    // const [frequencyDuration, setFrequencyDuration] = useState([]);
+    const [frequencyCounts, setFrequencyCounts] = useState([]);
+    const [frequencyDuration, setFrequencyDuration] = useState([]);
 
 
     useEffect(() => {
         getFrequencyStats().then(result => {
-            // setFrequencyData(result);
-            for(let i = 0; i < Object.keys(result).length; i++){
-                setFrequencyTimes([...frequencyTimes, (i+1)+":00"]);
+            const times = [];
+            const counts = [];
+            const durations = [];
+            for(let i = 7; i < Object.keys(result).length; i++){
+                times.push((i-6)+":00");
+                counts.push(result[i].count)
+                durations.push(result[i].time)
             }
+            for(let i = 0; i < 7; i++){
+                times.push((i-6+24)+":00");
+                counts.push(result[i].count)
+                durations.push(result[i].time)
+
+            }
+            setFrequencyTimes(times);
+            setFrequencyCounts(counts);
+            setFrequencyDuration(durations);
 
 
         })
-    }, [frequencyTimes])
+    }, [])
 
 
     return (
@@ -39,7 +51,22 @@ const Page = () => {
                     <Typography level={"title-md"} textAlign={"center"}  color = {"neutral"}>Frequency per hour</Typography>
                     <BarChart
                         xAxis={[{ data: frequencyTimes }]}
-                        series={[{ data: [1,2,3,4,5,6,7,8,9,10,11,12,12,11,10,9,8,7,6,5,4,3,2,1] }]}
+                        yAxis={[
+                            { id: "left", position: "left" },
+                            { id: "right", position: "right" }
+                        ]}
+                        series={[
+                            {
+                                data: frequencyCounts,
+                                label: "Sessions",
+                                yAxisId: "left"
+                            },
+                            {
+                                data: frequencyDuration,
+                                label: "Total Time",
+                                yAxisId: "right"
+                            }
+                        ]}
                         height={300}
                     />
                 </Card>
