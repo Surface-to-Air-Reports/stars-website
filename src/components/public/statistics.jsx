@@ -8,23 +8,20 @@ import {getFrequencyStats} from '../../utils/getStats'
 const Page = () => {
     const [frequencyData, setFrequencyData] = useState({});
     const [frequencyTimes, setFrequencyTimes] = useState([]);
-    const [frequencyCount, setFrequencyCount] = useState([]);
-    const [frequencyDuration, setFrequencyDuration] = useState([]);
+    // const [frequencyCount, setFrequencyCount] = useState([]);
+    // const [frequencyDuration, setFrequencyDuration] = useState([]);
 
 
     useEffect(() => {
         getFrequencyStats().then(result => {
-            setFrequencyData(result)
+            setFrequencyData(result);
+            for(let i = 0; i < Object.keys(result).length; i++){
+                setFrequencyTimes([...frequencyTimes, (i+1)+":00"]);
+            }
+
+
         })
     }, [])
-
-    useEffect(() => {
-        for(let i = 0; i < Object.keys(frequencyData); i++){
-            setFrequencyTimes(...frequencyTimes, (i+1)+":00");
-        }
-
-    }, [frequencyData])
-
 
 
     return (
