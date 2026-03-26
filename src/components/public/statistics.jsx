@@ -1,11 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
+import {getFrequencyStats} from '../../utils/getStats'
 
 
 
 const Page = () => {
+    const [frequencyData, setFrequencyData] = useState({});
+    const [frequencyTimes, setFrequencyTimes] = useState([]);
+    const [frequencyCount, setFrequencyCount] = useState([]);
+    const [frequencyDuration, setFrequencyDuration] = useState([]);
 
+
+    useEffect(() => {
+        getFrequencyStats().then(result => {
+            setFrequencyData(result)
+        })
+    }, [])
+
+    useEffect(() => {
+        for(let i = 0; i < Object.keys(frequencyData); i++){
+            setFrequencyTimes(...frequencyTimes, (i+1)+":00");
+        }
+
+    }, [frequencyData])
 
 
 
@@ -23,8 +41,7 @@ const Page = () => {
                 sx = {{width: 350}}>
                     <Typography level={"title-md"} textAlign={"center"}  color = {"neutral"}>Frequency per hour</Typography>
                     <BarChart
-                        xAxis={[{ data: ['0:00', '1:00','2:00','3:00','4:00','5:00','6:00','7:00','8:00','9:00','10:00','11:00','12:00',
-                            '13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00',] }]}
+                        xAxis={[{ data: frequencyTimes }]}
                         series={[{ data: [1,2,3,4,5,6,7,8,9,10,11,12,12,11,10,9,8,7,6,5,4,3,2,1] }]}
                         height={300}
                     />
