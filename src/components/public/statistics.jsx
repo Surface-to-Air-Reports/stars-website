@@ -30,8 +30,6 @@ const Page = () => {
             setFrequencyTimes(times);
             setFrequencyCounts(counts);
             setFrequencyDuration(durations);
-
-
         })
     }, [])
 
