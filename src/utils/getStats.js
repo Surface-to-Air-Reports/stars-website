@@ -29,5 +29,18 @@ async function getFrequencyStats() {
     }
 }
 
+async function getAltitudeStats() {
+    const docRef = doc(firestore, "stats", "alts");
+    const docSnap = await getDoc(docRef);
 
-export {getGenStats, getFrequencyStats};
+    if (docSnap.exists()) {
+        console.log(docSnap.data());
+        return(docSnap.data());
+    } else {
+        // docSnap.data() will be undefined in this case
+        console.log("No such document!");
+        return {};
+    }
+}
+
+export {getGenStats, getFrequencyStats, getAltitudeStats};
