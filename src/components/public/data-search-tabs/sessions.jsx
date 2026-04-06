@@ -1,4 +1,4 @@
-import {Chip, Table} from "@mui/joy";
+import {Chip, FormLabel, Table, Input} from "@mui/joy";
 import React, {useEffect, useState} from "react";
 import {secToDurationShort} from "../../../utils/secToDurationShort";
 import {colorScaleInverse, colorScale} from "../../../utils/colorScale";
@@ -7,33 +7,40 @@ import {powerSearchLowSessions} from "../../../utils/powerSearchLowSessions";
 const Sessions = () => {
     const [sessions, setSessions] = useState([]);
 
-    const [callFilter] = useState("");
+    const [callFilter, setCallFilter] = useState("");
 
-    const [altLowFilter] = useState(0);
-    const [altHighFilter] = useState(0);
+    const [altLowFilter, setAltLowFilter] = useState("");
+    const [altHighFilter, setAltHighFilter] = useState("");
 
-    const [durationLowFilter] = useState(0);
-    const [durationHighFilter] = useState(0);
+    const [durationLowFilter, setDurationLowFilter] = useState("");
+    const [durationHighFilter, setDurationHighFilter] = useState("");
+
+    //sort by
+
+    //date from
+    //date to
+
+    //pagination needed
 
     useEffect(() => {
-        powerSearchLowSessions(10, "ssrt", 0, null, null, callFilter, altHighFilter, altLowFilter, durationLowFilter, durationHighFilter).then(result => {setSessions(result)});
+        powerSearchLowSessions(10, callFilter, parseInt(altHighFilter), parseInt(altLowFilter), parseInt(durationLowFilter), parseInt(durationHighFilter)).then(result => {setSessions(result)});
     }, [callFilter, altLowFilter, altHighFilter, durationLowFilter, durationHighFilter]);
 
     return (
         <>
 
-            {/*<FormLabel>Callsign</FormLabel>*/}
-            {/*<Input placeholder={"Callsign"} value={callFilter} onChange={(e) => setCallFilter(e.target.value)}></Input>*/}
-            {/*<br/>*/}
-            {/*<FormLabel>Altitude From</FormLabel>*/}
-            {/*<Input placeholder={"Altitude From"} value={altLowFilter} onChange={(e) => setAltLowFilter(parseInt(e.target.value))}></Input>*/}
-            {/*<FormLabel>Altitude To</FormLabel>*/}
-            {/*<Input placeholder={"Altitude To"} value={altHighFilter} onChange={(e) => setAltHighFilter(parseInt(e.target.value))}></Input>*/}
-            {/*<br/>*/}
-            {/*<FormLabel>Duration From</FormLabel>*/}
-            {/*<Input placeholder={"Duration From"} value={durationLowFilter} onChange={(e) => setDurationLowFilter(parseInt(e.target.value))}></Input>*/}
-            {/*<FormLabel>Duration To</FormLabel>*/}
-            {/*<Input placeholder={"Duration To"} value={durationHighFilter} onChange={(e) => setDurationHighFilter(parseInt(e.target.value))}></Input>*/}
+            <FormLabel>Callsign</FormLabel>
+            <Input placeholder={"Callsign"} value={callFilter} onChange={(e) => setCallFilter(e.target.value)}></Input>
+            <br/>
+            <FormLabel>Altitude From</FormLabel>
+            <Input placeholder={"Altitude From"} value={altLowFilter} onChange={(e) => setAltLowFilter((e.target.value))}></Input>
+            <FormLabel>Altitude To</FormLabel>
+            <Input placeholder={"Altitude To"} value={altHighFilter} onChange={(e) => setAltHighFilter((e.target.value))}></Input>
+            <br/>
+            <FormLabel>Duration From</FormLabel>
+            <Input placeholder={"Duration From"} value={durationLowFilter} onChange={(e) => setDurationLowFilter((e.target.value))}></Input>
+            <FormLabel>Duration To</FormLabel>
+            <Input placeholder={"Duration To"} value={durationHighFilter} onChange={(e) => setDurationHighFilter((e.target.value))}></Input>
 
 
             <Table>
@@ -49,12 +56,12 @@ const Sessions = () => {
             </thead>
             {sessions.map((session) => (
                 <tr>
-                    <td>{session.cs}</td>
-                    <td>{session.ssrt.toDate().toLocaleString({timeZone: "MST"})}</td>
-                    <td><Chip color={colorScaleInverse(session.lalt, 6100, 6000)}>{session.lalt}ft</Chip></td>
-                    <td><Chip color={colorScale(session.sdur, 30, 60)}>{secToDurationShort(session.sdur)}</Chip></td>
-                    <td>{session.own}</td>
-                    <td>{session.at}</td>
+                    <td>{session.callsign}</td>
+                    <td>{session.session_start.toLocaleString({timeZone: "MST"})}</td>
+                    <td><Chip color={colorScaleInverse(session.lowest_altitude, 6100, 6000)}>{session.lowest_altitude}ft</Chip></td>
+                    <td><Chip color={colorScale(session.violating_duration, 30, 60)}>{secToDurationShort(session.violating_duration)}</Chip></td>
+                    <td>{session.owner}</td>
+                    <td>{session.aircraft_type}</td>
                 </tr>
 
             ))}

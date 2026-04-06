@@ -25,7 +25,7 @@ const Planes = () => {
             </thead>
             {planes.map((plane)=> (
                 <tr>
-                    <td>{plane.docid}</td>
+                    <td>{plane.callsign}</td>
                     <td><Chip color={colorScaleInverse(plane.lowest_altitude, 6100, 6000)}>{plane.lowest_altitude}ft</Chip></td>
                     <td><Chip color={colorScale(plane.total_violated_seconds, 10000, 14000)}>{secToDurationShort(plane.total_violated_seconds)}</Chip></td>
                     <td>{plane.owner_name}</td>
