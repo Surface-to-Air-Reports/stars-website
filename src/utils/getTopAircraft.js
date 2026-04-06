@@ -1,26 +1,22 @@
-import {firestore} from "./firebase.js";
-import { getDocs, collection, orderBy, limit, query } from "firebase/firestore";
+import { API_BASE_URL } from "./api.js";
 
 async function getTopAircraft(number) {
+    const res = await fetch(
+        `${API_BASE_URL}/aircraft?sort_by=total_violated_seconds&order=desc&page_size=${number}`
+    );
+    const json = await res.json();
 
-    // establish the collection to query
-    const aircraft = collection(firestore, "aircraft");
+    const top = json.data.map((row) => ({
+        callsign: row.callsign,
+        lowest_altitude: row.lowest_altitude,
+        total_violated_seconds: row.total_violated_seconds,
+        owner_name: row.owner,
+        type: row.aircraft_type,
+        session_count: row.session_count,
+    }));
 
-    // establish what we are querying and how we are querying it.
-    const que = query(aircraft, orderBy("total_violated_seconds", "desc"), limit(number));
-
-    // run query
-
-    const snap = await getDocs(que);
-
-    const top = snap.docs.map(doc => ({
-        docid: doc.id,
-        ...doc.data()
-    }))
-
-    console.log(top)
+    console.log(top);
     return top;
-
 }
 
-export {getTopAircraft}
+export { getTopAircraft };

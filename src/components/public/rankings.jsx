@@ -41,7 +41,7 @@ const Page = () => {
                     {aircraft[2] ? (
                         <>
                             <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[2]?.docid || "Loading..."}
+                                {aircraft[2]?.callsign || "Loading..."}
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[2]?.owner_name || "Loading..."}
@@ -67,7 +67,7 @@ const Page = () => {
                     {aircraft[0] ? (
                         <>
                             <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[0]?.docid || "Loading..."}
+                                {aircraft[0]?.callsign || "Loading..."}
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[0]?.owner_name || "Loading..."}
@@ -93,7 +93,7 @@ const Page = () => {
                     {aircraft[1] ? (
                         <>
                             <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[1]?.docid || "Loading..."}
+                                {aircraft[1]?.callsign || "Loading..."}
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[1]?.owner_name || "Loading..."}

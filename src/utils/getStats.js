@@ -1,46 +1,24 @@
-import {firestore} from "./firebase.js";
-import { doc, getDoc } from "firebase/firestore";
+import { API_BASE_URL } from "./api.js";
+
+async function fetchStats(field) {
+    const res = await fetch(`${API_BASE_URL}/stats?fields=${field}`);
+    const data = await res.json();
+    console.log(data);
+    return data[field];
+}
 
 async function getGenStats() {
-    const docRef = doc(firestore, "stats", "general");
-    const docSnap = await getDoc(docRef);
-
-    if (docSnap.exists()) {
-        console.log(docSnap.data());
-        return(docSnap.data());
-    } else {
-        // docSnap.data() will be undefined in this case
-        console.log("No such document!");
-        return {lowtime: 0};
-    }
+    const res = await fetch(`${API_BASE_URL}/stats?fields=total_violated_seconds&fields=last_updated`);
+    const data = await res.json();
+    return { lowtime: data["total_violated_seconds"], lastUpdated: data["last_updated"] };
 }
 
 async function getFrequencyStats() {
-    const docRef = doc(firestore, "stats", "times");
-    const docSnap = await getDoc(docRef);
-
-    if (docSnap.exists()) {
-        console.log(docSnap.data());
-        return(docSnap.data());
-    } else {
-        // docSnap.data() will be undefined in this case
-        console.log("No such document!");
-        return {};
-    }
+    return fetchStats("hourly_violations");
 }
 
 async function getAltitudeStats() {
-    const docRef = doc(firestore, "stats", "alts");
-    const docSnap = await getDoc(docRef);
-
-    if (docSnap.exists()) {
-        console.log(docSnap.data());
-        return(docSnap.data());
-    } else {
-        // docSnap.data() will be undefined in this case
-        console.log("No such document!");
-        return {};
-    }
+    return fetchStats("altitude_violations");
 }
 
-export {getGenStats, getFrequencyStats, getAltitudeStats};
+export { getGenStats, getFrequencyStats, getAltitudeStats };

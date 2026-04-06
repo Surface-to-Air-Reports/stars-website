@@ -26,8 +26,8 @@ const Owners = () => {
                     <td>{owner.name}</td>
                     <td><Chip color={colorScale(owner.total_violated_seconds, 60000, 72000)}>{secToDurationShort(owner.total_violated_seconds)}</Chip></td>
                     <td>
-                        {owner.aircraft_refs.map((craft) => (
-                            <Chip>{craft.path.slice(9)}</Chip>
+                        {owner.callsigns.map((cs) => (
+                            <Chip>{cs}</Chip>
                         ))}
                     </td>
                 </tr>
