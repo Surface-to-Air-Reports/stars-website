@@ -20,13 +20,13 @@ const Page = () => {
             const durations = [];
             for(let i = 7; i < Object.keys(result).length; i++){
                 times.push((i-6)+":00");
-                counts.push(result[i].count)
-                durations.push(result[i].time)
+                counts.push(result[i].unique_planes)
+                durations.push(result[i].total_violated_seconds)
             }
             for(let i = 0; i < 7; i++){
                 times.push((i-6+24)+":00");
-                counts.push(result[i].count)
-                durations.push(result[i].time)
+                counts.push(result[i].unique_planes)
+                durations.push(result[i].total_violated_seconds)
 
             }
             setFrequencyTimes(times);
@@ -44,8 +44,8 @@ const Page = () => {
             const durations = [];
             for(let key in result){
                 brackets.push(key);
-                counts.push(result[key].count)
-                durations.push(result[key].time)
+                counts.push(result[key].unique_planes)
+                durations.push(result[key].total_violated_seconds)
             }
             setAltitudeBrackets(brackets);
             setAltitudeCounts(counts);
