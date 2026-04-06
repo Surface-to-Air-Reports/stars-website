@@ -2,7 +2,7 @@ import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './components/public/home';
 import About from './components/public/about';
 import AffectedAreas from './components/public/affected-areas';
-import Blog from './components/public/blog';
+// import Blog from './components/public/blog';
 import TermsOfUse from './components/public/terms-of-use';
 import DataSearch from './components/public/data-search';
 import FileReport from './components/public/file-report';
@@ -35,7 +35,7 @@ function App() {
                                 <Route path="/" element={<Home/>}/>
                                 <Route path="/about" element={<About/>}/>
                                 <Route path="/affected-areas" element={<AffectedAreas/>}/>
-                                <Route path="/blog" element={<Blog/>}/>
+                                {/* <Route path="/blog" element={<Blog/>}/>  */}
                                 <Route path="/data-search" element={<DataSearch/>}/>
                                 <Route path="/file-report" element={<FileReport/>}/>
                                 <Route path="/methodology" element={<Methodology/>}/>

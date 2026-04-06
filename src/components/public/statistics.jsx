@@ -1,12 +1,63 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
+import {getFrequencyStats, getAltitudeStats} from '../../utils/getStats'
 
 
 
 const Page = () => {
+    const [frequencyTimes, setFrequencyTimes] = useState([]);
+    const [frequencyCounts, setFrequencyCounts] = useState([]);
+    const [frequencyDuration, setFrequencyDuration] = useState([]);
+    const [altitudeBrackets, setAltitudeBrackets] = useState([]);
+    const [altitudeCounts, setAltitudeCounts] = useState([]);
+    const [altitudeDuration, setAltitudeDuration] = useState([]);
+
+    useEffect(() => {
+        getFrequencyStats().then(result => {
+            const times = [];
+            const counts = [];
+            const durations = [];
+            for(let i = 7; i < Object.keys(result).length; i++){
+                times.push((i-6)+":00");
+                counts.push(result[i].count)
+                durations.push(result[i].time)
+            }
+            for(let i = 0; i < 7; i++){
+                times.push((i-6+24)+":00");
+                counts.push(result[i].count)
+                durations.push(result[i].time)
+
+            }
+            setFrequencyTimes(times);
+            setFrequencyCounts(counts);
+            setFrequencyDuration(durations);
+        })
+    }, [])
 
 
+        useEffect(() => {
+        getAltitudeStats().then(result => {
+            console.log(result);
+            const brackets = [];
+            const counts = [];
+            const durations = [];
+            for(let key in result){
+                brackets.push(key);
+                counts.push(result[key].count)
+                durations.push(result[key].time)
+            }
+            setAltitudeBrackets(brackets);
+            setAltitudeCounts(counts);
+            setAltitudeDuration(durations);
+        })
+    }, [])
+
+    useEffect(() => {
+        console.log(altitudeBrackets)
+        console.log(altitudeCounts)
+        console.log(altitudeDuration)
+    }, [altitudeBrackets, altitudeCounts, altitudeDuration])
 
 
     return (
@@ -23,9 +74,23 @@ const Page = () => {
                 sx = {{width: 350}}>
                     <Typography level={"title-md"} textAlign={"center"}  color = {"neutral"}>Frequency per hour</Typography>
                     <BarChart
-                        xAxis={[{ data: ['0:00', '1:00','2:00','3:00','4:00','5:00','6:00','7:00','8:00','9:00','10:00','11:00','12:00',
-                            '13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00',] }]}
-                        series={[{ data: [1,2,3,4,5,6,7,8,9,10,11,12,12,11,10,9,8,7,6,5,4,3,2,1] }]}
+                        xAxis={[{ data: frequencyTimes }]}
+                        yAxis={[
+                            { id: "left", position: "left" },
+                            { id: "right", position: "right" }
+                        ]}
+                        series={[
+                            {
+                                data: frequencyCounts,
+                                label: "Sessions",
+                                yAxisId: "left"
+                            },
+                            {
+                                data: frequencyDuration,
+                                label: "Total Time",
+                                yAxisId: "right"
+                            }
+                        ]}
                         height={300}
                     />
                 </Card>
@@ -34,11 +99,27 @@ const Page = () => {
                 sx = {{width: 350}}>
                     <Typography level={"title-md"} textAlign={"center"}  color = {"neutral"}>Aircraft Altitudes</Typography>
                     <BarChart
-                        layout = 'horizontal'
-                        yAxis={[{ data: ['450-500','400-450','350-400','300-350','250-300','200-250','150-200','100-150','50-100','0-50'] }]}
-                        series={[{ data: [50,45,40,35,30,25,20,15,10,5] }]}
+                        xAxis={[{ data: altitudeBrackets }]}
+                        yAxis={[
+                            { id: "left", position: "left" },
+                            { id: "right", position: "right" }
+                        ]}
+                        series={[
+                            {
+                                data: altitudeCounts,
+                                label: "Sessions",
+                                yAxisId: "left"
+                            },
+                            {
+                                data: altitudeDuration,
+                                label: "Total Time",
+                                yAxisId: "right"
+                            }
+                        ]}
                         height={300}
-                    />
+                    />                        
+                    
+
                 </Card>
                 <Card 
                 variant = 'soft'
