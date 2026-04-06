@@ -23,7 +23,7 @@ const Sessions = () => {
     //pagination needed
 
     useEffect(() => {
-        powerSearchLowSessions(10, "ssrt", 0, null, null, callFilter, parseInt(altHighFilter), parseInt(altLowFilter), parseInt(durationLowFilter), parseInt(durationHighFilter)).then(result => {setSessions(result)});
+        powerSearchLowSessions(10, callFilter, parseInt(altHighFilter), parseInt(altLowFilter), parseInt(durationLowFilter), parseInt(durationHighFilter)).then(result => {setSessions(result)});
     }, [callFilter, altLowFilter, altHighFilter, durationLowFilter, durationHighFilter]);
 
     return (
@@ -56,12 +56,12 @@ const Sessions = () => {
             </thead>
             {sessions.map((session) => (
                 <tr>
-                    <td>{session.cs}</td>
-                    <td>{session.ssrt.toDate().toLocaleString({timeZone: "MST"})}</td>
-                    <td><Chip color={colorScaleInverse(session.lalt, 6100, 6000)}>{session.lalt}ft</Chip></td>
-                    <td><Chip color={colorScale(session.sdur, 30, 60)}>{secToDurationShort(session.sdur)}</Chip></td>
-                    <td>{session.own}</td>
-                    <td>{session.at}</td>
+                    <td>{session.callsign}</td>
+                    <td>{session.session_start.toLocaleString({timeZone: "MST"})}</td>
+                    <td><Chip color={colorScaleInverse(session.lowest_altitude, 6100, 6000)}>{session.lowest_altitude}ft</Chip></td>
+                    <td><Chip color={colorScale(session.violating_duration, 30, 60)}>{secToDurationShort(session.violating_duration)}</Chip></td>
+                    <td>{session.owner}</td>
+                    <td>{session.aircraft_type}</td>
                 </tr>
 
             ))}
