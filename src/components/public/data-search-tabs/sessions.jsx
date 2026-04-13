@@ -11,7 +11,7 @@ import dayjs from 'dayjs';
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../../utils/muitheme";
 
-const Sessions = () => {
+const Sessions = ({typ, id}) => {
     const [sessions, setSessions] = useState([]);
 
     const [callFilter, setCallFilter] = useState("");
@@ -32,9 +32,15 @@ const Sessions = () => {
     const [totalPages, setTotalPages] = useState(1);
     const [loading, setLoading] = useState(false);
 
-
+    useEffect(() => {
+        if (typ === "t" && id) {
+            setCallFilter(id);
+        }
+    }, [typ, id]);
 
     useEffect(() => {
+        let active = true;
+
         setLoading(true);
         powerSearchLowSessions(
             pageSize,
@@ -48,10 +54,16 @@ const Sessions = () => {
             sort,
             page,
         ).then((result) => {
+            if (!active) return;
+
             setSessions(result.top);
             setTotalPages(result.total);
             setLoading(false);
         });
+
+        return () => {
+            active = false;
+        };
     }, [callFilter, altLowFilter, altHighFilter, durationLowFilter, durationHighFilter, dateTo, dateFrom, sort, page, pageSize]);
 
     return (
