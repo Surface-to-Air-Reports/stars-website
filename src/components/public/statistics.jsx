@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Box, Typography, Card, Divider} from "@mui/joy";
 import { BarChart } from '@mui/x-charts/BarChart';
-import {getFrequencyStats, getAltitudeStats} from '../../utils/getStats'
+import {getFrequencyStats, getAltitudeStats, getTopAircraft} from '../../utils/getStats'
+import {secToDurationShort} from '../../utils/secToDurationShort'
 
 
 
@@ -12,6 +13,25 @@ const Page = () => {
     const [altitudeBrackets, setAltitudeBrackets] = useState([]);
     const [altitudeCounts, setAltitudeCounts] = useState([]);
     const [altitudeDuration, setAltitudeDuration] = useState([]);
+    const [aircraftRankings, setAircraftRankings] = useState([])
+
+    useEffect(() => {
+        getTopAircraft(5).then(res => {
+            const callsigns = [];
+            const airtimes = [];
+            const top = [];
+            for(let i = 0; i < res.length;  i++){
+                const tmp = {};
+                callsigns.push(res[i].callsign);
+                airtimes.push(res[i].total_violated_seconds);
+                tmp.callsign = callsigns[i];
+                tmp.airtime = airtimes[i];
+                top.push(tmp);
+            }
+            setAircraftRankings(top);
+        });
+        
+    }, [])
 
     useEffect(() => {
         getFrequencyStats().then(result => {
@@ -61,7 +81,7 @@ const Page = () => {
 
 
     return (
-        <Box sx={{display: "flex", flexDirection: "column", gap : '2.5rem', alignItems: 'center'}}>
+        <Box sx={{display: "flex", flexDirection: "column", gap : '1.5rem', alignItems: 'center'}}>
             <Typography level={"h1"}>Statistics</Typography>
             <Typography level={"h2"} textAlign={"center"} sx = {{fontSize : "100px"}}>861</Typography>
             <Typography level={"h3"} textAlign={"center"}  color = {"neutral"}>Planes recorded at low altitudes</Typography>
@@ -117,6 +137,16 @@ const Page = () => {
                             }
                         ]}
                         height={300}
+                        slotProps={{
+                            tooltip: {
+                                sx: {
+                                    '& .MuiChartsTooltip-root': {
+                                        backgroundColor: 'white',
+                                        opacity: 1,
+                                    }
+                                }
+                            }
+                        }}
                     />                        
                     
 
@@ -127,8 +157,12 @@ const Page = () => {
                     <Typography level={"title-md"} textAlign={"center"}  color = {"neutral"}>Frequent Fliers</Typography>
                     <BarChart
                         layout = 'horizontal'
-                        yAxis={[{ data: ['N256SF','N738BJ','N65584','Joe','Mama'] }]}
-                        series={[{ data: [180, 162, 156, 130, 100] }]}
+                        dataset = {aircraftRankings}
+                        xAxis ={[{
+                            label : 'Time'
+                        }]}
+                        yAxis={[{ dataKey: 'callsign' }]}
+                        series={[{ dataKey: 'airtime', valueFormatter: secToDurationShort }]}
                         height={300}
                     />
                 </Card>
