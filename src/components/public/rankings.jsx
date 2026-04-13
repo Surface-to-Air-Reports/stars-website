@@ -15,7 +15,7 @@ const Page = () => {
             <Box sx = {{bgcolor: 'background.level1'}}>
                 <Box sx = {{display : 'flex', flexDirection : 'column', alignItems : 'center', gap : '1.5rem', py : '5rem'}}>
                     <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Check out this weeks</Typography>
-                    <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>RANKINGS</Typography>
+                    <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>Rankings</Typography>
                     {/*<Box sx={{display: 'flex', flexDirection: 'row', gap : '.5rem'}}>*/}
                     {/*    <Button*/}
                     {/*        color={"neutral"}*/}
@@ -37,33 +37,49 @@ const Page = () => {
                 alignItems : 'flex-end',
                 gap : '1rem',
                 flexDirection : 'row'}}>
-                <Card sx = {{alignItems : 'center', width : 300, height : 200, background : '#804a00'}}>
-                    {aircraft[2] ? (
-                        <>
+                <Box>
+                    
+                    <Card 
+                        sx = {{
+                            alignItems : 'center',
+                            width : 300,
+                            height : 200,
+                            bgcolor: 'background.level1',
+                        }}>
+                        {aircraft[2] ? (
+                            <>
+                                <Typography sx = {{alignText : 'center'}}>
+                                    {aircraft[2]?.callsign || "Loading..."}
+                                </Typography>
+                                <Typography sx = {{alignText : 'center'}}>
+                                    {aircraft[2]?.owner_name || "Loading..."}
+                                </Typography>
+                                <Typography sx = {{alignText : 'center'}}>
+                                    {aircraft[2]?.lowest_altitude || "Loading..."}ft
+                                </Typography>
+                                <Typography sx = {{alignText : 'center'}}>
+                                    {secToDuration(aircraft[2]?.total_violated_seconds || 0)}
+                                </Typography>
+                                <Typography sx = {{alignText : 'center'}}>
+                                    {aircraft[2]?.type || "Loading..."}
+                                </Typography>
+                            </>
+                        ) : (
                             <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[2]?.callsign || "Loading..."}
+                                Loading...
                             </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[2]?.owner_name || "Loading..."}
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[2]?.lowest_altitude || "Loading..."}ft
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {secToDuration(aircraft[2]?.total_violated_seconds || 0)}
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[2]?.type || "Loading..."}
-                            </Typography>
-                        </>
-                    ) : (
-                        <Typography sx = {{alignText : 'center'}}>
-                            Loading...
-                        </Typography>
 
-                    )}
-                </Card>
-                <Card sx = {{alignItems : 'center', width : 300, height : 500, background : '#a57c00'}}>
+                        )}
+                    </Card>
+                </Box>
+                <Card 
+                    sx = {{
+                        alignItems : 'center',
+                        width : 300,
+                        height : 500,
+                        bgcolor: 'background.level1'
+                    }}>
+                    
                     {aircraft[0] ? (
                         <>
                             <Typography sx = {{alignText : 'center'}}>
@@ -89,7 +105,15 @@ const Page = () => {
 
                     )}
                 </Card>
-                <Card sx = {{alignItems : 'center', width : 300, height : 300, background : '#71706e'}}>
+                <Card
+
+                    sx = {{
+                        alignItems : 'center',
+                        width : 300,
+                        height : 300,
+                        bgcolor: 'background.level1'
+                    }}>
+                    
                     {aircraft[1] ? (
                         <>
                             <Typography sx = {{alignText : 'center'}}>
