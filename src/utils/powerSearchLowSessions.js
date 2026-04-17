@@ -1,6 +1,6 @@
 import { API_BASE_URL } from "./api.js";
 
-async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, dur_from, dur_to) {
+async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, dur_from, dur_to, date_start, date_end, sort, page) {
     const params = new URLSearchParams();
     params.set("page_size", maxReturn);
     params.set("sort_by", "session_start");
@@ -21,6 +21,25 @@ async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, 
     if (dur_to && dur_to !== 0) {
         params.set("max_duration", dur_to);
     }
+    if (sort && sort !== "") {
+        params.set("sort_by", sort);
+        if (sort === "violating_duration_seconds") {
+            params.set("order", "desc");
+        }
+        if (sort === "lowest_altitude") {
+            params.set("order", "asc");
+        }
+        if (sort === "session_start") {
+            params.set("order", "desc");
+        }
+    }
+
+    if (page && page !== 0) {
+        params.set("page", page);
+    }
+
+    params.set("time_start", date_start);
+    params.set("time_end", date_end);
 
     console.log("powerSearch params:", Object.fromEntries(params));
 
@@ -37,8 +56,8 @@ async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, 
         pings: row.pings,
     }));
 
-    console.log(top);
-    return top;
+    console.log(json);
+    return {"top": top, "total": json["total_pages"], "totalSessions": json["total_results"]};
 }
 
 export { powerSearchLowSessions };
