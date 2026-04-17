@@ -37,6 +37,7 @@ function App() {
                                 <Route path="/affected-areas" element={<AffectedAreas/>}/>
                                 {/* <Route path="/blog" element={<Blog/>}/>  */}
                                 <Route path="/data-search" element={<DataSearch/>}/>
+                                <Route path="/data-search/:tab/:typ/:fil" element={<DataSearch/>}/>
                                 <Route path="/file-report" element={<FileReport/>}/>
                                 <Route path="/methodology" element={<Methodology/>}/>
                                 <Route path="/statistics" element={<Statistics/>}/>
