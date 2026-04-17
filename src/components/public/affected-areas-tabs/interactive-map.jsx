@@ -67,8 +67,8 @@ const InteractiveMap = ({ isVisible }) => {
     setSessions([]);
 
     try {
-        const startIso = `${selectedDate}T00:00:00Z`;
-        const endIso = `${selectedDate}T23:59:59Z`;
+        const startIso = `${selectedDate}T00:00:00`;
+        const endIso   = `${selectedDate}T23:59:59`;
 
         const url = `${API_BASE}/sessions?time_start=${encodeURIComponent(startIso)}&time_end=${encodeURIComponent(endIso)}&page_size=50&sort_by=session_start&order=asc`;
         
