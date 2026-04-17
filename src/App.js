@@ -13,7 +13,7 @@ import Header from "./components/reusable/header";
 import Footer from "./components/reusable/footer";
 import Notfound from "./components/public/notfound";
 import PrivacyPolicy from './components/public/privacy-policy';
-
+import 'leaflet/dist/leaflet.css';
 import {Box, CssBaseline, CssVarsProvider} from "@mui/joy";
 
 import { extendTheme } from '@mui/joy/styles';
@@ -37,6 +37,7 @@ function App() {
                                 <Route path="/affected-areas" element={<AffectedAreas/>}/>
                                 {/* <Route path="/blog" element={<Blog/>}/>  */}
                                 <Route path="/data-search" element={<DataSearch/>}/>
+                                <Route path="/data-search/:tab/:typ/:fil" element={<DataSearch/>}/>
                                 <Route path="/file-report" element={<FileReport/>}/>
                                 <Route path="/methodology" element={<Methodology/>}/>
                                 <Route path="/statistics" element={<Statistics/>}/>
