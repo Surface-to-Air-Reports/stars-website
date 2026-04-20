@@ -59,45 +59,58 @@ const InteractiveMap = ({ isVisible }) => {
     const playRef = useRef(null);
 
     const fetchSessions = async () => {
-    if (!selectedDate) return;
+        if (!selectedDate) return;
 
-    setLoading(true);
-    setError(null);
-    setIsPlaying(false);
-    setSessions([]);
+        setLoading(true);
+        setError(null);
+        setIsPlaying(false);
+        setSessions([]);
 
-    try {
-        const startIso = `${selectedDate}T00:00:00`;
-        const endIso   = `${selectedDate}T23:59:59`;
+        try {
+            const startIso = `${selectedDate}T00:00:00`;
+            const endIso   = `${selectedDate}T23:59:59`;
 
-        const url = `${API_BASE}/sessions?time_start=${encodeURIComponent(startIso)}&time_end=${encodeURIComponent(endIso)}&page_size=50&sort_by=session_start&order=asc`;
-        
-        const res = await fetch(url, {
-            headers: { 'accept': 'application/json' }
-        });
+            let allSessions = [];
+            let page = 1;
+            let hasMore = true;
 
-        // bad stuff happened
-        if (!res.ok) throw new Error(`API error: ${res.status}`);
-        const json = await res.json();
+            while (hasMore) {
+                const url = `${API_BASE}/sessions?time_start=${encodeURIComponent(startIso)}&time_end=${encodeURIComponent(endIso)}&page_size=50&page=${page}&sort_by=session_start&order=asc`;
 
-        // set data
-        setSessions(json.data || []);
+                const res = await fetch(url, {
+                    headers: { 'accept': 'application/json' }
+                });
 
-        // sliders range
-        const startTs = new Date(startIso).getTime() / 1000;
-        const endTs = new Date(endIso).getTime() / 1000;
-        
-        setDayStart(startTs);
-        setDayEnd(endTs);
-        setCurrentTime(startTs);
+                if (!res.ok) throw new Error(`API error: ${res.status}`);
+                const json = await res.json();
 
-    } catch (err) {
-        setError(err.message);
-    } finally {
-        setLoading(false);
-    }
-};
+                const pageData = json.data || [];
+                allSessions = [...allSessions, ...pageData];
 
+                // Stop if we got fewer results than the page size,
+                // or if the API tells us there are no more pages
+                if (pageData.length < 50 || (json.total && allSessions.length >= json.total)) {
+                    hasMore = false;
+                } else {
+                    page++;
+                }
+            }
+
+            setSessions(allSessions);
+
+            const startTs = new Date(startIso).getTime() / 1000;
+            const endTs   = new Date(endIso).getTime() / 1000;
+
+            setDayStart(startTs);
+            setDayEnd(endTs);
+            setCurrentTime(startTs);
+
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+        }
+    };
     useEffect(() => {
         if (isPlaying) {
             playRef.current = setInterval(() => {setCurrentTime(prev => {
@@ -158,7 +171,6 @@ const InteractiveMap = ({ isVisible }) => {
 
     return (
         <Box sx={{ display: "flex", flexDirection: "column", gap: '2rem', alignItems: 'center', width: '100%' }}>
-            <Typography level={"h2"} textAlign={"center"} color={"neutral"}>Flight Tracker</Typography>
 
             {/*Date Picker*/}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
