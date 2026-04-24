@@ -1,15 +1,14 @@
 import { API_BASE_URL } from "./api.js";
+import { cachedFetch } from "./cachedFetch.js";
 
 async function fetchStats(field) {
-    const res = await fetch(`${API_BASE_URL}/stats?fields=${field}`);
-    const data = await res.json();
+    const data = await cachedFetch(`${API_BASE_URL}/stats?fields=${field}`);
     console.log(data);
     return data[field];
 }
 
 async function getGenStats() {
-    const res = await fetch(`${API_BASE_URL}/stats?fields=total_violated_seconds&fields=last_updated`);
-    const data = await res.json();
+    const data = await cachedFetch(`${API_BASE_URL}/stats?fields=total_violated_seconds&fields=last_updated`);
     return { lowtime: data["total_violated_seconds"], lastUpdated: data["last_updated"] };
 }
 
@@ -22,10 +21,9 @@ async function getAltitudeStats() {
 }
 
 async function getTopAircraft(number) {
-    const res = await fetch(
+    const json = await cachedFetch(
         `${API_BASE_URL}/aircraft?sort_by=total_violated_seconds&order=desc&page_size=${number}`
     );
-    const json = await res.json();
 
     const top = json.data.map((row) => ({
         callsign: row.callsign,

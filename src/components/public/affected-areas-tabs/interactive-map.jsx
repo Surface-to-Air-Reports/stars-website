@@ -3,8 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import { Box, Typography, Button, Slider, CircularProgress } from "@mui/joy";
 import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-
-const API_BASE = 'https://api.stars80027.com';
+import { getSessionsByDate } from '../../../utils/getSessionsByDate.js';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -67,40 +66,9 @@ const InteractiveMap = ({ isVisible }) => {
         setSessions([]);
 
         try {
-            const startIso = `${selectedDate}T00:00:00`;
-            const endIso   = `${selectedDate}T23:59:59`;
-
-            let allSessions = [];
-            let page = 1;
-            let hasMore = true;
-
-            while (hasMore) {
-                const url = `${API_BASE}/sessions?time_start=${encodeURIComponent(startIso)}&time_end=${encodeURIComponent(endIso)}&page_size=50&page=${page}&sort_by=session_start&order=asc`;
-
-                const res = await fetch(url, {
-                    headers: { 'accept': 'application/json' }
-                });
-
-                if (!res.ok) throw new Error(`API error: ${res.status}`);
-                const json = await res.json();
-
-                const pageData = json.data || [];
-                allSessions = [...allSessions, ...pageData];
-
-                // Stop if we got fewer results than the page size,
-                // or if the API tells us there are no more pages
-                if (pageData.length < 50 || (json.total && allSessions.length >= json.total)) {
-                    hasMore = false;
-                } else {
-                    page++;
-                }
-            }
+            const { sessions: allSessions, startTs, endTs } = await getSessionsByDate(selectedDate);
 
             setSessions(allSessions);
-
-            const startTs = new Date(startIso).getTime() / 1000;
-            const endTs   = new Date(endIso).getTime() / 1000;
-
             setDayStart(startTs);
             setDayEnd(endTs);
             setCurrentTime(startTs);
