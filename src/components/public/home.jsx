@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {Box, Button, Typography, Tooltip} from "@mui/joy";
+import {Link, Box, Button, Typography, Tooltip} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 import {getGenStats} from "../../utils/getStats";
 import {secToDurationShort} from "../../utils/secToDurationShort";
+import OpenInNew from '@mui/icons-material/OpenInNew';
 
 const Page = () => {
     const navigate = useNavigate();
@@ -44,8 +45,12 @@ const Page = () => {
                 <Box sx={{display: 'flex', flexDirection: 'row', gap: '1rem'}}>
                     <Button
                         color={"neutral"}
-                        onClick={() => navigate("/file-report")}>
-                        File a complaint
+                        component = "a"
+                        href = "https://ancir.faa.gov/ancir?id=ancir_sc_cat_item&sys_id=6149ade187a1f550b0d987b9cebb357e"
+                        target = "_blank"
+                        startDecorator={<OpenInNew />}
+                        >
+                        File a Report
                     </Button>
                     <Button
                         color={"neutral"}
