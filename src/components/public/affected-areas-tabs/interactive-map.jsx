@@ -31,7 +31,7 @@
                         border: '1px solid var(--joy-palette-neutral-outlinedBorder)',
                         borderRadius: '6px',
                         cursor: 'pointer',
-                        fontSize: '26px',
+                        fontSize: '26px',       
                         fontWeight: 'bold',
                         color: 'var(--joy-palette-neutral-outlinedColor)',
                 }}>
@@ -211,6 +211,7 @@
                         onClick={fetchSessions} 
                         disabled={!selectedDate || loading}
                         size="sm"
+                        color= 'neutral'
                     >
                         Load Flights
                     </Button>
@@ -236,6 +237,7 @@
                             <Button
                                 size="sm"
                                 variant="outlined"
+                                color = 'neutral'
                                 onClick={() => setIsPlaying(p => !p)}
                             >
                                 {isPlaying ? 'Pause' : 'Play'}
