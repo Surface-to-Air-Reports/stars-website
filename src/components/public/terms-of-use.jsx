@@ -76,7 +76,7 @@ export default function TermsOfUse() {
               Users may share and adapt the data for non-commercial purposes.
             </ListItem>
             <ListItem>
-              Public use must provide clear attribution to [Project Name].
+              Public use must provide clear attribution to Surface to Air Reports.
             </ListItem>
             <ListItem>
               Commercial redistribution or resale is not permitted without
