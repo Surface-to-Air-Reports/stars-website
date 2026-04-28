@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, Box, Button, Typography, Tooltip} from "@mui/joy";
+import {Box, Button, Typography, Tooltip} from "@mui/joy";
 import {useNavigate} from "react-router-dom";
 import {getGenStats} from "../../utils/getStats";
 import {secToDurationShort} from "../../utils/secToDurationShort";
