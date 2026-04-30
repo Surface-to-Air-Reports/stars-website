@@ -47,7 +47,8 @@ const Header = () => {
                 <Link onClick={() => navigate("/rankings")} color = {"neutral"}>Rankings</Link>
                 <Link onClick={() => navigate("/statistics")} color = {"neutral"}>Statistics</Link>
                 <Link onClick={() => navigate("/affected-areas")} color = {"neutral"}>Affected Areas</Link>
-                <Link onClick={() => navigate("/file-report")} color = {"neutral"}>File a Report</Link>
+                <Link href="https://ancir.faa.gov/ancir?id=ancir_sc_cat_item&sys_id=6149ade187a1f550b0d987b9cebb357e"
+          target="_blank" color = {"neutral"}>File a Report</Link>
                 <ModeToggle sx={{ ml: 'auto' }} />
             </Box>
         </Box>
