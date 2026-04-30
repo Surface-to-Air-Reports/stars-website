@@ -66,9 +66,9 @@ export default function TermsOfUse() {
             5. License and Attribution
           </Typography>
           <Typography sx={{ mb: 2 }}>
-            Unless otherwise stated, datasets made available through this
-            platform are licensed under a Creative Commons Attribution-
-            NonCommercial 4.0 International (CC BY-NC 4.0) license.
+            Unless otherwise stated, all content made available through this
+            platform is licensed under the GNU Affero General Public License
+            v3.0 (AGPL-3.0).
           </Typography>
 
           <List>
@@ -76,7 +76,7 @@ export default function TermsOfUse() {
               Users may share and adapt the data for non-commercial purposes.
             </ListItem>
             <ListItem>
-              Public use must provide clear attribution to [Project Name].
+              Public use must provide clear attribution to Surface to Air Reports.
             </ListItem>
             <ListItem>
               Commercial redistribution or resale is not permitted without
