@@ -1,10 +1,10 @@
 import { API_BASE_URL } from "./api.js";
+import { cachedFetch } from "./cachedFetch.js";
 
 async function getTopOwners(number) {
-    const res = await fetch(
+    const json = await cachedFetch(
         `${API_BASE_URL}/owners?sort_by=total_violated_seconds&order=desc&page_size=${number}`
     );
-    const json = await res.json();
 
     const top = json.data.map((row) => ({
         name: row.name,

@@ -1,4 +1,5 @@
 import { API_BASE_URL } from "./api.js";
+import { cachedFetch } from "./cachedFetch.js";
 
 async function powerSearchPlanes(maxReturn, sort, page, owner) {
     const params = new URLSearchParams();
@@ -26,8 +27,7 @@ async function powerSearchPlanes(maxReturn, sort, page, owner) {
 
     console.log("powerSearch params:", Object.fromEntries(params));
 
-    const res = await fetch(`${API_BASE_URL}/aircraft?${params.toString()}`);
-    const json = await res.json();
+    const json = await cachedFetch(`${API_BASE_URL}/aircraft?${params.toString()}`);
 
     const top = json.data.map((row) => ({
         callsign: row.callsign,
