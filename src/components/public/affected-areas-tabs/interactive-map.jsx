@@ -1,77 +1,128 @@
-import React, { useEffect, useRef, useState } from 'react';
-import 'leaflet/dist/leaflet.css';
-import { Box, Typography, Button, Slider, CircularProgress } from "@mui/joy";
-import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-leaflet';
-import L from 'leaflet';
-import { getSessionsByDate } from '../../../utils/getSessionsByDate.js';
+    import React, { useEffect, useRef, useState } from 'react';
+    import { useColorScheme } from '@mui/joy';
+    import 'leaflet/dist/leaflet.css';
+    import { Box, Typography, Button, Slider, CircularProgress } from "@mui/joy";
+    import { MapContainer, TileLayer, Polyline, Marker, Popup, useMap } from 'react-leaflet';
+    import L from 'leaflet';
 
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-    iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
-    iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
-});
+    const API_BASE = 'https://api.stars80027.com';
 
-const ResizeMap = ({ isVisible }) => {
-    const map = useMap();
-    useEffect(() => {
-        if (isVisible) {
-            setTimeout(() => map.invalidateSize(), 100);
-        }
-    }, [isVisible, map]);
-    return null;
-};
+    delete L.Icon.Default.prototype._getIconUrl;
+    L.Icon.Default.mergeOptions({
+        iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
+        iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+    });
 
-const getBearing = (lat1, lon1, lat2, lon2) => {
-  const toRad = d => (d * Math.PI) / 180;
-  const dLon = toRad(lon2 - lon1);
-  const y = Math.sin(dLon) * Math.cos(toRad(lat2));
-  const x =
-    Math.cos(toRad(lat1)) * Math.sin(toRad(lat2)) -
-    Math.sin(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.cos(dLon);
-  return ((Math.atan2(y, x) * 180) / Math.PI + 360) % 360;
-};
+   const RecenterButton = () => {
+        const map = useMap();
+        return (
+            <div style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                zIndex: 1000,
+            }}>
+                <button
+                    onClick={() => map.setView([39.93, -105.146], 13)}
+                    style={{
+                        padding: '0px 5px',
+                        background: 'background-surface',
+                        border: '1px solid var(--joy-palette-neutral-outlinedBorder)',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontSize: '26px',       
+                        fontWeight: 'bold',
+                        color: 'var(--joy-palette-neutral-outlinedColor)',
+                }}>
+                ⌖
+                </button>
+            </div>
+        );
+    };
+    const ResizeMap = ({ isVisible }) => {
+        const map = useMap();
+        useEffect(() => {
+            if (isVisible) {
+                setTimeout(() => map.invalidateSize(), 100);
+            }
+        }, [isVisible, map]);
+        return null;
+    };
 
-const makePlaneIcon = (bearing = 0) =>
-  L.divIcon({
-    className: "",
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    html: `<svg width="28" height="28" viewBox="0 0 28 28"
-            xmlns="http://www.w3.org/2000/svg"
-            style="transform:rotate(${bearing}deg);transform-origin:center">
-      <path d="M14 2 L17 12 L26 14 L17 16 L16 24 L14 22 L12 24 L11 16 L2 14 L11 12 Z"
-            fill="#3b82f6" stroke="white" stroke-width="1.2"/>
-    </svg>`,
-  });
+    const getBearing = (lat1, lon1, lat2, lon2) => {
+    const toRad = d => (d * Math.PI) / 180;
+    const dLon = toRad(lon2 - lon1);
+    const y = Math.sin(dLon) * Math.cos(toRad(lat2));
+    const x =
+        Math.cos(toRad(lat1)) * Math.sin(toRad(lat2)) -
+        Math.sin(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.cos(dLon);
+    return ((Math.atan2(y, x) * 180) / Math.PI + 360) % 360;
+    };
 
-const InteractiveMap = ({ isVisible }) => {
-    // Initialized to empty string to keep the input controlled
-    const [selectedDate, setSelectedDate] = useState(""); 
-    const [sessions, setSessions] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
-    const [currentTime, setCurrentTime] = useState(0);
-    const [dayStart, setDayStart] = useState(0);
-    const [dayEnd, setDayEnd] = useState(0);
-    const [isPlaying, setIsPlaying] = useState(false);
-    const playRef = useRef(null);
+    const makePlaneIcon = (bearing = 0) =>
+    L.divIcon({
+        className: "",
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+        html: `<svg width="28" height="28" viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+                style="transform:rotate(${bearing}deg);transform-origin:center">
+        <path d="M14 2 L17 12 L26 14 L17 16 L16 24 L14 22 L12 24 L11 16 L2 14 L11 12 Z"
+                fill="#3b82f6" stroke="white" stroke-width="1.2"/>
+        </svg>`,
+    });
 
-    const fetchSessions = async () => {
-        if (!selectedDate) return;
+    const InteractiveMap = ({ isVisible }) => {
+        // Initialized to empty string to keep the input controlled
+        const { mode } = useColorScheme();
+        const [selectedDate, setSelectedDate] = useState(""); 
+        const [sessions, setSessions] = useState([]);
+        const [loading, setLoading] = useState(false);
+        const [error, setError] = useState(null);
+        const [currentTime, setCurrentTime] = useState(0);
+        const [dayStart, setDayStart] = useState(0);
+        const [dayEnd, setDayEnd] = useState(0);
+        const [isPlaying, setIsPlaying] = useState(false);
+        const playRef = useRef(null);
 
-        setLoading(true);
-        setError(null);
-        setIsPlaying(false);
-        setSessions([]);
+        const fetchSessions = async () => {
+            if (!selectedDate) return;
 
-        try {
-            const { sessions: allSessions, startTs, endTs } = await getSessionsByDate(selectedDate);
+            setLoading(true);
+            setError(null);
+            setIsPlaying(false);
+            setSessions([]);
 
-            setSessions(allSessions);
-            setDayStart(startTs);
-            setDayEnd(endTs);
-            setCurrentTime(startTs);
+            try {
+                const startIso = `${selectedDate}T00:00:00`;
+                const endIso   = `${selectedDate}T23:59:59`;
+
+                let allSessions = [];
+                let page = 1;
+                let hasMore = true;
+
+                while (hasMore) {
+                    const url = `${API_BASE}/sessions?time_start=${encodeURIComponent(startIso)}&time_end=${encodeURIComponent(endIso)}&page_size=50&page=${page}&sort_by=session_start&order=asc`;
+
+                    const res = await fetch(url, {
+                        headers: { 'accept': 'application/json' }
+                    });
+
+                    if (!res.ok) throw new Error(`API error: ${res.status}`);
+                    const json = await res.json();
+
+                    const pageData = json.data || [];
+                    allSessions = [...allSessions, ...pageData];
+
+                    if (pageData.length < 50 || (json.total && allSessions.length >= json.total)) {
+                        hasMore = false;
+                    } else {
+                        page++;
+                    }
+                }
+
+                setSessions(allSessions);
 
                 const startTs = new Date(startIso).getTime() / 1000;
                 const endTs   = new Date(endIso).getTime() / 1000;
