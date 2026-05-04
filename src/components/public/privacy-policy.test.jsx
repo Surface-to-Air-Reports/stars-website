@@ -21,7 +21,7 @@ describe("Privacy Policy page", () => {
 
     test("includes a contact email", () => {
         renderPrivacy();
-        expect(screen.getByText(/starscolorado@protonmail\.com/i)).toBeInTheDocument();
+        expect(screen.getByText(/contact@stars80027\.com/i)).toBeInTheDocument();
     });
 
     test("renders all numbered sections", () => {
