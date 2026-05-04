@@ -4,7 +4,6 @@ import { cachedFetch } from "./cachedFetch.js";
 async function powerSearchPlanes(maxReturn, sort, page, owner) {
     const params = new URLSearchParams();
     params.set("page_size", maxReturn);
-    params.set("sort_by", "session_start");
     params.set("order", "desc");
 
     if (sort && sort !== "") {

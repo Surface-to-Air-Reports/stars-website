@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Container, Grid, useColorScheme} from '@mui/joy';
+import { Box, Typography, Container, Grid, useColorScheme, Link} from '@mui/joy';
 
 
 const Page = () => {
@@ -22,6 +22,8 @@ const Page = () => {
               recalculations, and visuals to help individuals better understand this situation.
 
             </Typography>
+                        
+                          <Link href="mailto:contact@stars80027.com">contact@stars80027.com</Link>
 
           </Grid>
 
