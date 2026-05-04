@@ -16,19 +16,6 @@ const Page = () => {
                 <Box sx = {{display : 'flex', flexDirection : 'column', alignItems : 'center', gap : '1.5rem', py : '5rem'}}>
                     <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Check out this weeks</Typography>
                     <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>Rankings</Typography>
-                    {/*<Box sx={{display: 'flex', flexDirection: 'row', gap : '.5rem'}}>*/}
-                    {/*    <Button*/}
-                    {/*        color={"neutral"}*/}
-                    {/*        onClick={() => navigate("/file-report")}>*/}
-                    {/*        Top Aircraft*/}
-                    {/*    </Button>*/}
-                    {/*    <Button*/}
-                    {/*        color={"neutral"}*/}
-                    {/*        variant={"outlined"}*/}
-                    {/*        onClick={() => navigate("/data-search")}>*/}
-                    {/*        Activity Breakdown*/}
-                    {/*    </Button>*/}
-                    {/*</Box>*/}
                 </Box>
             </Box>
             <Box sx = {{

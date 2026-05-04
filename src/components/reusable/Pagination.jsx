@@ -1,18 +1,60 @@
-import {Box, Button, Select, Option} from "@mui/joy";
+import { Box, Button, Select, Option, Stack, Typography } from "@mui/joy";
 
-const Pagination = ({currentPage, totalPages, handleChangePage, handleChangeCount, count}) => {
+const Pagination = ({
+                        currentPage,
+                        totalPages,
+                        handleChangePage,
+                        handleChangeCount,
+                        count,
+                    }) => {
+    const canGoPrev = currentPage > 1;
+    const canGoNext = currentPage < totalPages;
+
     return (
-        <Box>
-            <Button onClick={() => handleChangePage(currentPage-1)}>Previous</Button>
-            {currentPage}/{totalPages}
-            <Button onClick={() => handleChangePage(currentPage+1)}>Next</Button>
-            <Select value={count} onChange={handleChangeCount}>
-                <Option value={10}>10 per page</Option>
-                <Option value={25}>25 per page</Option>
-                <Option value={50}>50 per page</Option>
+        <Box
+            sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: 2,
+                flexWrap: "wrap",
+            }}
+        >
+            <Stack direction="row" spacing={1} alignItems="center">
+                <Button
+                    size="sm"
+                    variant="soft"
+                    disabled={!canGoPrev}
+                    onClick={() => handleChangePage(currentPage - 1)}
+                >
+                    Previous
+                </Button>
+
+                <Typography level="body-sm">
+                    Page {currentPage} / {totalPages}
+                </Typography>
+
+                <Button
+                    size="sm"
+                    variant="soft"
+                    disabled={!canGoNext}
+                    onClick={() => handleChangePage(currentPage + 1)}
+                >
+                    Next
+                </Button>
+            </Stack>
+
+            <Select
+                size="sm"
+                value={count}
+                onChange={(_, value) => handleChangeCount(value)}
+            >
+                <Option value={10}>10 / page</Option>
+                <Option value={25}>25 / page</Option>
+                <Option value={50}>50 / page</Option>
             </Select>
         </Box>
-    )
-}
+    );
+};
 
-export {Pagination}
+export { Pagination };
