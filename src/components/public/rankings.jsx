@@ -16,19 +16,6 @@ const Page = () => {
                 <Box sx = {{display : 'flex', flexDirection : 'column', alignItems : 'center', gap : '1.5rem', py : '5rem'}}>
                     <Typography level={"h4"} textAlign={"center"}  color = {"neutral"}>Check out this weeks</Typography>
                     <Typography level={"h1"} textAlign={"center"} sx = {{fontSize : "50px"}}>Rankings</Typography>
-                    {/*<Box sx={{display: 'flex', flexDirection: 'row', gap : '.5rem'}}>*/}
-                    {/*    <Button*/}
-                    {/*        color={"neutral"}*/}
-                    {/*        onClick={() => navigate("/file-report")}>*/}
-                    {/*        Top Aircraft*/}
-                    {/*    </Button>*/}
-                    {/*    <Button*/}
-                    {/*        color={"neutral"}*/}
-                    {/*        variant={"outlined"}*/}
-                    {/*        onClick={() => navigate("/data-search")}>*/}
-                    {/*        Activity Breakdown*/}
-                    {/*    </Button>*/}
-                    {/*</Box>*/}
                 </Box>
             </Box>
             <Box sx = {{
@@ -37,8 +24,17 @@ const Page = () => {
                 alignItems : 'flex-end',
                 gap : '1rem',
                 flexDirection : 'row'}}>
-                <Box>
-                    
+                <Box
+                 sx ={{
+                    display : 'flex',
+                    alignItems : 'center',
+                    flexDirection : 'column'
+                    }}>
+                    <Typography
+                    level = {"h2"}
+                    sx = {{alignText : 'center'}}>
+                        {secToDuration(aircraft[2]?.total_violated_seconds || 0)}
+                    </Typography>
                     <Card 
                         sx = {{
                             alignItems : 'center',
@@ -48,17 +44,14 @@ const Page = () => {
                         }}>
                         {aircraft[2] ? (
                             <>
-                                <Typography sx = {{alignText : 'center'}}>
+                                <Typography level = {"h3"} sx = {{alignText : 'center'}}>
                                     {aircraft[2]?.callsign || "Loading..."}
                                 </Typography>
-                                <Typography sx = {{alignText : 'center'}}>
-                                    {aircraft[2]?.owner_name || "Loading..."}
-                                </Typography>
-                                <Typography sx = {{alignText : 'center'}}>
+                                <Typography level = {"h4"} sx = {{alignText : 'center'}}>
                                     {aircraft[2]?.lowest_altitude || "Loading..."}ft
                                 </Typography>
                                 <Typography sx = {{alignText : 'center'}}>
-                                    {secToDuration(aircraft[2]?.total_violated_seconds || 0)}
+                                    {aircraft[2]?.owner_name || "Loading..."}
                                 </Typography>
                                 <Typography sx = {{alignText : 'center'}}>
                                     {aircraft[2]?.type || "Loading..."}
@@ -72,6 +65,17 @@ const Page = () => {
                         )}
                     </Card>
                 </Box>
+                <Box
+                sx ={{
+                    display : 'flex',
+                    alignItems : 'center',
+                    flexDirection : 'column'
+                    }}>
+                <Typography
+                level = {"h2"}
+                sx = {{alignText : 'center'}}>
+                                {secToDuration(aircraft[0]?.total_violated_seconds || 0)}
+                </Typography>
                 <Card 
                     sx = {{
                         alignItems : 'center',
@@ -82,19 +86,20 @@ const Page = () => {
                     
                     {aircraft[0] ? (
                         <>
-                            <Typography sx = {{alignText : 'center'}}>
+                            <Typography
+                                level = {"h3"}
+                                sx = {{alignText : 'center'}}>
                                 {aircraft[0]?.callsign || "Loading..."}
+                            </Typography>
+                            <Typography
+                            level = {"h4"}
+                            sx = {{alignText : 'center'}}>
+                                {aircraft[0]?.lowest_altitude || "Loading..."}ft
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[0]?.owner_name || "Loading..."}
                             </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[0]?.lowest_altitude || "Loading..."}ft
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {secToDuration(aircraft[0]?.total_violated_seconds || 0)}
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
+                           <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[0]?.type || "Loading..."}
                             </Typography>
                         </>
@@ -105,6 +110,18 @@ const Page = () => {
 
                     )}
                 </Card>
+                </Box>
+                <Box
+                sx ={{
+                    display : 'flex',
+                    alignItems : 'center',
+                    flexDirection : 'column'
+                    }}>
+                <Typography
+                    level = {"h2"}
+                    sx = {{alignText : 'center'}}>
+                        {secToDuration(aircraft[1]?.total_violated_seconds || 0)}
+                </Typography>
                 <Card
 
                     sx = {{
@@ -116,17 +133,14 @@ const Page = () => {
                     
                     {aircraft[1] ? (
                         <>
-                            <Typography sx = {{alignText : 'center'}}>
+                            <Typography level = {"h3"} sx = {{alignText : 'center'}}>
                                 {aircraft[1]?.callsign || "Loading..."}
                             </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
-                                {aircraft[1]?.owner_name || "Loading..."}
-                            </Typography>
-                            <Typography sx = {{alignText : 'center'}}>
+                            <Typography level = {"h4"} sx = {{alignText : 'center'}}>
                                 {aircraft[1]?.lowest_altitude || "Loading..."}ft
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
-                                {secToDuration(aircraft[1]?.total_violated_seconds || 0)}
+                                {aircraft[1]?.owner_name || "Loading..."}
                             </Typography>
                             <Typography sx = {{alignText : 'center'}}>
                                 {aircraft[1]?.type || "Loading..."}
@@ -139,6 +153,7 @@ const Page = () => {
 
                     )}
                 </Card>
+                </Box>
             </Box>
             <Box sx = {{alignSelf : 'center'}}>
 

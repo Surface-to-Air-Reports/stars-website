@@ -1,4 +1,10 @@
 import { API_BASE_URL } from "./api.js";
+import { cachedFetch, DEFAULT_TTL_MS, THIRTY_DAYS_MS } from "./cachedFetch.js";
+
+function isPastDateTime(dt) {
+    if (!dt) return false;
+    return new Date(dt).getTime() < Date.now();
+}
 
 async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, dur_from, dur_to, date_start, date_end, sort, page) {
     const params = new URLSearchParams();
@@ -43,8 +49,8 @@ async function powerSearchLowSessions(maxReturn, tail_filter, alt_to, alt_from, 
 
     console.log("powerSearch params:", Object.fromEntries(params));
 
-    const res = await fetch(`${API_BASE_URL}/sessions?${params.toString()}`);
-    const json = await res.json();
+    const ttl = isPastDateTime(date_end) ? THIRTY_DAYS_MS : DEFAULT_TTL_MS;
+    const json = await cachedFetch(`${API_BASE_URL}/sessions?${params.toString()}`, { ttl });
 
     const top = json.data.map((row) => ({
         callsign: row.callsign,
